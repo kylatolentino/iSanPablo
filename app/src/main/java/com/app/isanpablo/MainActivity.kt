@@ -10,11 +10,9 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.Window
-import android.widget.Button
-import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -77,23 +75,175 @@ class MainActivity : AppCompatActivity() {
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         dialog.window?.setBackgroundDrawableResource(R.drawable.rounded_dialog_bg)
 
-        // Initialize views inside the dialog layout
-        val textView = dialog.findViewById<EditText>(R.id.txtPhoneNum)
-        val button = dialog.findViewById<Button>(R.id.btnCall)
-
-        // Set click listener for the call button
-        button.setOnClickListener {
-            val phoneNum = textView.text.toString()
-            if (phoneNum.isNotEmpty()) {
-                if (phoneNum.length == 11 && phoneNum.startsWith("09")) {
-                    val callIntent = Intent(Intent.ACTION_CALL)
-                    callIntent.data = Uri.parse("tel:$phoneNum")
-                    startActivity(callIntent)
-                } else {
-                    Toast.makeText(this, "Invalid phone number", Toast.LENGTH_SHORT).show()
-                }
-            }
+        val btnClose = dialog.findViewById<ImageView>(R.id.btnExitHotline) // assuming you have an ImageView with id "btnClose" in your layout
+        btnClose.setOnClickListener {
+            dialog.dismiss() // Close the dialog when the close button is clicked
         }
+
+        // Initialize views inside the dialog layout
+        val btnSpcGov = dialog.findViewById<ImageButton>(R.id.btnSpcGov)
+        // Set click listener for the call button
+        btnSpcGov.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numofSpcGov)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnOfficebuild = dialog.findViewById<ImageButton>(R.id.btnOfficebuild)
+        // Set click listener for the call button
+        btnOfficebuild.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numberOfOfficebuilding)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnassessor = dialog.findViewById<ImageButton>(R.id.btnassessor)
+        // Set click listener for the call button
+        btnassessor.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numberOfAssessor)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btntreasurer = dialog.findViewById<ImageButton>(R.id.btntreasurer)
+        // Set click listener for the call button
+        btntreasurer.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numberOfTreasurer)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnOfBusinessPermit = dialog.findViewById<ImageButton>(R.id.btnOfBusinessPermit)
+        // Set click listener for the call button
+        btnOfBusinessPermit.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numberOfBusinessPermit)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnOfBFP = dialog.findViewById<ImageButton>(R.id.btnOfBFP)
+        // Set click listener for the call button
+        btnOfBFP.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numberOfBFP)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnOfwelfareAndDev = dialog.findViewById<ImageButton>(R.id.btnOfwelfareAndDev)
+        // Set click listener for the call button
+        btnOfwelfareAndDev.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numberOfwelfareAndDev)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnOfRedCross = dialog.findViewById<ImageButton>(R.id.btnOfRedCross)
+        // Set click listener for the call button
+        btnOfRedCross.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numberOfRedCross)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnOfbrgyCont = dialog.findViewById<ImageButton>(R.id.btnOfbrgyCont)
+        // Set click listener for the call button
+        btnOfbrgyCont.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numberOfbrgyCont)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnOfSPCPACD = dialog.findViewById<ImageButton>(R.id.btnOfSPCPACD)
+        // Set click listener for the call button
+        btnOfSPCPACD.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numberOfSPCPACD)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnOfSPCPolice = dialog.findViewById<ImageButton>(R.id.btnOfSPCPolice)
+        // Set click listener for the call button
+        btnOfSPCPolice.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numberOfSPCPolice)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnOfSPCGenHos = dialog.findViewById<ImageButton>(R.id.btnOfSPCGenHos)
+        // Set click listener for the call button
+        btnOfSPCGenHos.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numberOfSPCGenHos)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnOfSPCcdrrmo = dialog.findViewById<ImageButton>(R.id.btnOfSPCcdrrmo)
+        // Set click listener for the call button
+        btnOfSPCcdrrmo.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numberOfSPCcdrrmo)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnsmartOfSPCcdrrmo = dialog.findViewById<ImageButton>(R.id.btnsmartOfSPCcdrrmo)
+        // Set click listener for the call button
+        btnsmartOfSPCcdrrmo.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.smartOfSPCcdrrmo)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnglobeOfSPCcdrrmo = dialog.findViewById<ImageButton>(R.id.btnglobeOfSPCcdrrmo)
+        // Set click listener for the call button
+        btnglobeOfSPCcdrrmo.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.globeOfSPCcdrrmo)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnOfSPCcho = dialog.findViewById<ImageButton>(R.id.btnOfSPCcho)
+        // Set click listener for the call button
+        btnOfSPCcho.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.numberOfSPCcho)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnsmartOfSPCcho = dialog.findViewById<ImageButton>(R.id.btnsmartOfSPCcho)
+        // Set click listener for the call button
+        btnsmartOfSPCcho.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.smartOfSPCcho)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+        val btnglobeOfSPCcho = dialog.findViewById<ImageButton>(R.id.btnglobeOfSPCcho)
+        // Set click listener for the call button
+        btnglobeOfSPCcho.setOnClickListener {
+            val textView = dialog.findViewById<TextView>(R.id.globeOfSPCcho)
+            val phoneNum = textView.text.toString()
+            val callIntent = Intent(Intent.ACTION_CALL)
+            callIntent.data = Uri.parse("tel:$phoneNum")
+            startActivity(callIntent)
+        }
+
 
         dialog.show()
     }

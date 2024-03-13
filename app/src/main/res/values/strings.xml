@@ -7,16 +7,202 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
+    <string name="menu_home">San Pablo City</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+
+    <string name="home_taxes">Taxes</string>
+    <string name="taxes_rpt">RPT Payment</string>
+    <string name="taxes_franchisePayment">Franchise Payment</string>
+    <string name="taxes_onlineMP">Online Market Payment</string>
+    <string name="taxes_LCR">LCR Request Payment</string>
+    <string name="taxes_cert">Certification</string>
+    <string name="taxes_other">Others Payment</string>
+
+
+    <string name="SPCGovernment">San Pablo City Government</string>
+    <string name="numberOfSPCGov">0493000065</string>
+
+    <string name="SPCPolice">San Pablo City Police</string>
+    <string name="numberOfSPCPolice">04905626474</string>
+
+    <string name="RedCross">Red Cross San Pablo</string>
+    <string name="numberOfRedCross">0495624025</string>
+
+    <string name="SPCGeneralHospital">SPC General Hospital</string>
+    <string name="numberOfSPCGenHos">0495031431</string>
+
+    <string name="SPCEmergencyHospital">San Pablo Hospital</string>
+    <string name="numberOfSPCHos">0495031351</string>
+
+    <string name="DisasterRiskReduction">Disaster Risk Reduction</string>
+    <string name="numberOfDRR">0495031351</string>
+
+    <string name="SPCPACD">SPC PACD(CHRMO)</string>
+    <string name="numberOfSPCPACD">0495910588</string>
+
+    <string name="BARANGAYCONTROL">Barangay Control</string>
+    <string name="numberOfBrgy">5623086</string>
+
+    <string name="BFP">Bureau of Fire Protection</string>
+    <string name="numberOfBFP">5627654</string>
+
+    <string name="BusinessPermit">Business Permit and Licensing</string>
+    <string name="numberOfBusinessPermit">5033481</string>
+
+    <string name="Treasurer">Treasurer</string>
+    <string name="numberOfTreasurer">5626710</string>
+
+    <string name="Assessor">Assessor</string>
+    <string name="numberOfAssessor">8000801</string>
+
+    <string name="Officebuilding">Office of the building Official</string>
+    <string name="numberOfOfficebuilding">5210798</string>
+
+    <string name="welfareAndDev">Welfare and Development Office</string>
+    <string name="numberOfwelfareAndDev">5210798</string>
+
+    <string name="brgyCont">Barangay Control</string>
+    <string name="numberOfbrgyCont">5623086</string>
+
+    <string name="SPCcdrrmo">San Pablo City CDRRMO</string>
+    <string name="smartOfSPCcdrrmo">09089078124</string>
+    <string name="smartSPCcdrrmo">SPC CDRRMO \n Smart Network</string>
+    <string name="globeOfSPCcdrrmo">09955619456</string>
+    <string name="globeSPCcdrrmo">SPC CDRRMO \n Globe Network</string>
+    <string name="numberOfSPCcdrrmo">8000405</string>
+
+    <string name="SPCcho">San Pablo CHO</string>
+    <string name="smartOfSPCcho">09392022318</string>
+    <string name="smartSPCcho">SPC CHO \n Smart Network</string>
+    <string name="globeOfSPCcho">09673625480</string>
+    <string name="globeSPCcho">SPC CHO \n Globe Network</string>
+    <string name="numberOfSPCcho">5769119</string>
+
+    <string name="rptform_name">Owners Name</string>
+    <string name="rptform_email">Email Address</string>
+    <string name="rptform_property"> Property Address</string>
+    <string name="rptform_contact">Contact Number</string>
+    <string name="rptform_pin">PIN</string>
+
+
+    <string name="dlsp_payment">DLSP Payment</string>
+
+    <string name="citymayor_name">Vicente B. Amante PhD</string>
+
+    <string name="cityadmin_name">Larry S. Amante</string>
+    <string name="cityadmin_address">San Pablo City Multi-Purpose Convention Center,  San Jose, San Pablo Cit</string>
+    <string name="cityadmin_contact">Tel No. (049) 521-0307</string>
+
+    <string name="cityaccountant_name">Arlene M. Beltejar</string>
+    <string name="cityaccountant_contact">Tel. No. 562-6577, 562-7687</string>
+    <string name="cityaccountant_internalcontact">Internal - 562-1982</string>
+
+    <string name="cityagri_name">Arthur B. Almari</string>
+    <string name="cityagri_contact">Tel. No. 503-2229</string>
+
+    <string name="cityassessor_name">Eva F. Punto</string>
+    <string name="cityassessor_contact">Tel. No.  521-0996,557-3663, 557-3845,800-0801</string>
+
+    <string name="citybudget_name">Arthur B. Almario</string>
+    <string name="citybudget_contact">Tel. No. 546-289</string>
+
+    <string name="citybuilding_name">Arch. Herbert G. Cartabio</string>
+    <string name="citybuilding_contact">Tel. No. 521-0798</string>
+
+    <string name="cityregistrar_name">Victoria G. Maloles</string>
+    <string name="cityregistrar_contact">Tel. No. 0918-792-2603; 0995-268-9523</string>
+
+    <string name="citycoop_name">Concepcion M. Biglete</string>
+    <string name="citycoop_contact">Tel. No. 562-2866</string>
+
+    <string name="cityDRRM_name">Margarita Vanessa T. Reyes</string>
+    <string name="cityDRRM_contact">Tel. No. 800-0405, 549-0500</string>
+
+    <string name="cityengr_name">Engr. Michael A. Dimaisip</string>
+    <string name="cityengr_contact">Tel. No.</string>
+
+    <string name="cityENR_name">Arthur B. Almario</string>
+    <string name="cityENR_contact">Tel. No. 546-2894</string>
+
+    <string name="cityservices_name">Dra. Marianne Criselda D. Belen</string>
+    <string name="cityservices_contact">Tel. No. 562-2395,562-0779</string>
+
+    <string name="cityhealth_name">Dr. James T. Lee Ho</string>
+    <string name="cityhealth_contact1">Tel. No. 562-8116</string>
+    <string name="cityhealth_contact2">Fax No. 562-7874</string>
+
+    <string name="cityHR_name">Engr. Diosdado A. Biglete</string>
+
+    <string name="cityinfo_name">Enrico B. Galicia</string>
+    <string name="cityinfo_contact">Tel No. 503-5783</string>
+    <string name="cityaffairs_contact">Brgy. Affairs: 561-1483</string>
+    <string name="brgy_controlnum">Barangay Control No.: 562-3086</string>
+
+    <string name="citylegal_name">Atty. Agripino G. Morga</string>
+    <string name="citylegal_contact">Tel. No. 562-0863</string>
+
+    <string name="cityPND_name">Cristina D. Amante</string>
+    <string name="cityPND_contact">Tel. No. 562-4980,503-1301</string>
+
+    <string name="citypopulation_name">Mylene T. Deriquito</string>
+    <string name="citypopulation_contact">Tel. No. 562-1030</string>
+
+    <string name="citySWD_name">Marilyn S. Escondo</string>
+    <string name="citySWD_contact">Tel. No. 562-1575</string>
+
+    <string name="citySWM_name">Engr. Diosdado A. Biglete</string>
+    <string name="citySWM_contact">Tel. No. 521-7816</string>
+
+    <string name="citytourism_name">Ma. Donnalyn E. Briñas</string>
+    <string name="citytourism_contact">Tel. No. 562-1429</string>
+
+    <string name="citytreasurer_name">Arjan V. Babani</string>
+    <string name="citytreasurer_contact">Tel. No. 562-6710</string>
+
+    <string name="cityvet_name">Dra. Fara Jayne C. Orsolino</string>
+    <string name="cityvet_contact">Tel. No. 562-8266</string>
+
+    <string name="PLSP_univPresName">Dr. Sigfredo D. Adajar</string>
+    <string name="PLSP_univPresContact">Tel. No. 536-7830</string>
+
+    <string name="SPCGenHsptl_name">Dr. Michale Ritchie L. Flores</string>
+    <string name="SPCGenHsptl_contact">Tel. No. 503-1351</string>
+    <string name="SPCGenHsptl_ernum">ER No. 503-1431</string>
+
+    <string name="cityvice_name">Hon. Justin G. Colago</string>
+    <string name="cityvice_contact">Tel. No. 562-8125,561-1315</string>
+
+    <string name="cityBPLO_name">Oria M. Bañagale</string>
+    <string name="cityBPLO_contact">Tel. No. 503-3481</string>
+
+    <string name="cityCTMO_name">Louie A. Castillo"</string>
+    <string name="cityCTMO_contact">Tel. No. 503-2200</string>
+
+    <string name="cityGAD_name">Peachy E. Tulud</string>
+    <string name="cityGAD_contact">Tel. No.</string>
+
+    <string name="cityLEDIPO_name">Paul Michael M. Cuadra</string>
+    <string name="cityLEDIPO_contact">Tel. No. 503-307</string>
+
+    <string name="cityMISO_name">Christina I. Flores</string>
+    <string name="cityMISO_contact">Tel. No. 0919-840-5599</string>
+
+    <string name="cityOSCA_name">Efren B. Azusano</string>
+    <string name="cityOSCA_contact">Tel. No. 562-4457</string>
+
+    <string name="cityPESO_name">Janquil D. Bumagat</string>
+    <string name="cityPESO_contact">Tel. No. 0956-930-2575</string>
+
+    <string name="citysports_name">Pedrito D. Bigueras</string>
+    <string name="citysports_contact">Tel. No. 503-3112</string>
+
+    <string name="cityCUDHO_name">Engr. Edgardo A. Malijan</string>
+    <string name="cityCUDHO_contact">Tel. No. 561-2322"</string>
+
+    <string name="cityCGSO_name">Louie A. Castillo</string>
+    <string name="cityCGSO_contact">Tel. No. 503-2200</string>
+
+    <string name="data_policy">By submitting this as a fully accomplished form; you hereby consent to the collection, generation, use, processing, storage and retention of your personal data by the City Government of San Pablo as provided for in the Data Privacy Act of 2012.</string>
+
 </resources>
