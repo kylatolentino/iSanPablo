@@ -6,8 +6,8 @@
     android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="361dp"
-        android:layout_height="594dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:cardCornerRadius="10dp"
         app:cardElevation="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -425,6 +425,7 @@
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -486,6 +487,7 @@
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -546,6 +548,7 @@
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -730,6 +733,7 @@
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -854,6 +858,7 @@
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -914,6 +919,7 @@
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -975,6 +981,7 @@
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -1035,6 +1042,7 @@
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -1095,6 +1103,7 @@
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -1155,7 +1164,7 @@
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
-            </LinearLayout>
+                    </LinearLayout>
 
                 </ScrollView>
 

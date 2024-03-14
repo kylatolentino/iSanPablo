@@ -1,6 +1,7 @@
 package com.app.isanpablo
 
 import android.Manifest
+import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -9,6 +10,7 @@ import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.view.Window
 import android.widget.ImageButton
 import android.widget.ImageView
@@ -50,17 +52,35 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
+                R.id.nav_home, R.id.nav_thecity, R.id.nav_government,R.id.nav_economy,R.id.nav_tourism, R.id.nav_foi,R.id.nav_arta
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.actionLogout -> {
+                showLogoutDialog()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+    private fun showLogoutDialog() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Logout")
+        builder.setMessage("Are you sure you want to logout?")
+        builder.setPositiveButton("Yes") { dialog, which ->
+            // Perform logout action here
+            // For example, you can clear user session and navigate to login screen
+        }
+        builder.setNegativeButton("No") { dialog, which ->
+            dialog.dismiss()
+        }
+        val dialog = builder.create()
+        dialog.show()
     }
 
     override fun onSupportNavigateUp(): Boolean {

@@ -6,15 +6,31 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_navbar_home"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_thecity"
+            android:icon="@drawable/ic_navbar_thecity"
+            android:title="The City" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_government"
+            android:icon="@drawable/ic_navbar_government"
+            android:title="Government" />
+        <item
+            android:id="@+id/nav_economy"
+            android:icon="@drawable/ic_navbar_economy"
+            android:title="Economy" />
+        <item
+            android:id="@+id/nav_tourism"
+            android:icon="@drawable/ic_navbar_tourism"
+            android:title="Tourism" />
+        <item
+            android:id="@+id/nav_foi"
+            android:icon="@drawable/ic_navbar_foi"
+            android:title="Freedom Of Information" />
+        <item
+            android:id="@+id/nav_arta"
+            android:icon="@drawable/ic_navbar_arta"
+            android:title="ARTA Corner" />
     </group>
 </menu>

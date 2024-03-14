@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#005acd">
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Government"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:background="@drawable/login_shape"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView59">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/svc_box"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnLocalOfficials"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:srcCompat="@android:drawable/ic_menu_gallery"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="5dp"
+                    android:text="Local Officials"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:ignore="InefficientWeight" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/svc_box"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnDepartment"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:srcCompat="@android:drawable/ic_menu_gallery"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView68"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="5dp"
+                    android:text="Departments"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/svc_box"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton12"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:srcCompat="@android:drawable/ic_menu_gallery"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView69"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Standing Committees"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:ignore="InefficientWeight" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/svc_box"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton13"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:srcCompat="@android:drawable/ic_menu_gallery"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="5dp"
+                    android:text="Ordinances"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/svc_box"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton14"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:srcCompat="@android:drawable/ic_menu_gallery"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView72"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="5dp"
+                    android:text="ELA"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:ignore="InefficientWeight" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/svc_box"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton15"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:srcCompat="@android:drawable/ic_menu_gallery"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Office Vicinity Map"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

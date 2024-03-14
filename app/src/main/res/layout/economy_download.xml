@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#007FDB"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:text="Economy"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:background="#DFDFDF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Comprehensive Development \n Program"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="Volume 1"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:strokeColor="#007FDB"
+                    app:strokeWidth="2.5dp" />
+
+                <Button
+                    android:id="@+id/btnNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="Volume 2"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:strokeColor="#007FDB"
+                    app:strokeWidth="2.5dp" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="Volume 3"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2.5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            android:layout_marginTop="215dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnCDP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#007fdb"
+                android:checkable="true"
+                android:elevation="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5sp"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:text="Comprehensive Development Plan"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#007fdb"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5sp"
+                android:text="SPC Ecological Profile"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnCDPAnnexes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#007fdb"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5sp"
+                android:text="CDP Annexes"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/exitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_gravity="right"
+            android:background="#007fdb"
+            android:clickable="false"
+            android:padding="5dp"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="header_dialog">#007FDB</color>
+    <color name="header">#005ACD</color>
+    <color name="footer">#CCE3ED</color>
+    <color name="background">#F5F5F5</color>
+    <color name="backButton">#AABCD3</color>
+    <color name="downloadButton">#0C6AF6</color>
 </resources>

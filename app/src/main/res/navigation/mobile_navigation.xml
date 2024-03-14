@@ -12,14 +12,13 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.app.isanpablo.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.app.isanpablo.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:id="@+id/nav_government"
+        android:name="com.app.isanpablo.ui.government.GovernmentFragment"
+        android:label="@string/menu_government"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_economy"
+        android:name="com.app.isanpablo.ui.economy.EconomyFragment"
+        android:label="@string/menu_economy"
+        tools:layout="@layout/fragment_economy" />
 </navigation>
