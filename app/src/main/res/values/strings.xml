@@ -207,5 +207,6 @@
     <string name="cityCGSO_contact">Tel. No. 503-2200</string>
 
     <string name="data_policy">By submitting this as a fully accomplished form; you hereby consent to the collection, generation, use, processing, storage and retention of your personal data by the City Government of San Pablo as provided for in the Data Privacy Act of 2012.</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>

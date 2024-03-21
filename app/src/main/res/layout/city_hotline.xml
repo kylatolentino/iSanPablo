@@ -113,7 +113,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -175,7 +175,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -236,7 +236,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -297,7 +297,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -359,7 +359,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -421,7 +421,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -483,7 +483,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -544,7 +544,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -605,7 +605,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -667,7 +667,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -729,7 +729,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -792,7 +792,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -854,7 +854,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -915,7 +915,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_phone"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -977,7 +977,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_phone"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -1038,7 +1038,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_lan"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -1099,7 +1099,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_phone"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>
@@ -1160,7 +1160,7 @@
                                 android:layout_weight="1"
                                 android:background="#FFFFFF"
                                 android:foregroundTint="#FFFFFF"
-                                android:src="@drawable/ic_hotline_lanline"
+                                android:src="@drawable/ic_hotline_phone"
                                 tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                         </LinearLayout>

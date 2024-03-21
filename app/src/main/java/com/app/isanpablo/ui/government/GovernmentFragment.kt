@@ -10,7 +10,7 @@ import com.app.isanpablo.R
 import com.app.isanpablo.databinding.FragmentGovernmentBinding
 import com.app.isanpablo.ui.localofficial.LocalOfficialFragment
 import com.app.isanpablo.ui.departments.DepartmentFragment
-
+import com.app.isanpablo.ui.map.MapFragment
 class GovernmentFragment : Fragment() {
 
     private var _binding: FragmentGovernmentBinding? = null
@@ -40,6 +40,13 @@ class GovernmentFragment : Fragment() {
             val fragmentManager = requireActivity().supportFragmentManager
             val transaction = fragmentManager.beginTransaction()
             transaction.replace(R.id.nav_host_fragment_content_main, DepartmentFragment())
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        binding.btnmap?.setOnClickListener{
+            val fragmentManager = requireActivity().supportFragmentManager
+            val transaction = fragmentManager.beginTransaction()
+            transaction.replace(R.id.nav_host_fragment_content_main, MapFragment())
             transaction.addToBackStack(null)
             transaction.commit()
         }

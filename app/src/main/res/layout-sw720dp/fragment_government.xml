@@ -11,12 +11,11 @@
         android:id="@+id/textView59"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Government"
         android:textColor="#ffffff"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,7 +42,7 @@
         app:layout_constraintDimensionRatio="0:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2">
+        app:layout_constraintTop_toBottomOf="@+id/textView59">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -53,7 +52,7 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
@@ -69,7 +68,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="30dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -106,7 +106,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="30dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -142,7 +143,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="30dp">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -184,7 +186,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="30dp">
 
                         <LinearLayout
                             android:layout_width="150dp"
@@ -193,7 +196,7 @@
                             android:orientation="vertical">
 
                             <ImageButton
-                                android:id="@+id/imageButton13"
+                                android:id="@+id/btnordinance"
                                 android:layout_width="150dp"
                                 android:layout_height="150dp"
                                 android:backgroundTint="#00000000"
@@ -220,7 +223,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="30dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -254,7 +258,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="30dp">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
