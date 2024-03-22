@@ -1,15 +1,20 @@
 package com.app.isanpablo.ui.government
 
+import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
+import android.widget.Button
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.app.isanpablo.R
 import com.app.isanpablo.databinding.FragmentGovernmentBinding
 import com.app.isanpablo.ui.localofficial.LocalOfficialFragment
 import com.app.isanpablo.ui.departments.DepartmentFragment
+import com.app.isanpablo.ui.ela.ElaFragment
 import com.app.isanpablo.ui.map.MapFragment
 class GovernmentFragment : Fragment() {
 
@@ -43,13 +48,46 @@ class GovernmentFragment : Fragment() {
             transaction.addToBackStack(null)
             transaction.commit()
         }
-        binding.btnmap?.setOnClickListener{
+        binding.btnmap.setOnClickListener{
             val fragmentManager = requireActivity().supportFragmentManager
             val transaction = fragmentManager.beginTransaction()
             transaction.replace(R.id.nav_host_fragment_content_main, MapFragment())
             transaction.addToBackStack(null)
             transaction.commit()
         }
+
+        binding.btnstand.setOnClickListener {
+            val dialog = Dialog(requireContext())
+            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+            dialog.setCancelable(false)
+            dialog.setContentView(R.layout.government_ordinance)
+            val exitButton: Button = dialog.findViewById(R.id.btnOk)
+            exitButton.setOnClickListener {
+                dialog.dismiss() // Dismiss the dialog
+            }
+        }
+        binding.btnEla.setOnClickListener{
+            val dialog = Dialog(requireContext())
+            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+            dialog.setCancelable(false)
+            dialog.setContentView(R.layout.confirmation_downloadfile)
+            val exitButton: Button = dialog.findViewById(R.id.btnCancel)
+            val yesButton: Button = dialog.findViewById(R.id.btnOk)
+            exitButton.setOnClickListener {
+                dialog.dismiss() // Dismiss the dialog
+            }
+            yesButton.setOnClickListener {
+                val fragmentManager = requireActivity().supportFragmentManager
+                val transaction = fragmentManager.beginTransaction()
+                transaction.replace(R.id.nav_host_fragment_content_main,ElaFragment())
+                transaction.addToBackStack(null)
+                transaction.commit()
+                dialog.dismiss()
+            }
+            dialog.show()
+
+        }
+
 
 
         return root

@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.app.isanpablo.R
 import com.app.isanpablo.databinding.ActivityMapsBinding
@@ -17,6 +18,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 
 class MapFragment : Fragment(), OnMapReadyCallback {
@@ -90,8 +92,37 @@ class MapFragment : Fragment(), OnMapReadyCallback {
             val position = marker.position
             // Animate the camera to zoom in on the tapped marker's position
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(position, MARKER_ZOOM))
+            // Show custom info window
+            showCustomInfoWindow(marker)
             // Return true to consume the event
             true
+        }
+    }
+    private fun showCustomInfoWindow(marker: Marker) {
+        // Create a custom info window adapter
+        mMap.setInfoWindowAdapter(object : GoogleMap.InfoWindowAdapter {
+            override fun getInfoWindow(p0: Marker): View? {
+                return null
+            }
+
+            override fun getInfoContents(marker: Marker): View {
+                val view = layoutInflater.inflate(R.layout.marker_picture, null)
+                // Load image into ImageView
+                val imageView = view.findViewById<ImageView>(R.id.imageView)
+                // Depending on your implementation, load the appropriate image here
+                imageView.setImageResource(getImageForMarker(marker))
+                return view
+            }
+        })
+        // Show the info window for the marker
+        marker.showInfoWindow()
+    }
+
+    private fun getImageForMarker(marker: Marker): Int {
+        // Determine the image resource based on the marker's position
+        return when (marker.position) {
+            oldCapitalBuilding -> R.drawable.ic_government_mapl_oldcityhall
+            else -> R.drawable.ic_government_map_church // Default image if no match found
         }
     }
 
