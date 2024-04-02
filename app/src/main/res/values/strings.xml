@@ -14,6 +14,19 @@
     <string name="menu_government">Government</string>
 
 
+    <string name="old_capital_building_text">Old Capital Building</string>
+    <string name="dona_leonita_text">Dona Leonita Park</string>
+    <string name="police_station_text">Police Station</string>
+    <string name="pamanahall_text">Pamana Hall</string>
+    <string name="new_capital_building_text">New Capital Building</string>
+    <string name="one_stop_text">One Stop</string>
+    <string name="abc_text">ABC Office</string>
+    <string name="hall_of_justice_text">Hall Of Justice</string>
+    <string name="girl_scout_text">Girl Scout Office</string>
+    <string name="assessor_text">Assessor</string>
+    <string name="default_text">Default text</string>
+
+
     <string name="home_taxes">Taxes</string>
     <string name="taxes_rpt">RPT Payment</string>
     <string name="taxes_franchisePayment">Franchise Payment</string>

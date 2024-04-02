@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10sp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#007FDB"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="10sp"
+            android:paddingLeft="10sp"
+            android:text="Vision"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:backgroundTint="#007fdb"
+            android:padding="5dp"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10sp"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="5dp"
+                android:text="Vision"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="10sp"
+                android:text="San Pablo, the city of seven lakes - premier tourist destination, light industrial and education hub in CALABARZON, committed to good governance and sustainable development."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

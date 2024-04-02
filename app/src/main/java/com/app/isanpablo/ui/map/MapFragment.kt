@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.app.isanpablo.R
 import com.app.isanpablo.databinding.ActivityMapsBinding
@@ -30,15 +31,15 @@ class MapFragment : Fragment(), OnMapReadyCallback {
     private lateinit var imageButton: ImageButton
 
     private val oldCapitalBuilding = LatLng(14.0745546, 121.3248985)
-    private val donaLeonita = LatLng(14.074578, 121.3244506)
+    private val donaLeonita = LatLng(14.0745991, 121.325239)
     private val policeStation = LatLng(14.0742329, 121.3245585)
-    private val pamanahall = LatLng(14.074815, 121.3246301)
+    private val pamanahall = LatLng(14.0749863,121.3244641)
     private val newCapitalBuilding = LatLng(14.0744621, 121.3245659)
-    private val oneStop = LatLng(14.0748101, 121.3244474)
-    private val abc = LatLng(14.074867, 121.3243361)
-    private val hallOfJustice = LatLng(14.0749195, 121.3244799)
-    private val girlScout = LatLng(14.0744268, 121.3256782)
-    private val assessor = LatLng(14.0744017, 121.3253047)
+    private val oneStop = LatLng(14.074886447352126, 121.32484036256916)
+    private val abc = LatLng(14.074771322735794, 121.32449569871731)
+    private val hallOfJustice = LatLng(14.0751244, 121.3248124)
+    private val girlScout = LatLng(14.074498598969566, 121.32605782089661)
+    private val assessor = LatLng(14.074343882878967, 121.32575433869948)
 
     private var locationArray: ArrayList<LatLng>? = null
 
@@ -65,7 +66,7 @@ class MapFragment : Fragment(), OnMapReadyCallback {
 
         locationArray = arrayListOf(
             oldCapitalBuilding, donaLeonita, policeStation, pamanahall,
-            newCapitalBuilding, oneStop, abc, hallOfJustice, girlScout, assessor
+            newCapitalBuilding, oneStop, abc, hallOfJustice, assessor, girlScout
         )
     }
 
@@ -109,8 +110,10 @@ class MapFragment : Fragment(), OnMapReadyCallback {
                 val view = layoutInflater.inflate(R.layout.marker_picture, null)
                 // Load image into ImageView
                 val imageView = view.findViewById<ImageView>(R.id.imageView)
+                val textView = view.findViewById<TextView>(R.id.textView)
                 // Depending on your implementation, load the appropriate image here
                 imageView.setImageResource(getImageForMarker(marker))
+                textView.setText(getTextForMarker(marker))
                 return view
             }
         })
@@ -122,10 +125,34 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         // Determine the image resource based on the marker's position
         return when (marker.position) {
             oldCapitalBuilding -> R.drawable.ic_government_mapl_oldcityhall
+            donaLeonita-> R.drawable.ic_government_map_dona
+            policeStation -> R.drawable.ic_government_map_police
+            pamanahall -> R.drawable.ic_government_map_pamana
+            newCapitalBuilding -> R.drawable.ic_government_map_newbuilding
+            oneStop -> R.drawable.ic_government_map_onestop
+            abc -> R.drawable.ic_government_map_church
+            girlScout -> R.drawable.ic_government_map_girl
+            assessor -> R.drawable.ic_government_mapl_abc
+            hallOfJustice ->R.drawable.ic_government_map_hallof
             else -> R.drawable.ic_government_map_church // Default image if no match found
         }
     }
-
+    private fun getTextForMarker(marker: Marker): Int {
+        // Determine the text resource based on the marker's position
+        return when (marker.position) {
+            oldCapitalBuilding -> R.string.old_capital_building_text
+            donaLeonita -> R.string.dona_leonita_text
+            policeStation -> R.string.police_station_text
+            pamanahall -> R.string.pamanahall_text
+            newCapitalBuilding -> R.string.new_capital_building_text
+            oneStop -> R.string.one_stop_text
+            abc -> R.string.abc_text
+            hallOfJustice -> R.string.hall_of_justice_text
+            girlScout -> R.string.girl_scout_text
+            assessor -> R.string.assessor_text
+            else -> R.string.default_text // Default text if no match found
+        }
+    }
     private fun showpicDialog() {
         val dialog = Dialog(requireContext())
         dialog.setContentView(R.layout.image_view_dialog)

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="729dp"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:contextClickable="false"
+        tools:context=".ui.home.HomeFragment"
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+    <Button
+        android:id="@+id/btnCitySanPablo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#aabcd3"
+        android:text="Back"
+        android:textColor="#000000"
+        app:icon="?attr/actionModeCloseDrawable"
+        app:iconTint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCitySanPablo">
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#005acd"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="10dp"
+            android:text="Pamantasan ng Lunsod ng San Pablo"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppins"
+            android:justificationMode="inter_word"
+            android:text="The school is deeply committed towards the integral formation of the human person, with a profound faith in God, in his fellow men and himself by providing its students the full development of their physical, intellectual, social and cultural endowment for effective participation in various professions and industrial occupations and to enable them to enjoy reasonable quality of life to be able to contribute to the upliftment of the human society."
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/plsp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            app:srcCompat="@drawable/plsp_container" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="80dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="155dp"
+            app:srcCompat="@drawable/plsp_logo" />
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView8">
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="10dp"
+                android:text="Mission"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/poppins"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:text="Pamantasan ng Lunsod ng San Pablo shall emerge as one of the best locally funded universities in the country and a center of excellence in Education. The College foresees its graduates with strong moral fiber, proud of his race and prepared for exemplary global participation in the arts, sciences, humanities, education and business, enjoying a quality of life and abundance; graduates who are living in peace and in harmony with nature and their fellowmen and above all, God-fearing."
+                android:textColor="#000000" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView9">
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="10dp"
+                android:text="Vision"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/poppins"
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:text="The school is deeply committed towards the integral formation of the human person, with a profound faith in God, in his fellow men and himself by providing its students the full development of their physical, intellectual, social and cultural endowment for effective participation in various professions and industrial occupations and to enable them to enjoy reasonable quality of life to be able to contribute to the upliftment of the human society."
+                android:textColor="#000000" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

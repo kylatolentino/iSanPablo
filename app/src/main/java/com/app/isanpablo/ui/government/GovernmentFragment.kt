@@ -57,15 +57,12 @@ class GovernmentFragment : Fragment() {
         }
 
         binding.btnstand.setOnClickListener {
-            val dialog = Dialog(requireContext())
-            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
-            dialog.setCancelable(false)
-            dialog.setContentView(R.layout.government_ordinance)
-            val exitButton: Button = dialog.findViewById(R.id.btnOk)
-            exitButton.setOnClickListener {
-                dialog.dismiss() // Dismiss the dialog
-            }
+            showUnavailableDialog()
         }
+            binding.btnordinance.setOnClickListener {
+            showUnavailableDialog()
+        }
+
         binding.btnEla.setOnClickListener{
             val dialog = Dialog(requireContext())
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -92,7 +89,17 @@ class GovernmentFragment : Fragment() {
 
         return root
     }
-
+    private fun showUnavailableDialog() {
+        val dialog = Dialog(requireContext())
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setCancelable(true)
+        dialog.setContentView(R.layout.government_ordinance)
+        val exitButton: Button = dialog.findViewById(R.id.btnOk)
+        exitButton.setOnClickListener {
+            dialog.dismiss() // Dismiss the dialog
+        }
+        dialog.show()
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

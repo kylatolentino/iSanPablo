@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#007fdb"
+            android:text="Back"
+            app:icon="?attr/actionModeCloseDrawable" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="28dp"
+            android:background="#498FE9"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="10sp"
+            android:text="History of San Pablo City"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="140dp"
+            app:srcCompat="@drawable/history_spc" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="355dp"
+            android:fontFamily="@font/poppins"
+            android:padding="10dp"
+            android:text="       The earliest historical record of the City of San Pablo dates back to pre-Spanish times when four (4) big barrios bounded by Mt. Banahaw and Mt. Makiling composed Sampaloc.  In 1521, Sampaloc was changed to San Pablo De Los Montes, which became a parish in 1556 and then a municipality in 1647. In 1899, a Municipal Government was established with Inocente Martinez as Municipal President in 1902 when the Civil Government was granted independence from the Province of Laguna. On May 7, 1940, the charter bill sponsored by Congressman Tomas Dizon was approved.  "
+            android:textAlignment="viewStart"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="610dp"
+            android:backgroundTint="#007fdb"
+            android:text="See more"
+            android:textAllCaps="false" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

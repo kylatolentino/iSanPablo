@@ -8,17 +8,18 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.app.isanpablo.ui.home.HomeFragment"
-        android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
-
+    <fragment
+        android:id="@+id/nav_thecity"
+        android:name="com.app.isanpablo.ui.thecity.TheCityFragment"
+        tools:layout="@layout/fragment_thecity" />
     <fragment
         android:id="@+id/nav_government"
         android:name="com.app.isanpablo.ui.government.GovernmentFragment"
-        android:label="@string/menu_government"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_economy"
         android:name="com.app.isanpablo.ui.economy.EconomyFragment"
-        android:label="@string/menu_economy"
         tools:layout="@layout/fragment_economy" />
+
 </navigation>

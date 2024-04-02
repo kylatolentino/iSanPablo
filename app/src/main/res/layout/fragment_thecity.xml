@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="729dp"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:contextClickable="false"
+        tools:context=".ui.home.HomeFragment"
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_thecity_map"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_thecity_map" />
+
+        <Button
+            android:id="@+id/btnmap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="#0C6AF6"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Map"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+            app:layout_constraintVertical_bias="0.494" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+            <Button
+                android:id="@+id/btnMission"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/poppins_bold"
+                android:text="MISSION"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/mission"
+                app:iconGravity="top"
+                app:iconTintMode="multiply"
+                app:strokeColor="#0C6AF6"
+                app:strokeWidth="2.5sp" />
+
+            <Button
+                android:id="@+id/btnVision"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:duplicateParentState="false"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="5dp"
+                android:text="VISION"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/vision"
+                app:iconGravity="top"
+                app:iconTintMode="multiply"
+                app:strokeColor="#0C6AF6"
+                app:strokeWidth="2.5dp" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout13"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="#007FDB"
+                android:elevation="2dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="San Pablo HYMN"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="217dp"
+                android:layout_marginTop="38dp"
+                android:orientation="horizontal">
+
+                <VideoView
+                    android:id="@+id/vidSanPablo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:padding="5dp"
+                        android:text="Lunsod Naming Mahal"
+                        android:textAlignment="center"
+                        android:textColor="#444242"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:padding="5dp"
+                        android:text="Titik ni: Celso Al Carunungan \n Tugtugin ni: Antonio Buenaventura \n Inawit ni: Oyayi Choir"
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:padding="5dp"
+                            android:text="I \n Lunsod na dakila \n Bayan ng Maykapal \n Lupang pinagyaman \n ng puri at dangal \n\n II \n Lunsod ng San Pablo \n Bayang minamahal, \n Buhay namin ay iyo \n Magpakailan pa man"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout14"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnHistory"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_thecity_history" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/subtitle"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="History"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnGeLocation"
+                    android:layout_width="150dp"
+                    android:layout_height="127dp"
+                    android:src="@drawable/ic_thecity_location" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/subtitle"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Location and Topology"
+                    android:textAlignment="textStart"
+                    android:textColor="#EFE9E9"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/cardView5"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnSanPablo"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_thecity_sanpablo" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/subtitle"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="San Pablenos"
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFEFE"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnBarangay"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_thecity_district" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/subtitle"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Barangays"
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#007FDB"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="Our 15-point service standards for client"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="10dp"
+                    android:text="1. When we go to work, we will come in complete uniform and display our identification cards.
+                    \n2. We will greet our clients with a sincere smile.
+                    \n3. When you enter our office premises, we will introduce ourselves to you so that you can address usb ack in an appropriate manner.
+                    \n4. We will attend our clients’ inquiries within three(3)minutes.
+                    \n5. Appropriate action will immediately follow your queries and you will be referred accordingly.
+                    \n6. We will make you comfortable inside our facilities while you wait for your service request.
+                    \n7. Express/special lanes are provided for Senior Citizens, pregnant women and People with Disabilities.
+                    \n8. We will teach the clients, needed requirements that can expedite their service request.
+                    \n9. We will promptly return your denied request and explain to you the reason for such, which in turn will allow us to reprocess it.
+                    \n10. Our service stations will be properly labeled that will include our organizational chart and service flow chart.
+                    \n11. Directional signs will be displayed conspicuously as guide so that you can establish familiarity with our work place.
+                    \n12. Information and complaint desk is at your service in strategic locations.
+                    \n13. An information and hotline service is available 24/7 for anyone who has queries.
+                    \n14. No noon-break policy is followed and we are to serve beyond office hours if need.
+                    \n15. A satisfied client is our happiness in the government service."
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#007FDB"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="Performance Pledge"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="10dp"
+                    android:text="We, the officials and employees of the City Government of San Pablo commit to:
+                    \nA ssist every client and visitors with utmost courtesy and smile.
+                    \nM onitor our own ranks to ensure that services are delivered ontime.
+                    \nA dequate care shall be accorded to Senior Citizens, pregnant women, children and Persons with Disabilities(PWDs) that comes our door.
+                    \nN urture each day as a gift of opportunity to serve others.
+                    \nT trustworthiness shall be epitome of our service delays with explanations.
+                    \nE nsure happy clients by addressing service delays with explanations. To all this we pledge and commit, keeping in mind that we are at all times accountable to the people that we serve."
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#007fdb"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="10dp"
+                android:text="Agency Mandate"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/poppins"
+                android:lineSpacingExtra="8sp"
+                android:padding="10dp"
+                android:text="All employees both rank and file and personnel holding key positions in different departments of the local government are mandated to deliver quality service through the implementation of its programs to make them efficient and sustainable that have been developed in partnership with the private sector."
+                android:textColor="#000000" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#007fdb"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="Strategic Decisions"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="10dp"
+                    android:text="These directions can be realized by strictly following:
+                    \n\n1. Existing policies of the city/agency have to be reviewed and revisited by the implementing office.
+                    \n2. Implementation of recruitment, selection and promotion plan, along with the performance management plan, learning and development strategy and rewards and recognition policies have to be strictly observed by the city and to be upheld by the city’s implementing officials/officers at all times.  \n3. Monitor day-to-day activities of all employees.  \n4. Public service has to be the top most priority of all employees"
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
