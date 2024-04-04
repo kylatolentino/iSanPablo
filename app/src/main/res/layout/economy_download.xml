@@ -47,6 +47,13 @@ android:layout_height="match_parent">
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="invisible" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="104dp"
@@ -71,7 +78,7 @@ android:layout_height="match_parent">
                     app:strokeWidth="2.5dp" />
 
                 <Button
-                    android:id="@+id/btnNo"
+                    android:id="@+id/btnVolumeTwo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -89,7 +96,7 @@ android:layout_height="match_parent">
                     app:strokeWidth="2.5dp" />
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/btnVolumeThree"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -135,7 +142,7 @@ android:layout_height="match_parent">
                 android:textSize="14sp" />
 
             <Button
-                android:id="@+id/btnmap2"
+                android:id="@+id/btnSpc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

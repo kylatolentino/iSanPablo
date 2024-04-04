@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -76,7 +75,10 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:backgroundTint="@color/header_dialog"
-        app:srcCompat="@drawable/ic_hotline" />
+        android:foreground="@drawable/ic_hotline"
+        android:foregroundGravity="center"
+        android:foregroundTintMode="screen"
+        android:tintMode="add"
+        app:backgroundTint="@color/downloadButton" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

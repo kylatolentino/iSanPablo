@@ -21,5 +21,17 @@
         android:id="@+id/nav_economy"
         android:name="com.app.isanpablo.ui.economy.EconomyFragment"
         tools:layout="@layout/fragment_economy" />
+    <fragment
+        android:id="@+id/nav_foi"
+        android:name="com.app.isanpablo.ui.foi.FOIFragment"
+        tools:layout="@layout/fragment_economy" />
+    <fragment
+        android:id="@+id/nav_arta"
+        android:name="com.app.isanpablo.ui.arta.ARTAFragment"
+        tools:layout="@layout/fragment_economy" />
+    <fragment
+        android:id="@+id/nav_tourism"
+        android:name="com.app.isanpablo.ui.tourism.TourismFragment"
+        tools:layout="@layout/fragment_economy" />
 
 </navigation>

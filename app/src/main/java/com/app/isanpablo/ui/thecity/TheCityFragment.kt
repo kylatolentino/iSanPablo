@@ -70,7 +70,7 @@ class TheCityFragment : Fragment() {
             transaction.addToBackStack(null)
             transaction.commit()
         }
-        binding.btnmap2.setOnClickListener{
+        binding.btnmap2?.setOnClickListener{
             val fragmentManager = requireActivity().supportFragmentManager
             val transaction = fragmentManager.beginTransaction()
             transaction.replace(R.id.nav_host_fragment_content_main, MapFragment())
