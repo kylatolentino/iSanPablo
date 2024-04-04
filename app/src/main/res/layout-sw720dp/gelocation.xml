@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:padding="10dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
@@ -76,11 +76,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="300dp"
                 android:fontFamily="@font/poppins"
+                android:justificationMode="inter_word"
                 android:padding="15dp"
                 android:text="        San Pablo City is located at the southern tip of the Province of Laguna in the island of Luzon at geographic coordinates, 140 4’ north latitude and 1210 19’ east longtitude. It is bounded by 6 municipalities and 1 city namely Calauan, Laguna in the northwest; Nagcarlan, Laguna in the northeast; Alaminos, Laguna in the west; Rizal, Laguna in the east; Lipa City, Batangas in the southeastern tip; and the municipalities of Tiaong and Dolores, Quezon in the south. All adjoining municipalities and city have entry points making San Pablo accessible from virtually all directions.  "
                 android:textAlignment="viewStart"
-                android:textColor="#000000"
-                android:justificationMode="inter_word"/>
+                android:textColor="#000000" />
 
         </androidx.cardview.widget.CardView>
 
@@ -89,6 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
             app:cardCornerRadius="10dp"
             app:cardMaxElevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -125,6 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -161,7 +163,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="20dp"
             app:cardCornerRadius="10dp"

@@ -42,28 +42,28 @@ class TheCityFragment : Fragment() {
             val message: String = "Mission"
             showMissionDialogBox(message)
         }
-        binding.btnHistory.setOnClickListener{
+        binding.btnHistory?.setOnClickListener{
             val fragmentManager = requireActivity().supportFragmentManager
             val transaction = fragmentManager.beginTransaction()
             transaction.replace(R.id.nav_host_fragment_content_main,HistoryFragment())
             transaction.addToBackStack(null)
             transaction.commit()
         }
-        binding.btnGeLocation.setOnClickListener{
+        binding.btnGeLocation?.setOnClickListener{
             val fragmentManager = requireActivity().supportFragmentManager
             val transaction = fragmentManager.beginTransaction()
             transaction.replace(R.id.nav_host_fragment_content_main, GeLocationFragment())
             transaction.addToBackStack(null)
             transaction.commit()
         }
-        binding.btnBarangay.setOnClickListener{
+        binding.btnBarangay?.setOnClickListener{
             val fragmentManager = requireActivity().supportFragmentManager
             val transaction = fragmentManager.beginTransaction()
             transaction.replace(R.id.nav_host_fragment_content_main, BarangayFragment())
             transaction.addToBackStack(null)
             transaction.commit()
         }
-        binding.btnSanPablo.setOnClickListener{
+        binding.btnSanpablo?.setOnClickListener{
             val fragmentManager = requireActivity().supportFragmentManager
             val transaction = fragmentManager.beginTransaction()
             transaction.replace(R.id.nav_host_fragment_content_main, CitySanPablenosFragment())

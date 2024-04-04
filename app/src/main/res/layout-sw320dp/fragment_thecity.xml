@@ -30,31 +30,32 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
-            android:scaleType="fitCenter"
+            android:layout_marginEnd="30dp"
+            android:scaleType="center"
             android:src="@drawable/ic_thecity_map"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_thecity_map" />
+            app:srcCompat="@drawable/ic_thecity_maptablet" />
 
         <Button
             android:id="@+id/btnmap2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="150dp"
-            android:backgroundTint="#0C6AF6"
+            android:backgroundTint="@color/downloadButton"
             android:fontFamily="@font/poppins_semibold"
             android:text="Map"
             android:textAllCaps="false"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintHorizontal_bias="0.879"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-            app:layout_constraintVertical_bias="0.494" />
+            app:layout_constraintVertical_bias="0.511" />
 
         <LinearLayout
             android:id="@+id/linearLayout4"
@@ -106,16 +107,79 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <Button
+                android:id="@+id/btnHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/ic_launcher_background"
+                android:elevation="50dp"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="5dp"
+                android:text="History"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnGeLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/ic_launcher_background"
+                android:elevation="50dp"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="5dp"
+                android:text="Location and Topology"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnSanpablo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/ic_launcher_background"
+                android:elevation="50dp"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="5dp"
+                android:text="San Pablenos"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnBarangay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/ic_launcher_background"
+                android:elevation="50dp"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="5dp"
+                android:text="Barangays"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
             app:layout_constraintBottom_toTopOf="@+id/cardView6"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintStart_toStartOf="@+id/guideline2">
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@id/test">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -301,6 +365,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.95" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
