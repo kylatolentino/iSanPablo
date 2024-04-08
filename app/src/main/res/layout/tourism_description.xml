@@ -27,7 +27,7 @@
             android:textColor="#FFFFFF" />
 
         <ImageButton
-            android:id="@+id/christmas"
+            android:id="@+id/exitto"
             android:layout_width="14dp"
             android:layout_height="14dp"
             android:layout_gravity="right"
@@ -47,8 +47,7 @@
                 android:id="@+id/imgView"
                 android:layout_width="wrap_content"
                 android:layout_height="230dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_margin="10dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/im_cathedral" />
 

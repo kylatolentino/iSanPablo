@@ -1,15 +1,22 @@
 package com.app.isanpablo.ui.tourism
 
 import android.app.Dialog
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.app.isanpablo.R
 import com.app.isanpablo.databinding.FragmentTourismBinding
+import com.app.isanpablo.ui.festandevent.FestivalAndEventFragment
+import com.app.isanpablo.ui.gallery.GalleryFragment
+import com.app.isanpablo.ui.sevenlakes.SevenLakesFragment
 
 class TourismFragment : Fragment() {
 
@@ -31,10 +38,10 @@ class TourismFragment : Fragment() {
             showPicDesc(
                 R.drawable.im_cityplaza,
                 "The City Plaza",
-                "• Rizal Monument was installed in 1911\n" +
-                        "• Plaza fountain was constructed between 1916-1918 during the term of Don Feliano Exconde\n" +
-                        "• Lamp posts in the plaza circle and islands along Rizal Ave. were erected by Mun. President Crispin Calabia (1928-1931)\n" +
-                        "• The Mango Tree was believed to have been there since 1899."
+                "•Rizal Monument was installed in 1911\n" +
+                        "•Plaza fountain was constructed between 1916-1918 during the term of Don Feliano Exconde\n" +
+                        "•Lamp posts in the plaza circle and islands along Rizal Ave. were erected by Mun. President Crispin Calabia (1928-1931)\n" +
+                        "•The Mango Tree was believed to have been there since 1899."
             )
         }
 
@@ -42,7 +49,7 @@ class TourismFragment : Fragment() {
             showPicDesc(
                 R.drawable.im_cathedral,
                 "San Pablo Cathedral",
-                "Construction of the bricks and stones church started in 1680 and finished " +
+                "\t\tConstruction of the bricks and stones church started in 1680 and finished " +
                         "in 1721. The detailed affluent, ecclesiastical ornamentation were made by artist " +
                         "Juan de los Santos under Father Hernando Cabrera’s direction (1618-1629) who mandated " +
                         "that all payments and tributes to the church be made in the form of gold, silver and " +
@@ -54,7 +61,7 @@ class TourismFragment : Fragment() {
             showPicDesc(
                 R.drawable.im_farcon,
                 "Farcon Residence",
-                "Constructed in the early 1950s. Design is a fusion of Hispanic and American-Colonial building styles. Home of Municipal President (1945) Don Alfonso Farcon."
+                "\t\tConstructed in the early 1950s. Design is a fusion of Hispanic and American-Colonial building styles. Home of Municipal President (1945) Don Alfonso Farcon."
             )
         }
 
@@ -62,7 +69,7 @@ class TourismFragment : Fragment() {
             showPicDesc(
                 R.drawable.im_cityhall,
                 "San Pablo City Hall",
-                "It represents the prevailing architectural characteristics and design during the American Colonial period when the structure was built.\n" +
+                "\t\tIt represents the prevailing architectural characteristics and design during the American Colonial period when the structure was built.\n" +
                         "The building was designed by Architect Antonio Toledo, one of the government Architects during the American Colonial period, show cases the popular design of the same period."
             )
         }
@@ -70,7 +77,7 @@ class TourismFragment : Fragment() {
             showPicDesc(
                 R.drawable.im_hagdangbato,
                 "Hagdang Bato",
-                "Constructed in 1915 under MP Marcial Alimario. It has five sections " +
+                "\t\tConstructed in 1915 under MP Marcial Alimario. It has five sections " +
                         "with a total of 89 steps. It serves as an access to Sampalok Lake from " +
                         "the view deck/Bonifacio Shrine. The lot was part of Dona Leonila Park " +
                         "which was donated by Cabesang Sixto Bautista."
@@ -80,46 +87,141 @@ class TourismFragment : Fragment() {
             showPicDesc(
                 R.drawable.im_boni,
                 " Andres Bonifacio Monument",
-                "The Bonifacio monument is a reminder of the heroic deeds of Andres Bonifacio in the quest for Philippine Independence. It is strategically located at the upper west bank of Sampalok Lake, against a panoramic view of the lake from that view deck. It was inaugurated in November 30, 1997 in time for the hero’s 134th birth anniversary."
+                "\t\tThe Bonifacio monument is a reminder of the heroic deeds of Andres Bonifacio in the quest for Philippine Independence. It is strategically located at the upper west bank of Sampalok Lake, against a panoramic view of the lake from that view deck. It was inaugurated in November 30, 1997 in time for the hero’s 134th birth anniversary."
             )
         }
         binding.imroad.setOnClickListener {
             showPicDesc(
                 R.drawable.im_railroad,
                 "Railroad Station",
-                "The coming of the railroad system to San Pablo City in 1908 revolutionized the transport of coconut- the city’s primary product, to Manila and ports where they are loaded and exported to various countries in the west and Europe, capitalizing on the high demand for coconut products abroad. This tremendously boosted the economy of San Pablo. In 1912, the Bureau of Public Works Publication mentioned that the most prosperous community in the Philippines was San Pablo (Juan B. Hernandez, San Pablo delos Montes"
+                "\t\tThe coming of the railroad system to San Pablo City in 1908 revolutionized the transport of coconut- the city’s primary product, to Manila and ports where they are loaded and exported to various countries in the west and Europe, capitalizing on the high demand for coconut products abroad. This tremendously boosted the economy of San Pablo. In 1912, the Bureau of Public Works Publication mentioned that the most prosperous community in the Philippines was San Pablo (Juan B. Hernandez, San Pablo delos Montes"
             )
         }
         binding.imtrece.setOnClickListener {
             showPicDesc(
-                R.drawable.im_hagdangbato,
+                R.drawable.im_treceshrine,
                 "Trece Martinez Shrine",
-                " The Trece Martires monument is a reminder of the martyrdom of the 13 Filipinos who were part of the quest for Philippine Independence. It is located at the intersection of a street which was named in their behalf."
+                " \t\tThe Trece Martires monument is a reminder of the martyrdom of the 13 Filipinos who were part of the quest for Philippine Independence. It is located at the intersection of a street which was named in their behalf."
             )
         }
         binding.imguerilla.setOnClickListener {
             showPicDesc(
-                R.drawable.im_hagdangbato,
-                "Hagdang Bato",
-                "Constructed in 1915 under MP Marcial Alimario. It has five sections " +
-                        "with a total of 89 steps. It serves as an access to Sampalok Lake from " +
-                        "the view deck/Bonifacio Shrine. The lot was part of Dona Leonila Park " +
-                        "which was donated by Cabesang Sixto Bautista."
+                R.drawable.im_guerilla,
+                "Guerilla Shrine",
+                " \t\tThe Battle of Mt. Kalisungan was the last Fil-Am uprising in the city of San Pablo against the Japanese Imperial Army in March 29, 1945. San Pablo City was finally liberated from the Japanese invaders on April 3, 1945 The battle of Mt. Kalisungan/WW II Memorial Shrine was inaugurated in August 27, 2000 to commemorate the event on the historic spot on March 29, 1945."
             )
+        }
+        binding.imdona.setOnClickListener {
+            showPicDesc(
+                R.drawable.im_dona,
+                " Doña Leonila Park",
+                " \t\tDoña Leonila Park is the only park in the city today. Between 1968 to 1972, Mayor Cesar Dizon spearheaded the beautification of the park by installing the promenades, lake view deck and colonial lamp posts."
+            )
+        }
+        binding.imlina.setOnClickListener {
+            showPicDesc(
+                R.drawable.im_linabldg,
+                "Lina Building",
+                "\t\tThe Spanish Administration Building for Controlled Merchandise was constructed in 1814, of wood and light materials. It was burned in 1824 and was reconstructed the following year with stonewalls and tiled roofing under the supervision of Capitan Buenaventura de los Reyes with the assistance of church prior Apolinario Hernandez."
+            )
+        }
+        binding.imfranklin.setOnClickListener {
+            showPicDesc(
+                R.drawable.im_franklin,
+                "Franklin Bakery Company",
+                " \t\tFranklin Baker came to San Pablo (1922) under the name of Philippine Food Company, merged with Diehl Anderson Coconut Company. By 1923, Franklin Baker’s desiccated manufacturing and the Calamba Sugar Estate were competing for the premier industrial position in Laguna."
+            )
+        }
+        binding.imcasa.setOnClickListener {
+            showPicDesc(
+                R.drawable.im_casa,
+                "Casa real / Old Building",
+                "\t\tCasa Real was the first public building build by the Spanish friars in 1810 – 1814 under Father Cabrera; Rebuilt in 1905-1907 during the American regime under the supervision of the Philippine Commission."
+            )
+        }
+        binding.immabini.setOnClickListener {
+            showPicDesc(
+                R.drawable.im_mabini,
+                "Apolinario Mabini Shrine",
+                "\t\tThe Apolinario Mabini Shrine, the only one in the city of San Pablo and strategically located at the center island of the city main street is a reminder to everyone of the very important role that Apolinario Mabini played in the achievement of freedom and independence of the country from foreign invaders."
+            )
+        }
+        binding.imprudencia.setOnClickListener {
+            showPicDesc(
+                R.drawable.im_prudencia,
+                " Prudencia Fule Acesstral Hous",
+                " \t\tBuilt in the 1890s. This ancestral house was used as hide-out of General Miguel Malvar when he was in Laguna to confer with the Katipuneros in the late 1890s. The property was donated by the heirs of Ms. Prudencia Fule to the city government to be used for educational purposes only"
+            )
+        }
+        binding.imcentral.setOnClickListener {
+            showPicDesc(
+                R.drawable.im_central,
+                "San Pablo Central School",
+                "\t\tAs the first public school, the San Pablo Central School paved the way for the education of most San Pableños. Early professionals and local leaders were educated in the institution, under the American teachers."
+            )
+        }
+        binding.btnSevenLakes.setOnClickListener{
+            val fragmentManager = requireActivity().supportFragmentManager
+            val transaction = fragmentManager.beginTransaction()
+            transaction.replace(R.id.nav_host_fragment_content_main, SevenLakesFragment())
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        binding.btnTourism.setOnClickListener {
+            val link: String = "https://www.sanpablocity.gov.ph/docs/SP%20TMP.pdf"
+            showConfirmationDialog(link)
+        }
+        binding.btnGallery.setOnClickListener{
+            val fragmentManager = requireActivity().supportFragmentManager
+            val transaction = fragmentManager.beginTransaction()
+            transaction.replace(R.id.nav_host_fragment_content_main, GalleryFragment())
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        binding.btnFestAndEvent.setOnClickListener{
+            val fragmentManager = requireActivity().supportFragmentManager
+            val transaction = fragmentManager.beginTransaction()
+            transaction.replace(R.id.nav_host_fragment_content_main,FestivalAndEventFragment())
+            transaction.addToBackStack(null)
+            transaction.commit()
         }
         return root
     }
+    private fun showConfirmationDialog(link: String) {
+        val dialog = Dialog(requireContext())
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setCancelable(false)
+        dialog.setContentView(R.layout.confirmation_downloadfile)
+        val exitButton: Button = dialog.findViewById(R.id.btnCancel)
+        val yesButton: Button = dialog.findViewById(R.id.btnOk)
 
+        exitButton.setOnClickListener {
+            dialog.dismiss() // Dismiss the dialog
+        }
+
+        yesButton.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(link))
+            startActivity(intent)
+            dialog.dismiss()
+        }
+
+        dialog.show()
+    }
     private fun showPicDesc(imageResource: Int, title: String, description: String) {
         val dialog = Dialog(requireContext())
         dialog.setContentView(R.layout.tourism_description)
         val dialogImageView = dialog.findViewById<ImageView>(R.id.imgView)
         val dialogTitle = dialog.findViewById<TextView>(R.id.txtTitle)
         val dialogDescription = dialog.findViewById<TextView>(R.id.txtdesc)
+        val exitButton: ImageView = dialog.findViewById(R.id.exitto)
         dialogImageView.setImageResource(imageResource)
         dialogTitle.text = title
         dialogDescription.text = description
+        exitButton.setOnClickListener {
+            dialog.dismiss() // Dismiss the dialog
+        }
         dialog.show()
+
     }
 
     override fun onDestroyView() {
