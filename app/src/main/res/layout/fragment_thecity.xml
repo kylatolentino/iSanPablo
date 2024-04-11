@@ -33,7 +33,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_thecity_map"
+            android:src="@drawable/ic_thecity_maptablet"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -115,7 +115,8 @@
             app:cardElevation="10dp"
             app:layout_constraintBottom_toTopOf="@+id/cardView6"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintStart_toStartOf="@+id/guideline2">
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/imgView">
 
             <LinearLayout
                 android:layout_width="match_parent"

@@ -35,7 +35,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:scaleType="center"
-            android:src="@drawable/ic_thecity_map"
+            android:src="@drawable/ic_thecity_maptablet"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toTopOf="parent"
