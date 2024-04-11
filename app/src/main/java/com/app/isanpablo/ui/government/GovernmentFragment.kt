@@ -94,6 +94,7 @@ class GovernmentFragment : Fragment() {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(true)
         dialog.setContentView(R.layout.government_ordinance)
+        dialog.window?.setBackgroundDrawableResource(R.drawable.rounded_dialog_bg)
         val exitButton: Button = dialog.findViewById(R.id.btnOk)
         exitButton.setOnClickListener {
             dialog.dismiss() // Dismiss the dialog

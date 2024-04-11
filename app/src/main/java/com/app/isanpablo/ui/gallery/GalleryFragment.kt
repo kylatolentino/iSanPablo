@@ -97,6 +97,7 @@ class GalleryFragment : Fragment() {
         val dialogTitle = dialog.findViewById<TextView>(R.id.txtTitle)
         val dialogDescription = dialog.findViewById<TextView>(R.id.txtdesc)
         val exitButton: ImageView = dialog.findViewById(R.id.exitto)
+        dialog.window?.setBackgroundDrawableResource(R.drawable.rounded_dialog_bg)
         dialogImageView.setImageResource(imageResource)
         dialogTitle.text = title
         dialogDescription.visibility = View.GONE

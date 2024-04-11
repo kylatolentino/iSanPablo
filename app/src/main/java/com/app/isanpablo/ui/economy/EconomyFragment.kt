@@ -94,6 +94,7 @@ class EconomyFragment : Fragment() {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(false)
         dialog.setContentView(R.layout.confirmation_downloadfile)
+        dialog.window?.setBackgroundDrawableResource(R.drawable.rounded_dialog_bg)
         val exitButton: Button = dialog.findViewById(R.id.btnCancel)
         val yesButton: Button = dialog.findViewById(R.id.btnOk)
 

@@ -114,6 +114,7 @@ class MapFragment : Fragment(), OnMapReadyCallback {
                 // Depending on your implementation, load the appropriate image here
                 imageView.setImageResource(getImageForMarker(marker))
                 textView.setText(getTextForMarker(marker))
+
                 return view
             }
         })
@@ -156,6 +157,7 @@ class MapFragment : Fragment(), OnMapReadyCallback {
     private fun showpicDialog() {
         val dialog = Dialog(requireContext())
         dialog.setContentView(R.layout.image_view_dialog)
+        dialog.window?.setBackgroundDrawableResource(R.drawable.rounded_dialog_bg)
         dialog.show()
     }
 

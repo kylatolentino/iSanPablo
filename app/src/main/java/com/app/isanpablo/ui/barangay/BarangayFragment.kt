@@ -570,6 +570,7 @@ class BarangayFragment : Fragment() {
         val dialogChairMan = dialog.findViewById<TextView>(R.id.txtChairMan)
         val dialogContact = dialog.findViewById<TextView>(R.id.txtContact)
         val dialogBrgy = dialog.findViewById<TextView>(R.id.txtCode)
+        dialog.window?.setBackgroundDrawableResource(R.drawable.rounded_dialog_bg)
         dialogTitle.text = title
         dialogChairMan.text = chairMan
         dialogContact.text = contact

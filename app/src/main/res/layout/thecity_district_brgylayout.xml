@@ -6,10 +6,9 @@
     android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="10dp"
+        app:cardCornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,7 +16,7 @@
 
         <TextView
             android:id="@+id/textBrgy"
-            android:layout_width="364dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#007fdb"
             android:fontFamily="@font/poppins_semibold"
@@ -25,79 +24,91 @@
             android:text="  Barangay Concepcion"
             android:textColor="#FFFFFF" />
 
-        <TableLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginTop="35dp"
-            android:padding="20dp">
+            android:orientation="vertical">
 
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp">
 
-                <TextView
-                    android:id="@+id/textView571"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="Barangay Chairman:"
-                    android:textColor="#000000" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/txtChairMan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="Ernesto M. Banting"
-                    android:textColor="#000000" />
-            </TableRow>
+                    <TextView
+                        android:id="@+id/textView571"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Barangay Chairman:"
+                        android:textColor="#000000" />
 
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/txtChairMan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins"
+                        android:text="Ernesto M. Banting"
+                        android:textColor="#000000" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/textView573"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="Contact Number:"
-                    android:textColor="#000000" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/txtContact"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="09284598746/56-28179"
-                    android:textColor="#000000" />
-            </TableRow>
+                    <TextView
+                        android:id="@+id/textView573"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Contact Number:"
+                        android:textColor="#000000" />
 
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/txtContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins"
+                        android:text="09284598746/56-28179"
+                        android:textColor="#000000" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/textView575"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="Barangay Code: "
-                    android:textColor="#000000" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/txtCode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="41"
-                    android:textColor="#000000" />
-            </TableRow>
+                    <TextView
+                        android:id="@+id/textView575"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Barangay Code: "
+                        android:textColor="#000000" />
 
-        </TableLayout>
+                    <TextView
+                        android:id="@+id/txtCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins"
+                        android:text="41"
+                        android:textColor="#000000" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
