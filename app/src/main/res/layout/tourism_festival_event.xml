@@ -59,8 +59,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/cocofest"
-                    android:src="@android:drawable/btn_star" />
+                    android:background="@drawable/cocofest" />
 
                 <ImageButton
                     android:id="@+id/btnTilapia"
@@ -68,8 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/tilapia"
-                    android:src="@android:drawable/btn_star" />
+                    android:background="@drawable/tilapia" />
 
                 <ImageButton
                     android:id="@+id/btnMahal"
@@ -77,8 +75,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mahalnaaraw"
-                    android:src="@android:drawable/btn_star" />
+                    android:background="@drawable/mahalnaaraw" />
 
                 <ImageButton
                     android:id="@+id/btnChristmas"
@@ -86,8 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/cristmas_lighting"
-                    android:src="@android:drawable/btn_star" />
+                    android:background="@drawable/cristmas_lighting" />
             </LinearLayout>
         </LinearLayout>
 

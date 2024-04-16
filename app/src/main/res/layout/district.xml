@@ -12,9 +12,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:backgroundTint="#0c6af6"
+        android:backgroundTint="@color/backButton"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Back"
-        app:icon="?attr/actionModeCloseDrawable"
+        android:textColor="#000000"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/back_icon"
+        app:iconTint="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,8 +26,9 @@
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:padding="10dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp"
@@ -66,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:autofillHints="District 7"
-                android:background="@color/downloadButton"
+                android:background="@drawable/spinner_container"
                 android:padding="10dp" />
 
             <Spinner
@@ -75,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:autofillHints="District 7"
-                android:background="@color/downloadButton"
+                android:background="@drawable/spinner_container"
                 android:padding="10dp" />
 
             <Spinner
@@ -84,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:autofillHints="District 7"
-                android:background="@color/downloadButton"
+                android:background="@drawable/spinner_container"
                 android:padding="10dp" />
 
             <Spinner
@@ -93,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:autofillHints="District 7"
-                android:background="@color/downloadButton"
+                android:background="@drawable/spinner_container"
                 android:padding="10dp" />
 
             <Spinner
@@ -102,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:autofillHints="District 7"
-                android:background="@color/downloadButton"
+                android:background="@drawable/spinner_container"
                 android:padding="10dp" />
 
             <Spinner
@@ -111,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:autofillHints="District 7"
-                android:background="@color/downloadButton"
+                android:background="@drawable/spinner_container"
                 android:padding="10dp" />
 
         </LinearLayout>

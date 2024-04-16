@@ -1,6 +1,7 @@
 package com.app.isanpablo.ui.barangay
 
 import android.app.Dialog
+import android.graphics.Typeface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -44,7 +45,9 @@ class BarangayFragment : Fragment() {
         _binding = DistrictBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+
         val spinner7 = binding.spinnerBrgy7
+
         val arrayAdapter7 = CustomSpinnerAdapter(requireContext(), distict7) // Instantiate your custom adapter
         spinner7.adapter = arrayAdapter7
 

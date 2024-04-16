@@ -25,60 +25,62 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/backButton"
+            android:fontFamily="@font/poppins_semibold"
             android:text="Back"
             android:textColor="#000000"
-            app:icon="?attr/actionModeCloseDrawable"
+            app:cornerRadius="15dp"
+            app:icon="@drawable/back_icon"
             app:iconTint="#000000"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBack"
-        app:layout_constraintVertical_bias="0.002">
-
-
-        <TextView
-            android:id="@+id/textView25"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="28dp"
-            android:background="#498FE9"
-            android:fontFamily="@font/poppins_bold"
-            android:padding="10sp"
-            android:text="History of San Pablo City"
-            android:textAlignment="center"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
+            android:layout_margin="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBack"
+            app:layout_constraintVertical_bias="0.002">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="70dp"
-            app:srcCompat="@drawable/history_spc" />
 
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="300dp"
-            android:fontFamily="@font/poppins"
-            android:justificationMode="inter_word"
-            android:padding="20dp"
-            android:text="
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:background="#498FE9"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="10sp"
+                android:text="History of San Pablo City"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                app:srcCompat="@drawable/history_spc" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="300dp"
+                android:fontFamily="@font/poppins"
+                android:justificationMode="inter_word"
+                android:padding="20dp"
+                android:text="
             The earliest historical record of the City of San Pablo dates back to pre-Spanish times when four (4) big barrios bounded by Mt. Banahaw and Mt. Makiling composed Sampaloc.
             \n\n                In 1521, Sampaloc was changed to San Pablo De Los Montes, which became a parish in 1556 and then a municipality in 1647. In 1899, a Municipal Government was established with Inocente Martinez as Municipal President in 1902 when the Civil Government was granted independence from the Province of Laguna. On May 7, 1940, the charter bill sponsored by Congressman Tomas Dizon was approved. The bill became known as the City Charter of San Pablo or Commonwealth Act No. 520. The City was inaugurated on March 30, 1941 with Dr. Potenciano Malvar as the appointed City Mayor.
             \n\n                San Pablo was known as “Sampalok village ” before the coming of the Spaniards, because of the dominant tamarind trees in this area. It was a village of Bay, Laguna. In 1571, Spaniards came to the village of Sampalok under Capitan Juan de Salcedo. It became a separate parish in July 8, 1586 with Augustinian Priest Father Mateo Mendoza as prior of the convent. (JBHernandez, San Pablo Historical Records) It was in 1647 when Sampalok was separated from Bay as a municipality and was renamed San Pablo de los Montes (St. Paul of the Mountains) in honor of its patron, St. Paul the First Hermit. It was placed under the cabecera of Pagsanjan, with Bartolome Maghayin as first gobernadorcillo in 1648.
@@ -89,10 +91,10 @@
             \n\n                In August 8, 1938, A big fire before high noon destroyed the entire southern portion of the town center including the public market. President Manuel L. Quezon visited San Pablo and promised help in the reconstruction of the market and widening of roads.
             \n\n                Through the efforts of Assemblyman Tomas D. Dizon, San Pablo became a chartered city in May 7, 1940 by virtue of Commonwealth Act No. 520 as approved by President Manuel Luis Quezon. The seat of government was transferred to the new town hall building (now Old City Hall Building) which was built under MP Cristeto Brion and inaugurated in March 30, 1940, 37 days before the town became a city.
             \n\n                Barely two years after its declaration as a city, San Pablo was devastated by the Japanese bombs that fell on the city on Christmas day in 1941. World War II in the Pacific region did not spare the Philippines because of its strategic location. The Japanese occupied the Philippines from 1941 to 1945. Liberation came to San Pablo City on April 3, 1945 when US Military Forces occupied the city after subduing the Japanese at the same day when Tawi-Tawi in Sulu was liberated. (Melencia Balcadia, Chronological Reports on the Invasion of the Philippines 1944 - 1945)."
-            android:textAlignment="viewStart"
-            android:textColor="#000000" />
+                android:textAlignment="viewStart"
+                android:textColor="#000000" />
 
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

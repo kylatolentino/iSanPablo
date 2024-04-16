@@ -157,7 +157,7 @@ class TourismFragment : Fragment() {
             showPicDesc(
                 R.drawable.im_central,
                 "San Pablo Central School",
-                "\t\tAs the first public school, the San Pablo Central School paved the way for the education of most San Pableños. Early professionals and local leaders were educated in the institution, under the American teachers."
+                 "\t\tAs the first public school, the San Pablo Central School paved the way for the education of most San Pableños. Early professionals and local leaders were educated in the institution, under the American teachers."
             )
         }
         binding.btnSevenLakes.setOnClickListener{
