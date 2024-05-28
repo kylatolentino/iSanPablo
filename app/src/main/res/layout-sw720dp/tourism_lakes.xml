@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:contextClickable="false"
+        tools:context=".ui.home.HomeFragment"
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/our_seven_lakes"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+            <ImageButton
+                android:id="@+id/btnSampaloc"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00000000"
+                android:contentDescription="@string/picture"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pic_tourism_sevenlakes_sampaloclake"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageButton
+                android:id="@+id/btnBunot"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00000000"
+                android:contentDescription="@string/picture"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pic_tourism_sevenlakes_bunot"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageButton
+                android:id="@+id/btnCalibato"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00000000"
+                android:contentDescription="@string/picture"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pic_tourism_sevenlakes_calibato" />
+
+            <ImageButton
+                android:id="@+id/btnMohica"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00000000"
+                android:contentDescription="@string/picture"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pic_tourism_sevenlakes_mohicap"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/btnPalakpakin"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00000000"
+                android:contentDescription="@string/picture"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pic_tourism_sevenlakes_palakpakin"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/btnPandin"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00000000"
+                android:contentDescription="@string/picture"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pic_tourism_sevenlakes_pandin" />
+
+            <ImageButton
+                android:id="@+id/btnYambo"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00000000"
+                android:contentDescription="@string/picture"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pic_tourism_sevenlakes_yambo" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

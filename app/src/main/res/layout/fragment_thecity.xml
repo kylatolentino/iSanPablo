@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="729dp"
+    android:layout_height="wrap_content"
     android:fillViewport="true"
     tools:layout_editor_absoluteX="1dp"
     tools:layout_editor_absoluteY="1dp">
@@ -30,36 +30,39 @@
         <ImageView
             android:id="@+id/imgView"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_thecity_maptablet"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginEnd="30dp"
+            android:contentDescription="@string/picture"
+            android:scaleType="center"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_thecity_maptablet" />
+            app:srcCompat="@drawable/pic_thecity_maptablet" />
 
         <Button
             android:id="@+id/btnmap2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="150dp"
-            android:backgroundTint="#0C6AF6"
+            android:backgroundTint="@color/blue"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Map"
+            android:text="@string/map"
             android:textAllCaps="false"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintHorizontal_bias="0.879"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-            app:layout_constraintVertical_bias="0.494" />
+            app:layout_constraintVertical_bias="0.511" />
 
         <LinearLayout
             android:id="@+id/linearLayout4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -68,55 +71,113 @@
             <Button
                 android:id="@+id/btnMission"
                 android:layout_width="wrap_content"
-                android:layout_height="180dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="7dp"
-                android:layout_weight="1"
-                android:backgroundTint="#ffffff"
+                android:backgroundTint="@color/white"
                 android:fontFamily="@font/poppins_bold"
-                android:text="MISSION"
+                android:padding="15dp"
+                android:text="@string/mission"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 app:cornerRadius="10dp"
-                app:icon="@drawable/mission"
+                app:icon="@drawable/ic_thecity_mission"
                 app:iconGravity="top"
                 app:iconTintMode="multiply"
                 app:strokeColor="#0C6AF6"
-                app:strokeWidth="2.5sp" />
+                app:strokeWidth="2.5sp"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/btnVision"
                 android:layout_width="wrap_content"
-                android:layout_height="180dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
-                android:layout_margin="7dp"
-                android:layout_weight="1"
+                android:layout_margin="5dp"
                 android:backgroundTint="#FFFFFF"
                 android:duplicateParentState="false"
                 android:fontFamily="@font/poppins_bold"
-                android:padding="5dp"
-                android:text="VISION"
+                android:padding="10dp"
+                android:text="@string/vision"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 app:cornerRadius="10dp"
-                app:icon="@drawable/vision"
+                app:icon="@drawable/ic_thecity_vision"
                 app:iconGravity="top"
                 app:iconTintMode="multiply"
                 app:strokeColor="#0C6AF6"
-                app:strokeWidth="2.5dp" />
+                app:strokeWidth="2.5dp"
+                tools:ignore="ButtonStyle" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <Button
+                android:id="@+id/btnHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="50dp"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="5dp"
+                android:text="@string/history"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnGeLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="50dp"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="5dp"
+                android:text="@string/location_and_topology"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnSanpablo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="50dp"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="5dp"
+                android:text="@string/san_pablenos"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnBarangay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="50dp"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="5dp"
+                android:text="@string/barangays"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
             app:layout_constraintBottom_toTopOf="@+id/cardView6"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/imgView">
+            app:layout_constraintTop_toBottomOf="@id/test">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -130,7 +191,7 @@
                     android:background="#007FDB"
                     android:fontFamily="@font/poppins_semibold"
                     android:padding="10dp"
-                    android:text="Our 15-point service standards for client"
+                    android:text="@string/our_15_point_service_standards_for_client"
                     android:textColor="#ffffff"
                     android:textSize="16sp" />
 
@@ -139,24 +200,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins"
-                    android:justificationMode="inter_word"
                     android:lineSpacingExtra="8sp"
                     android:padding="15dp"
-                    android:text="1. When we go to work, we will come in complete uniform and display our identification cards.
-                    \n2. We will greet our clients with a sincere smile.
-                    \n3. When you enter our office premises, we will introduce ourselves to you so that you can address usb ack in an appropriate manner.
-                    \n4. We will attend our clients’ inquiries within three(3)minutes.
-                    \n5. Appropriate action will immediately follow your queries and you will be referred accordingly.
-                    \n6. We will make you comfortable inside our facilities while you wait for your service request.
-                    \n7. Express/special lanes are provided for Senior Citizens, pregnant women and People with Disabilities.
-                    \n8. We will teach the clients, needed requirements that can expedite their service request.
-                    \n9. We will promptly return your denied request and explain to you the reason for such, which in turn will allow us to reprocess it.
-                    \n10. Our service stations will be properly labeled that will include our organizational chart and service flow chart.
-                    \n11. Directional signs will be displayed conspicuously as guide so that you can establish familiarity with our work place.
-                    \n12. Information and complaint desk is at your service in strategic locations.
-                    \n13. An information and hotline service is available 24/7 for anyone who has queries.
-                    \n14. No noon-break policy is followed and we are to serve beyond office hours if need.
-                    \n15. A satisfied client is our happiness in the government service."
+                    android:text="@string/when_go_to_work"
+                    android:justificationMode="inter_word"
                     android:textAlignment="viewStart"
                     android:textColor="#000000" />
             </LinearLayout>
@@ -186,7 +233,7 @@
                     android:background="#007FDB"
                     android:fontFamily="@font/poppins_semibold"
                     android:padding="10dp"
-                    android:text="Performance Pledge"
+                    android:text="@string/performance_pledge"
                     android:textColor="#ffffff"
                     android:textSize="16sp" />
 
@@ -197,16 +244,10 @@
                     android:fontFamily="@font/poppins"
                     android:lineSpacingExtra="8sp"
                     android:padding="15dp"
-                    android:text="We, the officials and employees of the City Government of San Pablo commit to:
-                    \nA ssist every client and visitors with utmost courtesy and smile.
-                    \nM onitor our own ranks to ensure that services are delivered ontime.
-                    \nA dequate care shall be accorded to Senior Citizens, pregnant women, children and Persons with Disabilities(PWDs) that comes our door.
-                    \nN urture each day as a gift of opportunity to serve others.
-                    \nT trustworthiness shall be epitome of our service delays with explanations.
-                    \nE nsure happy clients by addressing service delays with explanations. To all this we pledge and commit, keeping in mind that we are at all times accountable to the people that we serve."
+                    android:text="@string/we_the_officials"
+                    android:justificationMode="inter_word"
                     android:textAlignment="viewStart"
-                    android:textColor="#000000"
-                    android:justificationMode="inter_word"/>
+                    android:textColor="@color/black" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -229,7 +270,7 @@
                 android:background="#007fdb"
                 android:fontFamily="@font/poppins_semibold"
                 android:padding="10dp"
-                android:text="Agency Mandate"
+                android:text="@string/agency_mandate"
                 android:textColor="#ffffff"
                 android:textSize="16sp" />
 
@@ -241,16 +282,16 @@
                 android:fontFamily="@font/poppins"
                 android:lineSpacingExtra="8sp"
                 android:padding="15dp"
-                android:text="All employees both rank and file and personnel holding key positions in different departments of the local government are mandated to deliver quality service through the implementation of its programs to make them efficient and sustainable that have been developed in partnership with the private sector."
-                android:textColor="#000000"
-                android:justificationMode="inter_word"/>
+                android:text="@string/all_employee"
+                android:justificationMode="inter_word"
+                android:textColor="#000000" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="100dp"
+            android:layout_marginBottom="20dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -269,7 +310,7 @@
                     android:background="#007fdb"
                     android:fontFamily="@font/poppins_semibold"
                     android:padding="10dp"
-                    android:text="Strategic Decisions"
+                    android:text="@string/strategic_decisions"
                     android:textColor="#ffffff"
                     android:textSize="16sp" />
 
@@ -280,15 +321,14 @@
                     android:fontFamily="@font/poppins"
                     android:lineSpacingExtra="8sp"
                     android:padding="15dp"
-                    android:text="These directions can be realized by strictly following:
-                    \n\n1. Existing policies of the city/agency have to be reviewed and revisited by the implementing office.
-                    \n2. Implementation of recruitment, selection and promotion plan, along with the performance management plan, learning and development strategy and rewards and recognition policies have to be strictly observed by the city and to be upheld by the city’s implementing officials/officers at all times.  \n3. Monitor day-to-day activities of all employees.  \n4. Public service has to be the top most priority of all employees"
+                    android:text="@string/these_directions_can"
+                    android:justificationMode="inter_word"
                     android:textAlignment="viewStart"
-                    android:textColor="#000000"
-                    android:justificationMode="inter_word"/>
+                    android:textColor="#000000" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline2"
             android:layout_width="wrap_content"
@@ -302,6 +342,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.95" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

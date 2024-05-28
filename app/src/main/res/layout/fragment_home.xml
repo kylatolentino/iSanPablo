@@ -20,12 +20,12 @@
         tools:layout_editor_absoluteY="-1dp">
 
         <LinearLayout
-            android:id="@+id/date_container"
+            android:id="@+id/linearLayout10"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_margin="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/rectangle"
+            android:background="@drawable/shape_rectangle"
             android:elevation="10dp"
             android:orientation="horizontal"
             android:padding="5dp"
@@ -37,41 +37,41 @@
                 android:id="@+id/imageView6"
                 android:layout_width="101dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:src="@drawable/pagasa" />
+                android:contentDescription="@string/picture"
+                android:src="@drawable/logo_pagasa" />
 
             <TextView
                 android:id="@+id/textView12"
-                android:layout_width="181dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_semibold"
                 android:lineSpacingExtra="0sp"
                 android:padding="10dp"
-                android:text="Philippines Standard Time"
+                android:text="@string/philippines_standard_time"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="10sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/texttime"
                 android:layout_width="159dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="12:00 am"
+                android:fontFamily="@font/poppins_bold"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textColor="#000000" />
 
             <LinearLayout
                 android:layout_width="196dp"
-                android:layout_height="49dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
@@ -79,19 +79,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="M-DD-YYYY"
                     android:textAlignment="center"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/textday"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="Day Today"
                     android:textAlignment="center"
                     android:textColor="#000000"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -100,76 +99,81 @@
             android:id="@+id/asdasdas"
             android:layout_width="wrap_content"
             android:layout_height="199dp"
-            android:layout_marginTop="16dp"
-            android:src="@drawable/spcathedral"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/pic_tourism_gallery_spcathedral"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/date_container" />
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+            android:contentDescription="@string/picture" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="320dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="150dp"
-            android:background="@drawable/tr_home_container"
+            android:background="@drawable/shape_rectangle"
             android:orientation="horizontal"
             android:padding="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/asdasdas">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
 
             <Button
                 android:id="@+id/btnJobs"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
+                android:height="125dp"
                 android:background="#00ffffff"
                 android:elevation="0dp"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Jobs"
+                android:text="@string/jobs"
                 android:textAllCaps="false"
                 android:textColor="#000000"
                 android:textSize="12sp"
-                app:icon="@drawable/job_icon"
+                app:icon="@drawable/ic_home_job"
                 app:iconGravity="top"
-                app:iconTintMode="multiply" />
+                app:iconTintMode="multiply"
+                tools:ignore="ButtonStyle" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnServices"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#00ffffff"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Services"
+                android:text="@string/services"
                 android:textAllCaps="false"
                 android:textColor="#000000"
                 android:textSize="12sp"
-                app:icon="@drawable/supplier_icon"
+                app:icon="@drawable/ic_home_supplier"
                 app:iconGravity="top"
-                app:iconTintMode="multiply" />
+                app:iconTintMode="multiply"
+                tools:ignore="ButtonStyle" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/btnBusiness2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#00ffffff"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Business"
+                android:text="@string/business"
                 android:textAllCaps="false"
                 android:textColor="#000000"
                 android:textSize="12sp"
-                app:icon="@drawable/business_icon"
+                app:icon="@drawable/ic_home_business"
                 app:iconGravity="top"
-                app:iconTintMode="multiply" />
+                app:iconTintMode="multiply"
+                tools:ignore="ButtonStyle" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
-            android:layout_height="238dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#ffffff"
             android:orientation="vertical"
@@ -190,9 +194,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/poppins_bold"
-                    android:paddingLeft="5dp"
-                    android:text=" Here @ San Pablo City"
-                    android:textColor="#000000" />
+                    android:paddingStart="5dp"
+                    android:text="@string/here_san_pablo_city"
+                    android:textColor="#000000"
+                    tools:ignore="RtlSymmetry" />
 
                 <Button
                     android:id="@+id/btnViewSanPablo"
@@ -201,17 +206,24 @@
                     android:layout_weight="1"
                     android:background="#00ffffff"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="View all"
+                    android:text="@string/view_all"
                     android:textAllCaps="true"
-                    android:textColor="#0009e8" />
+                    android:textColor="#0009e8"
+                    tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
             </LinearLayout>
 
-            <LinearLayout
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/tourism_viewPager2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical" />
-
+                android:layout_height="300dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
 
         </LinearLayout>
 
@@ -219,12 +231,14 @@
             android:id="@+id/linearLayout7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+            app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
             <TextView
                 android:id="@+id/textView6"
@@ -232,9 +246,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_bold"
-                android:paddingLeft="20dp"
-                android:text="Events and Announcements"
-                android:textColor="#000000" />
+                android:paddingStart="20dp"
+                android:text="@string/events_and_announcements"
+                android:textColor="#000000"
+                tools:ignore="RtlSymmetry" />
 
             <Button
                 android:id="@+id/btnViewAllAnnounce"
@@ -243,106 +258,30 @@
                 android:layout_weight="1"
                 android:background="#00ffffff"
                 android:fontFamily="@font/poppins_bold"
-                android:text="View all"
+                android:text="@string/view_all"
                 android:textColor="#0009e8" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:backgroundTint="#0c6af6"
-                android:text="Events" />
-
-            <Button
-                android:id="@+id/button15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:backgroundTint="#0c6af6"
-                android:text="Announcements" />
-        </LinearLayout>
-
-        <HorizontalScrollView
             android:id="@+id/horizontalScrollView"
-            android:layout_width="675dp"
+            android:layout_width="match_parent"
             android:layout_height="260dp"
             android:layout_marginBottom="10dp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <androidx.cardview.widget.CardView
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/events_viewPager2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="10dp">
-
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="200dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="5dp"
-                    android:text="Event Title"
-                    android:textAlignment="textStart"
-                    android:textColor="#000000" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="232dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/poppins"
-                        android:padding="5sp"
-                        android:text="DD-MM-YYYY"
-                        android:textAlignment="textStart"
-                        android:textColor="#000000"
-                        android:textSize="10sp" />
-
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/poppins"
-                        android:text="starts at 12:00am"
-                        android:textColor="#000000"
-                        android:textSize="10sp" />
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-        </HorizontalScrollView>
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp" />
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linearLayout8"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="200dp"
             android:layout_marginBottom="20sp"
             android:backgroundTint="#d9d9d9"
@@ -355,82 +294,27 @@
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:fontFamily="@font/poppins_bold"
                 android:padding="5dp"
-                android:text="Latest Video"
+                android:text="@string/latest_video"
                 android:textAlignment="textStart"
                 android:textColor="#000000"
                 android:textSize="14sp" />
 
             <LinearLayout
-                android:layout_width="450dp"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:orientation="horizontal">
 
                 <VideoView
                     android:id="@+id/videoView"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_height="match_parent" />
 
-                <Button
-                    android:id="@+id/button16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:backgroundTint="#ffffff"
-                    android:padding="5dp"
-                    android:text="See more exciting videos of San Pablo City"
-                    android:textColor="#000000" />
             </LinearLayout>
         </LinearLayout>
-
-
-        <!--
-
-                <HorizontalScrollView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:id="@+id/eventsnannc"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Events Announcement" />
-
-                    <Button
-                        android:id="@+id/btnevents"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/sampaloc1"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Event Title"
-                            android:fontFamily="@font/poppins_semibold"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Date today"
-                            android:fontFamily="@font/poppins"/>
-
-
-                    </LinearLayout>
-                </HorizontalScrollView>
-
-        -->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

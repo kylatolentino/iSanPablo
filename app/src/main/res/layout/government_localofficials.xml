@@ -18,32 +18,14 @@
         tools:layout_editor_absoluteX="-28dp"
         tools:layout_editor_absoluteY="-1dp">
 
-        <Button
-            android:id="@+id/backButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="25dp"
-            android:backgroundTint="#aabcd3"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="Back"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            app:cornerRadius="15dp"
-            app:icon="@drawable/back_icon"
-            app:iconTint="#000000"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/textView66"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="90dp"
             android:background="#007fdb"
             android:fontFamily="@font/poppins_semibold"
-            android:padding="5dp"
-            android:text="San Pablo City Officials"
+            android:padding="10dp"
+            android:text="@string/san_pablo_city_officials"
             android:textAlignment="center"
             android:textColor="#ffffff"
             android:textSize="16sp"
@@ -54,13 +36,15 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/textView66">
 
             <TextView
@@ -70,36 +54,36 @@
                 android:background="#005acd"
                 android:fontFamily="@font/poppins_semibold"
                 android:padding="5dp"
-                android:text="City Mayor of San Pablo City"
+                android:text="@string/city_mayor_of_san_pablo_city"
                 android:textAlignment="center"
                 android:textColor="#ffffff"
                 android:textSize="16sp" />
 
             <LinearLayout
-                android:layout_width="277dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="35dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:id="@+id/imageView10"
-                    android:layout_width="48dp"
-                    android:layout_height="190dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_weight="1"
+                    android:contentDescription="@string/picture_of_mayor"
                     android:padding="10dp"
-                    app:srcCompat="@drawable/ic_government_localofficial_citymayor"
-                    tools:srcCompat="@drawable/ic_government_localofficial_citymayor" />
+                    app:srcCompat="@drawable/pic_government_localofficial_citymayor"
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView74"
-                    android:layout_width="70dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_weight="1"
                     android:fontFamily="@font/poppins_medium"
                     android:padding="10dp"
-                    android:text="Hon. Mayor Vicente &quot;Vic&quot; B. Amante"
+                    android:text="@string/hon_mayor_vicente_quot_vic_quot_b_amante"
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="16sp"
@@ -109,15 +93,15 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/cardView10">
 
             <TextView
@@ -127,7 +111,7 @@
                 android:background="#005acd"
                 android:fontFamily="@font/poppins_semibold"
                 android:padding="5dp"
-                android:text="City Vice Mayor of San Pablo City"
+                android:text="@string/city_vice_mayor_of_san_pablo_city"
                 android:textAlignment="center"
                 android:textColor="#ffffff"
                 android:textSize="16sp" />
@@ -140,28 +124,25 @@
 
                 <ImageView
                     android:id="@+id/imageView11"
-                    android:layout_width="48dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="190dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_weight="1"
+                    android:contentDescription="@string/picture_of_vice_mayor"
                     android:padding="10dp"
-                    app:srcCompat="@drawable/ic_government_localofficial_cityvicemayor"
-                    tools:srcCompat="@drawable/ic_government_localofficial_cityvicemayor" />
+                    app:srcCompat="@drawable/pic_government_localofficial_cityvicemayor" />
 
                 <LinearLayout
-                    android:layout_width="70dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:gravity="center_vertical"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/textView76"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="80dp"
                         android:fontFamily="@font/poppins_medium"
-                        android:text="Hon. Justine G. Colago"
+                        android:text="@string/hon_justine_g_colago"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="16sp" />
@@ -171,9 +152,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins"
-                        android:text="justincolago.sp@gmail.com"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/justincolago_sp_gmail_com"
                         android:textAlignment="center"
-                        android:textColor="@color/emails"
+                        android:textColor="@color/blue"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -185,11 +168,11 @@
             android:id="@+id/textView79"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:background="#007fdb"
             android:fontFamily="@font/poppins_semibold"
-            android:padding="5dp"
-            android:text="List of Councilors"
+            android:padding="10dp"
+            android:text="@string/list_of_councilors"
             android:textAlignment="center"
             android:textColor="#ffffff"
             android:textSize="16sp"
@@ -197,750 +180,924 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView11" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:layout_marginTop="116dp"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal"
-            android:overScrollMode="always"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/textView79">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="match_parent"
-                app:cardCornerRadius="10dp">
+            <TextView
+                android:id="@+id/textView80"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="@string/city_councilor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/textView80"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#005acd"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="5dp"
-                    android:text="City Councilor"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/picture_of_councilor"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/pic_government_localofficial_citycounciloryang"
+                    tools:ignore="ImageContrastCheck" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="40dp"
+                    android:gravity="center_vertical"
                     android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView13"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:layout_margin="10dp"
-                        app:srcCompat="@drawable/ic_government_localofficial_citycounciloryang"
-                        tools:srcCompat="@drawable/ic_government_localofficial_citycounciloryang" />
 
                     <TextView
                         android:id="@+id/textView83"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_medium"
-                        android:text="Hon. Angelita Erasmo Yang"
+                        android:text="@string/hon_angelita_erasmo_yang"
                         android:textAlignment="center"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/txt089"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins"
-                        android:text="angieyang.sp@gmail.com"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/angieyang_sp_gmail_com"
                         android:textAlignment="center"
-                        android:textColor="@color/emails"
+                        android:textColor="@color/blue"
                         android:textSize="12sp" />
 
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
-            <Space
-                android:layout_width="15dp"
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView7">
+
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="@string/city_councilor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
-
-                <TextView
-                    android:id="@+id/textView84123"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#005acd"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="5dp"
-                    android:text="City Councilor"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView1498754"
-                        android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:padding="10dp"
-                        app:srcCompat="@drawable/ic_government_localofficial_citycounciloracebedo"
-                        tools:srcCompat="@drawable/ic_government_localofficial_citycounciloracebedo" />
-
-                    <TextView
-                        android:id="@+id/textView8515892"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Hon. Carmela Asaña Acebedo"
-                        android:textAlignment="center"
-                        android:textColor="#000000" />
-
-                    <TextView
-                        android:id="@+id/text23"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins"
-                        android:text="carmelaacebedo.sp@gmail.com"
-                        android:textAlignment="center"
-                        android:textColor="@color/emails"
-                        android:textSize="12sp" />
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView8400"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#005acd"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="5dp"
-                    android:text="City Councilor"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/picture_of_councilor"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/pic_government_localofficial_citycounciloracebedo" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="40dp"
+                    android:gravity="center_vertical"
                     android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/imageView14"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="10dp"
-                        app:srcCompat="@drawable/ic_government_localofficial_citycouncilorbondad"
-                        tools:srcCompat="@drawable/ic_government_localofficial_citycouncilorbondad" />
-
                     <TextView
-                        android:id="@+id/textView85"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_medium"
-                        android:text="Hon. Lou Vincent Bondad Amante"
+                        android:text="@string/hon_carmela_asa_a_acebedo"
                         android:textAlignment="center"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/txt42"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins"
-                        android:text="ambovincent1996.sp@gmail.com"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/carmelaacebedo_sp_gmail_com"
                         android:textAlignment="center"
-                        android:textColor="@color/emails"
+                        android:textColor="@color/blue"
                         android:textSize="12sp" />
+
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
-            <Space
-                android:layout_width="15dp"
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView8">
+
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="@string/city_councilor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView84"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#005acd"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="5dp"
-                    android:text="City Councilor"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/picture_of_councilor"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/pic_government_localofficial_citycouncilorbondad" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
                     android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/imageView14852"
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:padding="10dp"
-                        app:srcCompat="@drawable/ic_government_localofficial_citycouncilorcapuno"
-                        tools:srcCompat="@drawable/ic_government_localofficial_citycouncilorcapuno" />
-
-                    <TextView
-                        android:id="@+id/textView8576"
-                        android:layout_width="180dp"
                         android:layout_height="wrap_content"
-                        android:elevation="10dp"
                         android:fontFamily="@font/poppins_medium"
-                        android:text="Hon. Christian Dior Capuno. Amante"
+                        android:text="@string/hon_lou_vincent_bondad_amante"
                         android:textAlignment="center"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/txt4252"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins"
-                        android:text="christiandioramante.sp@gmail.com"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/ambovincent1996_sp_gmail_com"
                         android:textAlignment="center"
-                        android:textColor="@color/emails"
+                        android:textColor="@color/blue"
                         android:textSize="12sp" />
+
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
-        </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-        <LinearLayout
-            android:id="@+id/linearLayout15"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView9">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="@string/city_councilor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/picture_of_councilor"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/pic_government_localofficial_citycouncilorcapuno" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/hon_christian_dior_capuno_amante"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/christiandioramante_sp_gmail_com"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView13"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView12">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="@string/city_councilor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/picture_of_councilor"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/pic_government_localofficial_citycounciloradriano" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/hon_martin_angelo_belen_adriano_jr"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/geladriano_sp_gmail_com"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView14"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView13">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="@string/city_councilor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/picture_of_councilor"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/pic_government_localofficial_citycouncilorcalatraba" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/hon_francis_andal_calatraba"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/franciscalatraba_sp_gmail_com"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView20"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView14">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="@string/city_councilor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/picture_of_councilor"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/pic_government_localofficial_citycouncilorpavico" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/hon_richard_conducto_pavico"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/chad_z_168_sp_gmail_com"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView21"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="@string/city_councilor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/picture_of_councilor"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/pic_government_localofficial_citycouncilorespiritu" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/hon_buhay_dimabugti_espiritu"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/buhayespiritu_sp_gmail_com"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView22"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView21">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="@string/city_councilor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/picture_of_councilor"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/pic_government_localofficial_citycouncilorticzon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/hon_cesarito_cusi_ticzon"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/konsidocticzon_sp_gmail_com"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+                        tools:ignore="TooManyViews" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView21"
+            tools:ignore="TooManyViews">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="@string/city_councilor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/picture_of_councilor"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/pic_government_localofficial_citycouncilorticzon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/hon_cesarito_cusi_ticzon"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/konsidocticzon_sp_gmail_com"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView23"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView22">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="@string/city_councilor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="199dp"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/picture_of_councilor"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/pic_government_localofficial_citycouncilormedina"
+                    tools:ignore="ImageContrastCheck" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/hon_syra_a_medina"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/shyresmedina15_gmail_com"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView25"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView23">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="@string/city_councilor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/picture_of_councilor"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/pic_government_localofficial_abcpresident" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/hon_ariston_a_amante"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/aristonamante_sp_gmail_com"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="6:4"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView25">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#005acd"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="@string/sk_federation_president"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="195dp"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/picture_of_councilor"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/pic_government_localofficial_skfederation" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/hon_eldrich_khristoffer_b_villanueva"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/acevillanueva_gmail_com"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="match_parent"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
-
-                <TextView
-                    android:id="@+id/textView87"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#005acd"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="5dp"
-                    android:text="City Councilor"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView15"
-                        android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:padding="10dp"
-                        app:srcCompat="@drawable/ic_government_localofficial_citycounciloradriano"
-                        tools:srcCompat="@drawable/ic_government_localofficial_citycounciloradriano" />
-
-                    <TextView
-                        android:id="@+id/textView88"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Hon. Martin Angelo Belen Adriano JR."
-                        android:textAlignment="center"
-                        android:textColor="#000000" />
-
-                    <TextView
-                        android:id="@+id/txt4225"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins"
-                        android:text="geladriano.sp@gmail.com"
-                        android:textAlignment="center"
-                        android:textColor="@color/emails"
-                        android:textSize="12sp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <Space
-                android:layout_width="15dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp">
-
-                <TextView
-                    android:id="@+id/textView89"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#005acd"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="5sp"
-                    android:text="City Councilor"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView17"
-                        android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:padding="10dp"
-                        app:srcCompat="@drawable/ic_government_localofficial_citycouncilorcalatraba"
-                        tools:srcCompat="@drawable/ic_government_localofficial_citycouncilorcalatraba" />
-
-                    <TextView
-                        android:id="@+id/textView90"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Hon. Francis Andal Calatraba"
-                        android:textAlignment="center"
-                        android:textColor="#000000" />
-
-                    <TextView
-                        android:id="@+id/txt425325"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins"
-                        android:text="franciscalatraba.sp@gmail.com"
-                        android:textAlignment="center"
-                        android:textColor="@color/emails"
-                        android:textSize="12sp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout16"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout15">
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="match_parent"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
-
-                <TextView
-                    android:id="@+id/textView91"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#005acd"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="5dp"
-                    android:text="City Councilor"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView18"
-                        android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:padding="10dp"
-                        app:srcCompat="@drawable/ic_government_localofficial_citycouncilorpavico"
-                        tools:srcCompat="@drawable/ic_government_localofficial_citycouncilorpavico" />
-
-                    <TextView
-                        android:id="@+id/textView92"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Hon. Richard Conducto Pavico"
-                        android:textAlignment="center"
-                        android:textColor="#000000" />
-
-                    <TextView
-                        android:id="@+id/txt4221"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins"
-                        android:text="chad’z 168.sp@gmail.com"
-                        android:textAlignment="center"
-                        android:textColor="@color/emails"
-                        android:textSize="12sp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <Space
-                android:layout_width="15dp"
-                android:layout_height="72dp"
-                android:layout_weight="1" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
-
-                <TextView
-                    android:id="@+id/textView93"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#005acd"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="5dp"
-                    android:text="City Councilor"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView28"
-                        android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:padding="10dp"
-                        app:srcCompat="@drawable/ic_government_localofficial_citycouncilorespiritu"
-                        tools:srcCompat="@drawable/ic_government_localofficial_citycouncilorespiritu" />
-
-                    <TextView
-                        android:id="@+id/textView95"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Hon. Buhay Dimabugti Espiritu"
-                        android:textAlignment="center"
-                        android:textColor="#000000" />
-
-                    <TextView
-                        android:id="@+id/txt4521"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins"
-                        android:text="buhayespiritu.sp@gmail.com"
-                        android:textAlignment="center"
-                        android:textColor="@color/emails"
-                        android:textSize="12sp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout16">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="match_parent"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
-
-                <TextView
-                    android:id="@+id/textView96"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#005acd"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="5dp"
-                    android:text="City Councilor"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView29"
-                        android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:paddingTop="10dp"
-                        app:srcCompat="@drawable/ic_government_localofficial_citycouncilorticzon"
-                        tools:srcCompat="@drawable/ic_government_localofficial_citycouncilorticzon" />
-
-                    <TextView
-                        android:id="@+id/textView97"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Hon. Cesarito Cusi Ticzon"
-                        android:textAlignment="center"
-                        android:textColor="#000000" />
-
-                    <TextView
-                        android:id="@+id/txt2521"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins"
-                        android:text="konsidocticzon.sp@gmail.com"
-                        android:textAlignment="center"
-                        android:textColor="@color/emails"
-                        android:textSize="12sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <Space
-                android:layout_width="15dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
-
-                <TextView
-                    android:id="@+id/textView98"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#005acd"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="5dp"
-                    android:text="City Councilor"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView30"
-                        android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:padding="10dp"
-                        app:srcCompat="@drawable/ic_government_localofficial_citycouncilormedina"
-                        tools:srcCompat="@drawable/ic_government_localofficial_citycouncilormedina" />
-
-                    <TextView
-                        android:id="@+id/textView99"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Hon. Dandi Calabia Medina"
-                        android:textAlignment="center"
-                        android:textColor="#000000" />
-
-                    <TextView
-                        android:id="@+id/txt252421"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins"
-                        android:text="dandimedina.sp@gmail.com"
-                        android:textAlignment="center"
-                        android:textColor="@color/emails"
-                        android:textSize="12sp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout17">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="match_parent"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
-
-                <TextView
-                    android:id="@+id/textView100"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#005acd"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="5dp"
-                    android:text="ABC President"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView31"
-                        android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:padding="10dp"
-                        app:srcCompat="@drawable/ic_government_localofficial_abcpresident"
-                        tools:srcCompat="@drawable/ic_government_localofficial_abcpresident" />
-
-                    <TextView
-                        android:id="@+id/textView101"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Hon. Ariston A. Amante"
-                        android:textAlignment="center"
-                        android:textColor="#000000" />
-
-                    <TextView
-                        android:id="@+id/txt255121"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins"
-                        android:text="aristonamante.sp@gmail.com"
-                        android:textAlignment="center"
-                        android:textColor="@color/emails"
-                        android:textSize="12sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <Space
-                android:layout_width="15dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
-
-                <TextView
-                    android:id="@+id/textView102"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#005acd"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="5dp"
-                    android:text="SK Federation President"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView32"
-                        android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:padding="10dp"
-                        app:srcCompat="@drawable/ic_government_localofficial_skfederation"
-                        tools:srcCompat="@drawable/ic_government_localofficial_skfederation" />
-
-                    <TextView
-                        android:id="@+id/textView103"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Hon. Liberty Pamela E. Capuchino"
-                        android:textAlignment="center"
-                        android:textColor="#000000" />
-
-                    <TextView
-                        android:id="@+id/txt281"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins"
-                        android:text="libertypcapunchino.sp@gmail.com"
-                        android:textAlignment="center"
-                        android:textColor="@color/emails"
-                        android:textSize="12sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

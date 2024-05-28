@@ -19,33 +19,18 @@
         tools:layout_editor_absoluteY="-1dp">
 
 
-        <Button
-            android:id="@+id/btnback"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#AABCD3"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="Back"
-            android:textColor="#000000"
-            app:cornerRadius="15dp"
-            app:icon="@drawable/back_icon"
-            app:iconTint="#000000"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Our Seven Lakes"
+            android:text="@string/our_seven_lakes"
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnback" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/linearLayout3"
@@ -63,18 +48,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="225dp"
                 android:backgroundTint="#00000000"
+                android:contentDescription="@string/picture"
                 android:padding="0dp"
                 android:scaleType="centerInside"
-                app:srcCompat="@drawable/sampaloc_lake" />
+                app:srcCompat="@drawable/pic_tourism_sevenlakes_sampaloclake"
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
             <ImageButton
                 android:id="@+id/btnBunot"
                 android:layout_width="match_parent"
                 android:layout_height="225dp"
                 android:backgroundTint="#00000000"
+                android:contentDescription="@string/picture"
                 android:padding="0dp"
                 android:scaleType="centerInside"
-                app:srcCompat="@drawable/bunot" />
+                app:srcCompat="@drawable/pic_tourism_sevenlakes_bunot"
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
             <ImageButton
                 android:id="@+id/btnCalibato"
@@ -83,25 +72,30 @@
                 android:backgroundTint="#00000000"
                 android:padding="0dp"
                 android:scaleType="centerInside"
-                app:srcCompat="@drawable/calibato" />
+                app:srcCompat="@drawable/pic_tourism_sevenlakes_calibato"
+                android:contentDescription="@string/picture" />
 
             <ImageButton
                 android:id="@+id/btnMohica"
                 android:layout_width="match_parent"
                 android:layout_height="225dp"
                 android:backgroundTint="#00000000"
+                android:contentDescription="@string/picture"
                 android:padding="0dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/mohicap" />
+                android:src="@drawable/pic_tourism_sevenlakes_mohicap"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageButton
                 android:id="@+id/btnPalakpakin"
                 android:layout_width="match_parent"
                 android:layout_height="225dp"
                 android:backgroundTint="#00000000"
+                android:contentDescription="@string/picture"
                 android:padding="0dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/palakpakin" />
+                android:src="@drawable/pic_tourism_sevenlakes_palakpakin"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageButton
                 android:id="@+id/btnPandin"
@@ -110,7 +104,8 @@
                 android:backgroundTint="#00000000"
                 android:padding="0dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/pandin" />
+                android:src="@drawable/pic_tourism_sevenlakes_pandin"
+                android:contentDescription="@string/picture" />
 
             <ImageButton
                 android:id="@+id/btnYambo"
@@ -119,7 +114,8 @@
                 android:backgroundTint="#00000000"
                 android:padding="0dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/yambo" />
+                android:src="@drawable/pic_tourism_sevenlakes_yambo"
+                android:contentDescription="@string/picture" />
         </LinearLayout>
 
         <androidx.constraintlayout.widget.Guideline

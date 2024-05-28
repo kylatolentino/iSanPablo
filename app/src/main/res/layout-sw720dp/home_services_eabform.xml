@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView310"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#007fdb"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="10sp"
+            android:text="@string/obo_forms"
+            android:textAlignment="textStart"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="#007fdb"
+            android:importantForAccessibility="no"
+            android:padding="5dp"
+            app:tint="@color/white"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <Button
+                    android:id="@+id/button82"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/building_permit_checklist_san_pablo_city"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button83"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/requirement_of_certificate_of_annual_inspection_report_for_business_permit"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button84"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/requirements_of_demolition_permit"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button85"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/requirements_of_electrical_permit"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button86"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/requirements_of_electronics_permit"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button87"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/requirements_of_excavation_and_ground_preparation_permit"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button88"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/requirements_of_fencing_permit"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button89"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/requirements_of_mechanical_permit"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button90"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/requirements_of_sanitary_plumbing_permit"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button92"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/requirements_of_scaffolding_permit"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button93"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/requirements_of_sidewalk_construction_permit"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button94"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/requirements_of_sign_permit"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button95"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/requirements_of_temporary_service_connection_permit"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button66"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/application_for_building_permit_san_pablo_city"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button67"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/application_of_certicate_of_occupancy"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button68"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/application_for_electrical_permit_san_pablo_city"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button69"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/demolition_permit_san_pablo_city"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button70"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/excavation_and_ground_preparation_permit_san_pablo_city"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button71"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/fencing_permit_san_pablo_city"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button72"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/mechanical_permit_san_pablo_city"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button73"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/scaffolding_permit_san_pablo_city"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button74"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/side_walk_construction_permit_san_pablo_city"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button75"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/sign_permit_san_pablo_city"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button80"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/temporary_service_connection_permit_san_pablo_city"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button76"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/temporary_side_walk_enclosure_san_pablo_city"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button77"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="@string/terms_and_conditions_of_building_permit_san_pablo_city"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007fdb"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/button81"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/close"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:strokeColor="#007FDB"
+                    app:strokeWidth="2dp" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

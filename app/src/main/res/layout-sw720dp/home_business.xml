@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.home.HomeFragment"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:contextClickable="false"
+        tools:context=".ui.home.HomeFragment"
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+        <LinearLayout
+            android:id="@+id/date_container"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_rectangle"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/picture"
+                android:src="@drawable/logo_pagasa" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineSpacingExtra="0sp"
+                android:padding="10dp"
+                android:text="@string/philippines_standard_time"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/texttime"
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="196dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="15dp"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic_tourism_gallery_spcathedral"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_container" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/shape_rectangle"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_container">
+
+            <Button
+                android:id="@+id/btnjobs"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:height="125dp"
+                android:background="#00ffffff"
+                android:elevation="0dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/jobs"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:icon="@drawable/ic_home_job"
+                app:iconGravity="top"
+                app:iconTintMode="multiply"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnServices"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/services"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:icon="@drawable/ic_home_supplier"
+                app:iconGravity="top"
+                app:iconTintMode="multiply"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnbusi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:fontFamily="@font/poppins_bold"
+                android:foreground="@drawable/shape_border"
+                android:text="@string/business"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:icon="@drawable/ic_home_business"
+                app:iconGravity="top"
+                app:iconTintMode="multiply"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView370"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/business"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TableLayout
+            android:id="@+id/tableLayout3"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView370">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDoingBusiness"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/doing_business"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_doing_business"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnInvestment"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/investment"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_investment"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnAmend"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/amendments"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_amendments"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnMybusiness"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/my_business"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_mybusiness"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnBusinessTaxAssessment"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/business_tax_n_assessment"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_tax_assessment"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnMayorPermit"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/print_n_mayor_s_permit"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_print_mayorspermit"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle,TextSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"></LinearLayout>
+
+                <Button
+                    android:id="@+id/btnTaxPayment"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/business_tax_payment"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_taxes_payment"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"></LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

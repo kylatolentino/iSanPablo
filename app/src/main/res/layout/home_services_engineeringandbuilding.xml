@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#005acd">
+
+    <TextView
+        android:id="@+id/textView308"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/engineering_and_building_form"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shape_radius_upcorner"
+        android:orientation="vertical"
+        android:padding="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView308"
+        tools:ignore="TextSizeCheck">
+
+        <Button
+            android:id="@+id/button59"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#007fdb"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="15dp"
+            android:text="@string/engineering_and_building_form"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_menu"
+            app:iconGravity="end"
+            app:iconSize="15dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/button60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#ffffff"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="15dp"
+            android:text="@string/lcr_form"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            app:cornerRadius="10dp"
+            app:strokeColor="#007fdb"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/button61"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#ffffff"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="15dp"
+            android:text="@string/bpls_form"
+            android:textColor="#000000"
+            app:cornerRadius="10dp"
+            app:strokeColor="#007fdb"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/button62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#ffffff"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="15dp"
+            android:text="@string/rpt_request"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            app:cornerRadius="10dp"
+            app:strokeColor="#007fdb"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/button63"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#007fdb"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="15dp"
+            android:text="@string/hr_forms"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_menu"
+            app:iconGravity="end"
+            app:iconSize="15dp" />
+
+        <Button
+            android:id="@+id/button64"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#ffffff"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="15dp"
+            android:text="@string/ebp_system"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            app:cornerRadius="10dp"
+            app:strokeColor="#007fdb"
+            app:strokeWidth="3dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

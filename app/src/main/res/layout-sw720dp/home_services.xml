@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.home.HomeFragment"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:contextClickable="false"
+        tools:context=".ui.home.HomeFragment"
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_rectangle"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/picture"
+                android:src="@drawable/logo_pagasa" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineSpacingExtra="0sp"
+                android:padding="10dp"
+                android:text="@string/philippines_standard_time"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/texttime"
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="196dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/asdasdas"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/picture"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic_tourism_gallery_spcathedral"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/shape_rectangle"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+            <Button
+                android:id="@+id/btnjobs"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:height="125dp"
+                android:background="#00ffffff"
+                android:elevation="0dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/jobs"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:icon="@drawable/ic_home_job"
+                app:iconGravity="top"
+                app:iconTintMode="multiply"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnServices"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:fontFamily="@font/poppins_bold"
+                android:foreground="@drawable/shape_border"
+                android:text="@string/services"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:icon="@drawable/ic_home_supplier"
+                app:iconGravity="top"
+                app:iconTintMode="multiply"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnbusi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/business"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:icon="@drawable/ic_home_business"
+                app:iconGravity="top"
+                app:iconTintMode="multiply"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/all_services"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnTaxes"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/taxes"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_home_service_tax"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnHotline"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/city_hotlines"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_home_services_hotline"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnOnlineRequest"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/online_request"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_home_services_ol_request"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle,TextSizeCheck" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnAwards"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/bids_and_awards"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_home_services_bids"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle,TextSizeCheck" />
+
+                <Button
+                    android:id="@+id/btnEngineeringAndBuilding"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/engineering_and_building_forms"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_home_services_engineering"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnCityEmployeeCorner"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/city_employee_corner"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_home_services_cityemployee"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnPWD"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/philippine_registry_n_for_pwd"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_home_services_pwd"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnOnlineGovService"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/online_government_services"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/home_services_olgovservices"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnDisclosure"
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/disclosure"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_home_services_disclosure"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply"
+                    app:strokeColor="#005acd"
+                    app:strokeWidth="3dp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

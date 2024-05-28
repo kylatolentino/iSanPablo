@@ -1,27 +1,23 @@
 package com.app.isanpablo.ui.government
 
 import android.app.Dialog
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.Button
-import android.widget.ImageView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.app.isanpablo.R
 import com.app.isanpablo.databinding.FragmentGovernmentBinding
-import com.app.isanpablo.ui.localofficial.LocalOfficialFragment
-import com.app.isanpablo.ui.departments.DepartmentFragment
-import com.app.isanpablo.ui.ela.ElaFragment
-import com.app.isanpablo.ui.map.MapFragment
 class GovernmentFragment : Fragment() {
 
     private var _binding: FragmentGovernmentBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    private var link: String = ""
+    // This property is only valid between onCreateView and onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -29,72 +25,58 @@ class GovernmentFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val governmentViewModel =
-            ViewModelProvider(this).get(GovernmentViewModel::class.java)
-
         _binding = FragmentGovernmentBinding.inflate(inflater, container, false)
         val root: View = binding.root
-        binding.btnLocalOfficials.setOnClickListener{
-            val fragmentManager = requireActivity().supportFragmentManager
-            val transaction = fragmentManager.beginTransaction()
-            transaction.replace(R.id.nav_host_fragment_content_main,LocalOfficialFragment())
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }
-        binding.btnDepartment.setOnClickListener{
-            val fragmentManager = requireActivity().supportFragmentManager
-            val transaction = fragmentManager.beginTransaction()
-            transaction.replace(R.id.nav_host_fragment_content_main, DepartmentFragment())
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }
-        binding.btnmap.setOnClickListener{
-            val fragmentManager = requireActivity().supportFragmentManager
-            val transaction = fragmentManager.beginTransaction()
-            transaction.replace(R.id.nav_host_fragment_content_main, MapFragment())
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }
 
-        binding.btnstand.setOnClickListener {
+        // The Standing Committees and Ordinance sections not yet available so the Unavailable dialog box is shown
+        binding.btnStand.setOnClickListener {
             showUnavailableDialog()
         }
-            binding.btnordinance.setOnClickListener {
+        binding.btnOrdinance.setOnClickListener {
             showUnavailableDialog()
         }
+        binding.btnLocalOfficials.setOnClickListener {
+            findNavController().navigate(R.id.nav_government_localofficial)
+        }
+        binding.btnDepartment.setOnClickListener {
+            findNavController().navigate(R.id.nav_government_departments)
+        }
+        binding.btnMap.setOnClickListener {
+            findNavController().navigate(R.id.nav_government_map)
+        }
 
+        // Shows a confirmation dialog if you want to access or download a pdf file of ELA
         binding.btnEla.setOnClickListener{
+            link ="https://www.sanpablocity.gov.ph/docs/CDP%20Annexes%202018-2023.pdf"
             val dialog = Dialog(requireContext())
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
             dialog.setCancelable(false)
-            dialog.setContentView(R.layout.confirmation_downloadfile)
+            dialog.setContentView(R.layout.confirmation_dialog)
             val exitButton: Button = dialog.findViewById(R.id.btnCancel)
+            dialog.window?.setBackgroundDrawableResource(R.drawable.shape_rounded_dialog_border)
             val yesButton: Button = dialog.findViewById(R.id.btnOk)
             exitButton.setOnClickListener {
                 dialog.dismiss() // Dismiss the dialog
             }
             yesButton.setOnClickListener {
-                val fragmentManager = requireActivity().supportFragmentManager
-                val transaction = fragmentManager.beginTransaction()
-                transaction.replace(R.id.nav_host_fragment_content_main,ElaFragment())
-                transaction.addToBackStack(null)
-                transaction.commit()
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(link))
+                startActivity(intent)
                 dialog.dismiss()
             }
             dialog.show()
 
         }
 
-
-
         return root
     }
+
+    // Function to show the unavailable dialog
     private fun showUnavailableDialog() {
         val dialog = Dialog(requireContext())
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(true)
-        dialog.setContentView(R.layout.government_ordinance)
-        dialog.window?.setBackgroundDrawableResource(R.drawable.rounded_dialog_bg)
+        dialog.setContentView(R.layout.unavailable_dialog)
+        dialog.window?.setBackgroundDrawableResource(R.drawable.shape_rounded_dialog_border)
         val exitButton: Button = dialog.findViewById(R.id.btnOk)
         exitButton.setOnClickListener {
             dialog.dismiss() // Dismiss the dialog

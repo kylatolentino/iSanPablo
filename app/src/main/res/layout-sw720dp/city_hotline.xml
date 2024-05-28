@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightblue"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="SPC Service Hotline"
+            android:textAlignment="textStart"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd6"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/logo_bfp"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/BFP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/BFP"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numberOfBFP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfBFP"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnOfBFP"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd8"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+
+                                app:srcCompat="@drawable/logo_redcross"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/RedCross"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/RedCross"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numberOfRedCross"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfRedCross"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnOfRedCross"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd11"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/logo_spcpolice"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/SPCPolice"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/SPCPolice"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numberOfSPCPolice"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfSPCPolice"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnOfSPCPolice"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd12"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/logo_spcgenhos"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/SPCGenHos"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/SPCGeneralHospital"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numberOfSPCGenHos"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfSPCGenHos"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnOfSPCGenHos"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+
+                                app:srcCompat="@drawable/logo_spcgov"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/txtSpcGov"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/SPCGovernment"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numofSpcGov"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfSPCGov"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnSpcGov"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd1"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+
+                                app:srcCompat="@drawable/logo_spcgov"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/Officebuilding"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/Officebuilding"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numberOfOfficebuilding"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfOfficebuilding"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnOfficebuild"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd2"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+
+                                app:srcCompat="@drawable/logo_spcgov"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/Assessor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/Assessor"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numberOfAssessor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfAssessor"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnassessor"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd3"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/logo_spc_cho"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/Treasurer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/Treasurer"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numberOfTreasurer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfTreasurer"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btntreasurer"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd4"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/logo_spcgov"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/BusinessPermit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/BusinessPermit"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numberOfBusinessPermit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfBusinessPermit"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnOfBusinessPermit"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd7"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+
+                                app:srcCompat="@drawable/logo_spcgov"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/welfareAndDev"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/welfareAndDev"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numberOfwelfareAndDev"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfwelfareAndDev"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnOfwelfareAndDev"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd9"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+
+                                app:srcCompat="@drawable/logo_spcgov"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/brgyCont"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/brgyCont"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numberOfbrgyCont"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfbrgyCont"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnOfbrgyCont"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd10"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+
+                                app:srcCompat="@drawable/logo_spcgov"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/SPCPACD"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/SPCPACD"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numberOfSPCPACD"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfSPCPACD"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnOfSPCPACD"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="3sp"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd13"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/logo_spccddrmo"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/SPCcdrrmo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/SPCcdrrmo"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numberOfSPCcdrrmo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfSPCcdrrmo"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnOfSPCcdrrmo"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="3sp"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd14"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/logo_spccddrmo"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/smartSPCcdrrmo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/smartSPCcdrrmo"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/smartOfSPCcdrrmo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/smartOfSPCcdrrmo"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnsmartOfSPCcdrrmo"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_phone"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd18"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/logo_spccddrmo"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/globeSPCcdrrmo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/globeSPCcdrrmo"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/globeOfSPCcdrrmo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/globeOfSPCcdrrmo"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnglobeOfSPCcdrrmo"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="3sp"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_phone"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd15"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/logo_spc_cho"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/SPCcho"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/SPCcho"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numberOfSPCcho"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/numberOfSPCcho"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnOfSPCcho"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_lan"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd16"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/logo_spc_cho"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/smartSPCcho"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/smartSPCcho"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/smartOfSPCcho"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/smartOfSPCcho"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnsmartOfSPCcho"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_phone"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/shape_border"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/asd19"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/logo_spc_cho"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="2sp"
+                                android:paddingTop="1sp"
+                                android:paddingBottom="1sp"
+                                tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck">
+
+                                <TextView
+                                    android:id="@+id/globeSPCcho"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/globeSPCcho"
+                                    android:textAlignment="center"
+                                    android:textColor="#151515"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/globeOfSPCcho"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="@string/globeOfSPCcho"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnglobeOfSPCcho"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:foregroundTint="#FFFFFF"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_hotline_phone"
+                                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/exitto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="#FFFFFF" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

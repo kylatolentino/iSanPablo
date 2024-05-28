@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -16,68 +16,88 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5">
 
-        <TextView
-            android:id="@+id/text1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#007FDB"
-            android:fontFamily="@font/poppins_semibold"
-            android:padding="10dp"
-            android:paddingLeft="10dp"
-            android:text="ARTA Corner"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="45dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnCitizenCharter"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:backgroundTint="#007fdb"
-                android:checkable="true"
-                android:elevation="10dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="70dp"
-                android:paddingRight="70dp"
-                android:text="Citizen's Charter"
-                android:textAllCaps="false"
-                android:textSize="14sp" />
+                android:layout_height="match_parent"
+                android:background="@color/lightblue"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnChart"
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:background="@color/lightblue"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="20dp"
+                    android:paddingTop="13dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="12dp"
+                    android:text="@string/arta_corner"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/exitButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightblue"
+                    android:clickable="false"
+                    android:contentDescription="@string/exit_button"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="7dp"
+                    app:srcCompat="@drawable/ic_closescreen"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp"
-                android:backgroundTint="#007fdb"
-                android:fontFamily="@font/poppins_semibold"
-                android:padding="5sp"
-                android:text="Chart"
-                android:textAllCaps="false"
-                android:textSize="14sp" />
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnCitizenCharter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="#007fdb"
+                    android:checkable="true"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="70dp"
+                    android:paddingRight="70dp"
+                    android:text="@string/citizen_s_charter"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="#007fdb"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="5sp"
+                    android:text="@string/chart"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
 
         </LinearLayout>
-
-        <ImageButton
-            android:id="@+id/exitButton"
-            android:layout_width="wrap_content"
-            android:layout_height="41dp"
-            android:layout_gravity="right"
-            android:background="#007fdb"
-            android:clickable="false"
-            android:padding="5dp"
-            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
 
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

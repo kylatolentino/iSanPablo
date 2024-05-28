@@ -11,65 +11,75 @@ import android.view.Window
 import android.widget.Button
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.app.isanpablo.R
-import com.app.isanpablo.databinding.FragmentEconomyBinding
+import com.app.isanpablo.databinding.BlankpageBinding
 
 
 
 class ARTAFragment : Fragment() {
 
-    private var _binding: FragmentEconomyBinding? = null
+    private var _binding: BlankpageBinding? = null
+    private var link: String = " " // Initializing link variable
 
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    // This property is only valid between onCreateView and onDestroyView.
     private val binding get() = _binding!!
 
+    // Function to inflate the layout for this fragment
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val economyViewModel =
-            ViewModelProvider(this).get(ARTAViewModel::class.java)
 
-        _binding = FragmentEconomyBinding.inflate(inflater, container, false)
+        // Inflating the layout for this fragment using view binding
+        _binding = BlankpageBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val message: String = "Economy"
-        dialogEconomy(message)
+        // Show the dialog when fragment is created
+        dialogEconomy()
         return root
 
     }
-    private fun dialogEconomy(message: String?) {
+
+    // Function to show the dialog for ARTA options
+    private fun dialogEconomy() {
         val dialog = Dialog(requireContext())
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(false)
         dialog.setContentView(R.layout.fragment_arta)
         val exitButton: ImageView = dialog.findViewById(R.id.exitButton)
+
+        // Retrieving buttons from the dialog layout
         val btnCitizenCharter: Button = dialog.findViewById(R.id.btnCitizenCharter)
         val btnChart: Button = dialog.findViewById(R.id.btnChart)
-        dialog.window?.setBackgroundDrawableResource(R.drawable.rounded_dialog_bg)
 
+        // Setting background drawable for the dialog window
+        dialog.window?.setBackgroundDrawableResource(R.drawable.shape_rounded_dialog_border)
+
+        // Shows a confirmation dialog before navigating to the link
         btnCitizenCharter.setOnClickListener {
-            val link: String ="https://www.sanpablocity.gov.ph/docs/SPC_CC_2022.pdf"
+            link ="https://www.sanpablocity.gov.ph/docs/SPC_CC_2022.pdf"
             showConfirmationDialog(link)
         }
+        // Shows a dialog box that says the Chart section in not yet available
         btnChart.setOnClickListener {
             showUnavailableDialog()
         }
 
+        // Dismiss the dialog when exitButton is clicked
         exitButton.setOnClickListener {
             dialog.dismiss() // Dismiss the dialog
         }
         dialog.show() // Show the dialog
     }
+
+    // Function to show confirmation dialog before navigating to the link
     private fun showConfirmationDialog(link: String) {
         val dialog = Dialog(requireContext())
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(false)
-        dialog.setContentView(R.layout.confirmation_downloadfile)
+        dialog.setContentView(R.layout.confirmation_dialog)
+        dialog.window?.setBackgroundDrawableResource(R.drawable.shape_rounded_dialog_border)
         val exitButton: Button = dialog.findViewById(R.id.btnCancel)
         val yesButton: Button = dialog.findViewById(R.id.btnOk)
 
@@ -77,6 +87,7 @@ class ARTAFragment : Fragment() {
             dialog.dismiss() // Dismiss the dialog
         }
 
+        // Navigate to the link when ok button is clicked
         yesButton.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(link))
             startActivity(intent)
@@ -85,17 +96,24 @@ class ARTAFragment : Fragment() {
 
         dialog.show()
     }
+
+    // Function to show dialog when certain option is unavailable
     private fun showUnavailableDialog() {
         val dialog = Dialog(requireContext())
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(true)
-        dialog.setContentView(R.layout.government_ordinance)
+        dialog.setContentView(R.layout.unavailable_dialog)
+        dialog.window?.setBackgroundDrawableResource(R.drawable.shape_rounded_dialog_border)
         val exitButton: Button = dialog.findViewById(R.id.btnOk)
+
+        // Dismiss the dialog when cancel button is clicked
         exitButton.setOnClickListener {
             dialog.dismiss() // Dismiss the dialog
         }
         dialog.show()
     }
+
+    // Release binding when the fragment is destroyed
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

@@ -1,49 +1,365 @@
 <resources>
-    <string name="app_name">iSanPablo</string>
+    <string name="default_web_client_id">52330988382-hgd1dps9deev20fc64de56mr8dqu4pk0.apps.googleusercontent.com</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">San Pablo City</string>
-    <string name="nav_header_subtitle"><a href="https://www.sanpablocity.gov.ph/">https://www.sanpablocity.gov.ph/</a></string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
-    <string name="menu_home">San Pablo City</string>
-    <string name="menu_official">City Government of San Pablo</string>
-    <string name="menu_economy">Economy</string>
+    <string name="citymayor_name">Vicente B. Amante PhD</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_government">Government</string>
+    <string name="economy">Economy</string>
+    <string name="exit_button">Close Screen</string>
+    <string name="comprehensive_development_n_program">Comprehensive Development \n Program</string>
+    <string name="volume_1">Volume 1</string>
+    <string name="volume_2">Volume 2</string>
+    <string name="volume_3">Volume 3</string>
+    <string name="comprehensive_development_plan">Comprehensive Development Plan</string>
+    <string name="spc_ecological_profile">SPC Ecological Profile</string>
+    <string name="cdp_annexes">CDP Annexes</string>
+    <string name="download_file">Download File</string>
+    <string name="would_you_like_to_download_this_document">Would you like to download this document?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="emergency_hotline">Emergency Hotline</string>
+    <string name="this_is_the_logo_of_spc">This is the logo of SPC</string>
+    <string name="san_pablo_city">San Pablo City</string>
+    <string name="city_government_of_san_pablo_city">City Government of San Pablo</string>
+    <string name="the_city">The City</string>
+    <string name="government">Government</string>
+    <string name="tourism">Tourism</string>
+    <string name="freedom_of_information">Freedom Of Information</string>
+    <string name="username">Username</string>
+    <string name="arta_corner">ARTA Corner</string>
+    <string name="citizen_s_charter">Citizen\'s Charter</string>
+    <string name="chart">Chart</string>
+    <string name="cancel_dialog">Cancel Dialog</string>
+    <string name="content_not_yet_available">Content not yet Available</string>
+    <string name="the_content_you_are_trying_to_access_is_currently_unavailable">The content you are trying to access is currently unavailable.</string>
+    <string name="ela_dialog">Ela Dialog</string>
+    <string name="back">Back</string>
+    <string name="san_pablo_city_officials">San Pablo City Officials</string>
+    <string name="city_mayor_of_san_pablo_city">City Mayor of San Pablo City</string>
+    <string name="picture_of_mayor">Picture of Mayor</string>
+    <string name="hon_mayor_vicente_quot_vic_quot_b_amante">Hon. Mayor Vicente \"Vic\" B. Amante</string>
+    <string name="city_vice_mayor_of_san_pablo_city">City Vice Mayor of San Pablo City</string>
+    <string name="picture_of_vice_mayor">Picture Of Vice Mayor</string>
+    <string name="hon_justine_g_colago">Hon. Justine G. Colago</string>
+    <string name="justincolago_sp_gmail_com">justincolago.sp@gmail.com</string>
+    <string name="list_of_councilors">List of Councilors</string>
+    <string name="city_councilor">City Councilor</string>
+    <string name="picture_of_councilor">Picture Of Councilor</string>
+    <string name="hon_angelita_erasmo_yang">Hon. Angelita Erasmo Yang</string>
+    <string name="angieyang_sp_gmail_com">angieyang.sp@gmail.com</string>
+    <string name="hon_carmela_asa_a_acebedo">Hon. Carmela Asaña Acebedo</string>
+    <string name="carmelaacebedo_sp_gmail_com">carmelaacebedo.sp@gmail.com</string>
+    <string name="hon_lou_vincent_bondad_amante">Hon. Lou Vincent Bondad Amante</string>
+    <string name="ambovincent1996_sp_gmail_com">ambovincent1996.sp@gmail.com</string>
+    <string name="hon_christian_dior_capuno_amante">Hon. Christian Dior Capuno. Amante</string>
+    <string name="christiandioramante_sp_gmail_com">christiandioramante@gmail.com</string>
+    <string name="hon_martin_angelo_belen_adriano_jr">Hon. Martin Angelo Belen Adriano JR.</string>
+    <string name="geladriano_sp_gmail_com">geladriano.sp@gmail.com</string>
+    <string name="hon_francis_andal_calatraba">Hon. Francis Andal Calatraba</string>
+    <string name="franciscalatraba_sp_gmail_com">franciscalatraba09@gmail.com</string>
+    <string name="hon_richard_conducto_pavico">Hon. Richard Conducto Pavico</string>
+    <string name="chad_z_168_sp_gmail_com">chadz168@gmail.com</string>
+    <string name="hon_buhay_dimabugti_espiritu">Hon. Buhay Dimabugti Espiritu</string>
+    <string name="buhayespiritu_sp_gmail_com">buhayespiritu.sp@gmail.com</string>
+    <string name="hon_cesarito_cusi_ticzon">Hon. Cesarito Cusi Ticzon</string>
+    <string name="konsidocticzon_sp_gmail_com">konsidocticzon@gmail.com</string>
+    <string name="hon_syra_a_medina">Hon. Syra A. Medina</string>
+    <string name="shyresmedina15_gmail_com">Shyresmedina15@gmail.com</string>
+    <string name="hon_ariston_a_amante">Hon. Ariston A. Amante</string>
+    <string name="aristonamante_sp_gmail_com">aristonamante.sp@gmail.com</string>
+    <string name="sk_federation_president">SK Federation President</string>
+    <string name="hon_eldrich_khristoffer_b_villanueva">Hon. Eldrich Khristoffer B. Villanueva</string>
+    <string name="acevillanueva_gmail_com">Acevillanuevaa19@gmail.com</string>
+    <string name="city_administrator">City Administrator</string>
+    <string name="accounting_office">Accounting Office</string>
+    <string name="city_accountant">City Accountant</string>
+    <string name="agriculture_office">Agriculture Office</string>
+    <string name="city_agriculturist_office_concurrent">City Agriculturist Office (Concurrent)</string>
+    <string name="assessor_office">Assessor Office</string>
+    <string name="assistant_assessor_office">Assistant Assessor Office</string>
+    <string name="budget_office">Budget Office</string>
+    <string name="city_budget_officer">City Budget Officer</string>
+    <string name="city_building_official_office">City Building Official Office</string>
+    <string name="city_civil_registrar">City Civil Registrar</string>
+    <string name="city_civil_registry_office">City Civil Registry Office</string>
+    <string name="cooperative_office">Cooperative Office</string>
+    <string name="city_cooperative_officer_cgdh_1">City Cooperative Officer/ CGDH-1</string>
+    <string name="city_disaster_risk_reduction_and_management_office">City Disaster Risk Reduction and Management Officer</string>
+    <string name="engineering_office">Engineering Office</string>
+    <string name="assistant_city_risk_reduction_and_management_office">Assistant City Risk Reduction and Management Office</string>
+    <string name="assistant_city_engineer">Assistant City Engineer</string>
+    <string name="environment_and_natural_resources_office">Environment and Natural Resources Office</string>
+    <string name="general_services_office">General Services Office</string>
+    <string name="officer_in_charge_city_general_services_officer">Officer in Charge - City General Services Officer</string>
+    <string name="health_office">Health Office</string>
+    <string name="city_health_officer">City Health Officer</string>
+    <string name="human_resource_management_office">Human Resource Management Office</string>
+    <string name="information_office">Information Office</string>
+    <string name="officer_in_charge_city_information_officer">Officer in Charge - City Information Officer</string>
+    <string name="legal_office">Legal Office</string>
+    <string name="city_legal_name">City Legal Name</string>
+    <string name="city_legal_officer">City Legal Officer</string>
+    <string name="planning_and_development_office">Planning and Development Office</string>
+    <string name="planning_and_development_officer">Planning and Development Officer</string>
+    <string name="population_office">Population Office</string>
+    <string name="city_population_officer">City Population Officer</string>
+    <string name="social_welfare_and_development">Social Welfare and Development Office</string>
+    <string name="city_social_welfare_and_development_officer">City Social Welfare and Development Officer</string>
+    <string name="social_waste_management_office">Social Waste Management Office</string>
+    <string name="city_solid_waste_management_officer">City Solid Waste Management Officer</string>
+    <string name="tourism_office">Tourism Office</string>
+    <string name="city_tourism_officer">City Tourism Officer</string>
+    <string name="treasurer_s_office">Treasurer\'s Office</string>
+    <string name="city_treasurer">City Treasurer</string>
+    <string name="veterinarian_office">Veterinarian Office</string>
+    <string name="city_veterinarian">City Veterinarian</string>
+    <string name="pamantasan_ng_lungsod_ng_san_pablo">Pamantasan ng Lungsod ng San Pablo</string>
+    <string name="university_president">University President</string>
+    <string name="san_pablo_city_general_hospital">San Pablo City General Hospital</string>
+    <string name="vice_mayor_office">Vice Mayor Office</string>
+    <string name="officer_in_charge_chief_of_hospital">Officer in Charge – Chief of Hospital</string>
+    <string name="vice_mayor">Vice Mayor</string>
+    <string name="business_permit_and_licensing_office_bplo">Business Permit and Licensing Office (BPLO)</string>
+    <string name="city_traffic_management_office_ctmo">City Traffic Management Office (CTMO)</string>
+    <string name="gender_and_development_gad">Gender and Development (GAD)</string>
+    <string name="local_economic_development_and_investment_promotion_office_ledipo">Local Economic Development and Investment Promotion Office (LEDIPO)</string>
+    <string name="management_information_systems_office_miso">Management Information Systems Office (MISO)</string>
+    <string name="office_for_senior_citizens_affairs_osca">Office for Senior Citizens Affairs (OSCA)</string>
+    <string name="public_employment_service_office_peso">Public Employment Service Office (PESO)</string>
+    <string name="sports_division">Sports Division</string>
+    <string name="city_urban_development_and_housing_office_cudho">City Urban Development and Housing Office (CUDHO)</string>
+    <string name="city_general_services_office_comprehensive_indigency_assistance_program_cgso_ciap">City General Services Office – Comprehensive Indigency Assistance Program (CGSO-CIAP)</string>
+    <string name="assistant_office_of_the_city_buidling_official">Assistant Office of the City Buidling Official</string>
+    <string name="departments">Departments</string>
+    <string name="mayor_s_office">Mayor\'s Office</string>
+    <string name="city_administrator_s_office">City Administrator\'s Office</string>
+    <string name="city_mayor">City Mayor</string>
+    <string name="cityadmin_name">Larry S. Amante</string>
+    <string name="cityadmin_address">San Pablo City Multi-Purpose Convention Center,  San Jose, San Pablo Cit</string>
+    <string name="cityadmin_contact">Tel No. (049) 521–0307</string>
+    <string name="cityaccountant_name">Arlene M. Beltejar</string>
+    <string name="cityaccountant_contact">Tel. No. 562–6577, 562–7687</string>
+    <string name="cityaccountant_internalcontact">Internal– 562–1982</string>
+
+    <string name="cityagri_name">Arthur B. Almario</string>
+    <string name="cityagri_contact">Tel. No. 503–2229</string>
+
+    <string name="cityassessor_name">Eva F. Punto</string>
+    <string name="cityassessor_contact">Tel. No.  521–0996,557–3663, 557–3845,800–0801</string>
+
+    <string name="citybudget_name">Dennis A. Ramos</string>
+    <string name="citybudget_contact">Tel. No. 546–2894</string>
+
+    <string name="citybuilding_name">Arch. Herbert G. Cartabio</string>
+    <string name="citybuilding_contact">Tel. No. 521–0798</string>
+
+    <string name="cityregistrar_name">Victoria G. Maloles</string>
+    <string name="cityregistrar_contact">Tel. No. 0918–792–2603; 0995–268–9523</string>
+
+    <string name="citycoop_name">Concepcion M. Biglete</string>
+    <string name="citycoop_contact">Tel. No. 562–2866</string>
+
+    <string name="cityDRRM_name">Margarita Vanessa T. Reyes</string>
+    <string name="cityDRRM_contact">Tel. No. 800–0405, 549–0500</string>
+
+    <string name="cityengr_name">Engr. Michael A. Dimaisip</string>
+    <string name="cityengr_contact">Tel. No.</string>
+
+    <string name="cityENR_name">Dennis A. Ramos</string>
+    <string name="cityENR_contact">Tel. No. 562–2822</string>
+
+    <string name="cityservices_name">Dra. Marianne Criselda D. Belen</string>
+    <string name="cityservices_contact">Tel. No. 562–2395,562–0779</string>
+
+    <string name="cityhealth_name">Dr. James T. Lee Ho</string>
+    <string name="cityhealth_contact1">Tel. No. 562–8116</string>
+    <string name="cityhealth_contact2">Fax No. 562–7874</string>
+
+    <string name="cityHR_name">Engr. Diosdado A. Biglete</string>
+
+    <string name="cityinfo_name">Enrico B. Galicia</string>
+    <string name="cityinfo_contact">Tel No. 503–5783</string>
+
+    <string name="cityaffairs_contact">Brgy. Affairs: 561–1483</string>
+    <string name="brgy_controlnum">Barangay Control No.: 562–3086</string>
+
+    <string name="citylegal_name">Atty. Agripino G. Morga</string>
+    <string name="citylegal_contact">Tel. No. 562–0863</string>
+
+    <string name="cityPND_name">Cristina D. Amante</string>
+    <string name="cityPND_contact">Tel. No. 562–4980,503–1301</string>
+
+    <string name="citypopulation_name">Mylene T. Deriquito</string>
+    <string name="citypopulation_contact">Tel. No. 562–1030</string>
+
+    <string name="citySWD_name">Marilyn S. Escondo</string>
+    <string name="citySWD_contact">Tel. No. 562–1575</string>
+
+    <string name="citySWM_name">Engr. Diosdado A. Biglete</string>
+    <string name="citySWM_contact">Tel. No. 521–7816</string>
+
+    <string name="citytourism_name">Ma. Donnalyn E. Briñas</string>
+    <string name="citytourism_contact">Tel. No. 562–1429</string>
+
+    <string name="citytreasurer_name">Arjan V. Babani</string>
+    <string name="citytreasurer_contact">Tel. No. 562–6710</string>
+
+    <string name="cityvet_name">Dra. Fara Jayne C. Orsolino</string>
+    <string name="cityvet_contact">Tel. No. 562–8266</string>
+
+    <string name="PLSP_univPresName">Dr. Sigfredo D. Adajar</string>
+    <string name="PLSP_univPresContact">Tel. No. 536–7830</string>
+
+    <string name="SPCGenHsptl_name">Dr. Michael Ritchie L. Flores</string>
+    <string name="SPCGenHsptl_contact">Tel. No. 503–1351</string>
+    <string name="SPCGenHsptl_ernum">ER No. 503–1431</string>
+
+    <string name="cityvice_name">Hon. Justin G. Colago</string>
+    <string name="cityvice_contact">Tel. No. 562–8125,561–1315</string>
+
+    <string name="cityBPLO_name">Oria M. Bañagale</string>
+    <string name="cityBPLO_contact">Tel. No. 503–3481</string>
+
+    <string name="cityCTMO_name">Louie A. Castillo"</string>
+    <string name="cityCTMO_contact">Tel. No. 503–2200</string>
+
+    <string name="cityGAD_name">Peachy E. Tulud</string>
+    <string name="cityGAD_contact">Tel. No.</string>
+
+    <string name="cityLEDIPO_name">Paul Michael M. Cuadra</string>
+    <string name="cityLEDIPO_contact">Tel. No. 503–3070</string>
+
+    <string name="cityMISO_name">Christina I. Flores</string>
+    <string name="cityMISO_contact">Tel. No. 0919–840–5599</string>
+
+    <string name="cityOSCA_name">Efren B. Azusano</string>
+    <string name="cityOSCA_contact">Tel. No. 562–4457</string>
+
+    <string name="cityPESO_name">Pedrito D. Bigueras</string>
+    <string name="cityPESO_contact">Tel. No.  503-3112</string>
+
+    <string name="citysports_name">Janquil D. Bumagat</string>
+    <string name="citysports_contact">0956-930-2575</string>
+
+    <string name="cityCUDHO_name">Engr. Edgardo A. Malijan</string>
+    <string name="cityCUDHO_contact">Tel. No. 561–2322"</string>
+
+    <string name="cityCGSO_name">Wilfrando L. Del Rio</string>
+    <string name="cityCGSO_contact">Tel. No.</string>
 
 
     <string name="old_capital_building_text">Old Capital Building</string>
-    <string name="dona_leonita_text">Dona Leonita Park</string>
+    <string name="dona_leonita_text">Dona Leonila Park</string>
     <string name="police_station_text">Police Station</string>
     <string name="pamanahall_text">Pamana Hall</string>
-    <string name="new_capital_building_text">New Capital Building</string>
+    <string name="new_capital_building_text">New Capitol Building</string>
     <string name="one_stop_text">One Stop</string>
     <string name="abc_text">ABC Office</string>
     <string name="hall_of_justice_text">Hall Of Justice</string>
     <string name="girl_scout_text">Girl Scout Office</string>
     <string name="assessor_text">Assessor</string>
     <string name="default_text">Default text</string>
+    <string name="legend_picture">Legend Picture</string>
+    <string name="picture">Picture</string>
 
 
-    <string name="home_taxes">Taxes</string>
-    <string name="taxes_rpt">RPT Payment</string>
-    <string name="taxes_franchisePayment">Franchise Payment</string>
-    <string name="taxes_onlineMP">Online Market Payment</string>
-    <string name="taxes_LCR">LCR Request Payment</string>
-    <string name="taxes_cert">Certification</string>
-    <string name="taxes_other">Others Payment</string>
+    <string name="important_cultural_properties">Important Cultural Properties</string>
+    <string name="festival_and_events">Festival and Events</string>
+    <string name="our_7_lakes">Our 7 Lakes</string>
+    <string name="gallery">Gallery</string>
+    <string name="tourism_masterplan">Tourism Masterplan</string>
+    <string name="festivals_and_events">Festivals and Events</string>
+    <string name="our_seven_lakes">Our Seven Lakes</string>
+    <string name="map">Map</string>
+    <string name="mission">MISSION</string>
+    <string name="vision">VISION</string>
+    <string name="history">History</string>
+    <string name="location_and_topology">Location and Topology</string>
+    <string name="san_pablenos">San Pableños</string>
+    <string name="barangays">Barangays</string>
+    <string name="our_15_point_service_standards_for_client">Our 15-point service standards for client</string>
+    <string name="when_go_to_work">1. When we go to work, we will come in complete uniform and display our identification cards. \n2. We will greet our clients with a sincere smile. \n3. When you enter our office premises, we will introduce ourselves to you so that you can address usb ack in an appropriate manner. \n4. We will attend our clients’ inquiries within three(3)minutes. \n5. Appropriate action will immediately follow your queries and you will be referred accordingly. \n6. We will make you comfortable inside our facilities while you wait for your service request. \n7. Express/special lanes are provided for Senior Citizens, pregnant women and People with Disabilities. \n8. We will teach the clients, needed requirements that can expedite their service request. \n9. We will promptly return your denied request and explain to you the reason for such, which in turn will allow us to reprocess it. \n10. Our service stations will be properly labeled that will include our organizational chart and service flow chart. \n11. Directional signs will be displayed conspicuously as guide so that you can establish familiarity with our work place. \n12. Information and complaint desk is at your service in strategic locations. \n13. An information and hotline service is available 24/7 for anyone who has queries. \n14. No noon-break policy is followed and we are to serve beyond office hours if need. \n15. A satisfied client is our happiness in the government service.</string>
+    <string name="performance_pledge">Performance Pledge</string>
+    <string name="we_the_officials">We, the officials and employees of the City Government of San Pablo commit to: \nA ssist every client and visitors with utmost courtesy and smile. \nM onitor our own ranks to ensure that services are delivered ontime. \nA dequate care shall be accorded to Senior Citizens, pregnant women, children and Persons with Disabilities(PWDs) that comes our door. \nN urture each day as a gift of opportunity to serve others. \nT trustworthiness shall be epitome of our service delays with explanations. \nE nsure happy clients by addressing service delays with explanations. To all this we pledge and commit, keeping in mind that we are at all times accountable to the people that we serve.</string>
+    <string name="agency_mandate">Agency Mandate</string>
+    <string name="all_employee">All employees both rank and file and personnel holding key positions in different departments of the local government are mandated to deliver quality service through the implementation of its programs to make them efficient and sustainable that have been developed in partnership with the private sector.</string>
+    <string name="strategic_decisions">Strategic Decisions</string>
+    <string name="these_directions_can">These directions can be realized by strictly following: \n\n1. Existing policies of the city/agency have to be reviewed and revisited by the implementing office. \n2. Implementation of recruitment, selection and promotion plan, along with the performance management plan, learning and development strategy and rewards and recognition policies have to be strictly observed by the city and to be upheld by the city’s implementing officials/officers at all times. \n3. Monitor day-to-day activities of all employees. \n4. Public service has to be the top most priority of all employees</string>
+    <string name="history_of_san_pablo_city">History of San Pablo City</string>
+    <string name="history_desc">The earliest historical record of the City of San Pablo dates back to pre–Spanish times when four (4) big barrios bounded by Mt. Banahaw and Mt. Makiling composed Sampaloc. \n\n In 1521, Sampaloc was changed to San Pablo De Los Montes, which became a parish in 1556 and then a municipality in 1647. In 1899, a Municipal Government was established with Inocente Martinez as Municipal President in 1902 when the Civil Government was granted independence from the Province of Laguna. On May 7, 1940, the charter bill sponsored by Congressman Tomas Dizon was approved. The bill became known as the City Charter of San Pablo or Commonwealth Act No. 520. The City was inaugurated on March 30, 1941 with Dr. Potenciano Malvar as the appointed City Mayor. \n\n San Pablo was known as “Sampalok village ” before the coming of the Spaniards, because of the dominant tamarind trees in this area. It was a village of Bay, Laguna. In 1571, Spaniards came to the village of Sampalok under Capitan Juan de Salcedo. It became a separate parish in July 8, 1586 with Augustinian Priest Father Mateo Mendoza as prior of the convent. (JBHernandez, San Pablo Historical Records) It was in 1647 when Sampalok was separated from Bay as a municipality and was renamed San Pablo de los Montes (St. Paul of the Mountains) in honor of its patron, St. Paul the First Hermit. It was placed under the cabecera of Pagsanjan, with Bartolome Maghayin as first gobernadorcillo in 1648. \n\n When Father Juan de Nicolas became church prior in 1696, he launched a long–range coconut tree planting, believing that the economic prosperity of San Pablo de los Montes would depend largely on coconut. He hoped that someday, the citizens would be affluent enough to pay their taxes promptly and contribute more to the church fund. \n\n Governor Arandia placed San Pablo under the jurisdiction of Batangan (Batangas) in 1756. The provincial capital of Laguna during that time was Pagsanjan. It was returned under the jurisdiction of Laguna province in 1883, with Sta. Cruz as the provincial capital. \n\n Under the American military government in 1899, a municipal government was established with Inocente Martinez as Municipal President. When civil government was introduced in Laguna in 01 July 1902, Don Marcos Paulino was elected as San Pablo’s first Municipal President. \n\n With the coming of the railroad (1908) and more than 200 hundred of million nuts of harvest from more than four million coconut trees in Laguna, most of which were in San Pablo (Bureau of Public Works 1911), the town and residents became affluent. The Bureau of Public Works (BPW Quarterly Publication, Oct. 1, 1912) reported that San Pablo was “ the most prosperous community in the Philippines” during that time. \n\n In August 8, 1938, A big fire before high noon destroyed the entire southern portion of the town center including the public market. President Manuel L. Quezon visited San Pablo and promised help in the reconstruction of the market and widening of roads. \n\n Through the efforts of Assemblyman Tomas D. Dizon, San Pablo became a chartered city in May 7, 1940 by virtue of Commonwealth Act No. 520 as approved by President Manuel Luis Quezon. The seat of government was transferred to the new town hall building (now Old City Hall Building) which was built under MP Cristeto Brion and inaugurated in March 30, 1940, 37 days before the town became a city. \n\n Barely two years after its declaration as a city, San Pablo was devastated by the Japanese bombs that fell on the city on Christmas day in 1941. World War II in the Pacific region did not spare the Philippines because of its strategic location. The Japanese occupied the Philippines from 1941 to 1945. Liberation came to San Pablo City on April 3, 1945 when US Military Forces occupied the city after subduing the Japanese at the same day when Tawi–Tawi in Sulu was liberated. (Melencia Balcadia, Chronological Reports on the Invasion of the Philippines 1944 – 1945).</string>
+    <string name="geographical_location">Geographical Location</string>
+    <string name="gelocationdesc">San Pablo City is located at the southern tip of the Province of Laguna in the island of Luzon at geographic coordinates, 140 4’ north latitude and 1210 19’ east longtitude. It is bounded by 6 municipalities and 1 city namely Calauan, Laguna in the northwest; Nagcarlan, Laguna in the northeast; Alaminos, Laguna in the west; Rizal, Laguna in the east; Lipa City, Batangas in the southeastern tip; and the municipalities of Tiaong and Dolores, Quezon in the south. All adjoining municipalities and city have entry points making San Pablo accessible from virtually all directions.</string>
+    <string name="geo_and_topology">Geo and Topology</string>
+    <string name="spc_knownas">San Pablo City also known as the City of Seven Lakes is located at geographical coordinates 14 4’ north latitude and 121east latitude. It is about 87 south-southwest of the City of Manila with Rizal Park as reference point. The City is the center of other progressive cities in Southern Luzon as it belongs to a vital economic hub. The City at 14 15’ 20” north latitude is bounded by the mountain ranges of Kaisungan and Calauan Hills in the south; Mabilog in the northwest; San Cristobal and Banahaw Mountains in the east; and Susong-Dalaga, Napayong and Masalukot Hills in the south to the southeast.</string>
+    <string name="total_land_area">Total Land Area</string>
+    <string name="thecity_of_spc">The City of San Pablo has a total land area of 19,899 hectares, 77.16% of which is devoted to crop production.</string>
+    <string name="approximate_distance_of_neighboring_municipalities">Approximate Distance of Neighboring Municipalities</string>
+    <string name="name_of_municipality">Name of Municipality</string>
+    <string name="distance">Distance</string>
+    <string name="calauan_laguna">Calauan, Laguna</string>
+    <string name="_9_5">9.5</string>
+    <string name="alaminos_laguna">Alaminos, Laguna</string>
+    <string name="_10_00">10</string>
+    <string name="nagcarlan_laguna">Nagcarlan, Laguna</string>
+    <string name="_14_00">14</string>
+    <string name="rizal_laguna">Rizal, Laguna</string>
+    <string name="s_14_00">14</string>
+    <string name="dolores_quezon">Dolores, Quezon</string>
+    <string name="tiaong_quezon">Tiaong, Quezon</string>
+    <string name="lipa_city_batangas">Lipa City, Batangas</string>
+    <string name="_36">36</string>
+    <string name="pamantasan_ng_lunsod_ng_san_pablo">Pamantasan ng Lunsod ng San Pablo</string>
+    <string name="plsp">The school is deeply committed towards the integral formation of the human person, with a profound faith in God, in his fellow men and himself by providing its students the full development of their physical, intellectual, social and cultural endowment for effective participation in various professions and industrial occupations and to enable them to enjoy reasonable quality of life to be able to contribute to the upliftment of the human society.</string>
+    <string name="plsp_desc">Pamantasan ng Lunsod ng San Pablo shall emerge as one of the best locally funded universities in the country and a center of excellence in Education. The College foresees its graduates with strong moral fiber, proud of his race and prepared for exemplary global participation in the arts, sciences, humanities, education and business, enjoying a quality of life and abundance; graduates who are living in peace and in harmony with nature and their fellowmen and above all, God-fearing.</string>
+    <string name="school_is_deep">The school is deeply committed towards the integral formation of the human person, with a profound faith in God, in his fellow men and himself by providing its students the full development of their physical, intellectual, social and cultural endowment for effective participation in various professions and industrial occupations and to enable them to enjoy reasonable quality of life to be able to contribute to the upliftment of the human society.</string>
+    <string name="barangay_concepcion">Barangay Concepcion</string>
+    <string name="barangay_chairman">Barangay Chairman:</string>
+    <string name="ernesto_m_banting">Ernesto M. Banting</string>
+    <string name="contact_number">Contact Number:</string>
+    <string name="_09284598746_56_28179">09284598746/56–28179</string>
+    <string name="barangay_code">Barangay Code:</string>
+    <string name="_41">41</string>
+    <string name="barangay_and_district_list">Barangay and District List</string>
+    <string name="to_uplift_the_quality_of_the_life_of_san_pablenos_through_effective_and_efficient_delivery_of_pulic_service_in_partnership_with_the_private">To lift up the quality of the life of San Pablenos through Effective and Efficient Delivery of Pulic Service in Partnership with the Private.</string>
+    <string name="philippines_standard_time">Philippines Standard Time</string>
+    <string name="jobs">Jobs</string>
+    <string name="services">Services</string>
+    <string name="business">Business</string>
+    <string name="here_san_pablo_city">Here @ San Pablo City</string>
+    <string name="view_all">View all</string>
+    <string name="events_and_announcements">Events and Announcements</string>
+    <string name="events">Events</string>
+    <string name="announcements">Announcements</string>
+    <string name="latest_video">Latest Video</string>
+    <string name="see_more_exciting_videos_of_san_pablo_city">See more exciting videos of San Pablo City</string>
+    <string name="online_job_hunt_websites">Online Job Hunt Websites</string>
+    <string name="all_services">All Services</string>
+    <string name="taxes">Taxes</string>
+    <string name="city_hotlines">City Hotlines</string>
+    <string name="online_request">Online Request</string>
+    <string name="bids_and_awards">Bids and Awards</string>
+    <string name="engineering_and_building_forms">Engineering and Building Forms</string>
+    <string name="philippine_registry_n_for_pwd">Philippine Registry \n for PWD</string>
+    <string name="online_government_services">Online Government Services</string>
+    <string name="disclosure">Disclosure</string>
+    <string name="city_employee_corner">City Employee \n Corner</string>
 
 
     <string name="SPCGovernment">San Pablo City Government</string>
-    <string name="numberOfSPCGov">0493000065</string>
+    <string name="numberOfSPCGov">3000-065</string>
 
     <string name="SPCPolice">San Pablo City Police</string>
-    <string name="numberOfSPCPolice">04905626474</string>
+    <string name="numberOfSPCPolice">5626-474</string>
+    <string name="numberOfSPCPolice2">5210-610</string>
 
     <string name="RedCross">Red Cross San Pablo</string>
-    <string name="numberOfRedCross">0495624025</string>
+    <string name="numberOfRedCross">5624-025</string>
 
     <string name="SPCGeneralHospital">SPC General Hospital</string>
     <string name="numberOfSPCGenHos">0495031431</string>
@@ -55,171 +371,192 @@
     <string name="numberOfDRR">0495031351</string>
 
     <string name="SPCPACD">SPC PACD(CHRMO)</string>
-    <string name="numberOfSPCPACD">0495910588</string>
+    <string name="numberOfSPCPACD">(049)591-0588</string>
 
     <string name="BARANGAYCONTROL">Barangay Control</string>
-    <string name="numberOfBrgy">5623086</string>
+    <string name="numberOfBrgy">5623-086</string>
 
     <string name="BFP">Bureau of Fire Protection</string>
-    <string name="numberOfBFP">5627654</string>
+    <string name="numberOfBFP">562-7654</string>
 
     <string name="BusinessPermit">Business Permit and Licensing</string>
-    <string name="numberOfBusinessPermit">5033481</string>
+    <string name="numberOfBusinessPermit">503-3481</string>
 
     <string name="Treasurer">Treasurer</string>
-    <string name="numberOfTreasurer">5626710</string>
+    <string name="numberOfTreasurer">562-6710</string>
 
     <string name="Assessor">Assessor</string>
-    <string name="numberOfAssessor">8000801</string>
+    <string name="numberOfAssessor">557-3845</string>
 
     <string name="Officebuilding">Office of the building Official</string>
-    <string name="numberOfOfficebuilding">5210798</string>
+    <string name="numberOfOfficebuilding">521-0798</string>
 
     <string name="welfareAndDev">Welfare and Development Office</string>
-    <string name="numberOfwelfareAndDev">5210798</string>
+    <string name="numberOfwelfareAndDev">3000-065</string>
 
     <string name="brgyCont">Barangay Control</string>
-    <string name="numberOfbrgyCont">5623086</string>
+    <string name="numberOfbrgyCont">5623-086</string>
 
     <string name="SPCcdrrmo">San Pablo City CDRRMO</string>
     <string name="smartOfSPCcdrrmo">09089078124</string>
     <string name="smartSPCcdrrmo">SPC CDRRMO \n Smart Network</string>
     <string name="globeOfSPCcdrrmo">09955619456</string>
     <string name="globeSPCcdrrmo">SPC CDRRMO \n Globe Network</string>
-    <string name="numberOfSPCcdrrmo">8000405</string>
+    <string name="numberOfSPCcdrrmo">800-0405</string>
 
     <string name="SPCcho">San Pablo CHO</string>
     <string name="smartOfSPCcho">09392022318</string>
     <string name="smartSPCcho">SPC CHO \n Smart Network</string>
     <string name="globeOfSPCcho">09673625480</string>
     <string name="globeSPCcho">SPC CHO \n Globe Network</string>
-    <string name="numberOfSPCcho">5769119</string>
+    <string name="numberOfSPCcho">576-9119</string>
+
+    <string name="spc_service_hotline">SPC Service Hotline</string>
+    <string name="statement_of_debt_services_03_24_14">Statement of Debt Services 03.24.14</string>
+    <string name="unliquidated_2018">Unliquidated-2018</string>
+    <string name="statement_of_cash_flows_general_fund">Statement of Cash Flows-General Fund</string>
+    <string name="condensed_statement_of_financial_performance_gf">Condensed statement of Financial Performance - GF</string>
+    <string name="condensed_statement_of_financial_position_gf">Condensed statement of Financial Position - GF</string>
+    <string name="bir_online_registration_tin">BIR Online Registration (TIN)</string>
+    <string name="dti_buisiness_registration">DTI Buisiness Registration</string>
+    <string name="passport_online_app">Passport Online App</string>
+    <string name="nbi_application">NBI Application</string>
+    <string name="sss_registration">SSS Registration</string>
+    <string name="philsys">PhilSys</string>
+    <string name="philhealth_online_registration">PhilHealth Online Registration</string>
+    <string name="pag_ibig_online_registration">Pag-ibig Online Registration</string>
+    <string name="copy_of_payslip">Copy of Payslip</string>
+    <string name="vacation_leave">Vacation Leave</string>
+    <string name="engineering_and_building_form">Engineering and Building Form</string>
+    <string name="lcr_form">LCR Form</string>
+    <string name="bpls_form">BPLS Form</string>
+    <string name="rpt_request">RPT Request</string>
+    <string name="hr_forms">HR Forms</string>
+    <string name="ebp_system">EBP System</string>
+    <string name="obo_forms">OBO Forms</string>
+    <string name="building_permit_checklist_san_pablo_city">Building Permit Checklist San Pablo City</string>
+    <string name="requirement_of_certificate_of_annual_inspection_report_for_business_permit">Requirement of Certificate of Annual Inspection Report for Business permit</string>
+    <string name="requirements_of_demolition_permit">Requirements of Demolition Permit</string>
+    <string name="requirements_of_electrical_permit">Requirements of Electrical Permit</string>
+    <string name="requirements_of_electronics_permit">Requirements of Electronics Permit</string>
+    <string name="requirements_of_excavation_and_ground_preparation_permit">Requirements of Excavation and ground preparation permit</string>
+    <string name="requirements_of_fencing_permit">Requirements of Fencing Permit</string>
+    <string name="requirements_of_mechanical_permit">Requirements of Mechanical Permit</string>
+    <string name="requirements_of_sanitary_plumbing_permit">Requirements of Sanitary- Plumbing Permit</string>
+    <string name="requirements_of_scaffolding_permit">Requirements of Scaffolding permit</string>
+    <string name="requirements_of_sidewalk_construction_permit">Requirements of Sidewalk Construction Permit</string>
+    <string name="requirements_of_sign_permit">Requirements of Sign Permit</string>
+    <string name="requirements_of_temporary_service_connection_permit">Requirements of Temporary Service Connection Permit</string>
+    <string name="application_for_building_permit_san_pablo_city">Application for Building Permit San Pablo City</string>
+    <string name="application_of_certicate_of_occupancy">Application of Certicate of Occupancy</string>
+    <string name="application_for_electrical_permit_san_pablo_city">Application for Electrical Permit San Pablo City</string>
+    <string name="demolition_permit_san_pablo_city">Demolition Permit San Pablo City</string>
+    <string name="excavation_and_ground_preparation_permit_san_pablo_city">Excavation and Ground Preparation Permit San Pablo City</string>
+    <string name="fencing_permit_san_pablo_city">Fencing Permit San Pablo City</string>
+    <string name="mechanical_permit_san_pablo_city">Mechanical Permit San Pablo City</string>
+    <string name="scaffolding_permit_san_pablo_city">Scaffolding Permit San Pablo City</string>
+    <string name="side_walk_construction_permit_san_pablo_city">Side walk Construction Permit San Pablo City</string>
+    <string name="sign_permit_san_pablo_city">Sign Permit San Pablo City</string>
+    <string name="temporary_service_connection_permit_san_pablo_city">Temporary Service Connection Permit San Pablo City</string>
+    <string name="temporary_side_walk_enclosure_san_pablo_city">Temporary SIde Walk Enclosure San Pablo City</string>
+    <string name="terms_and_conditions_of_building_permit_san_pablo_city">Terms and Conditions of Building permit San Pablo City</string>
+    <string name="obo_checklist_requirements">Checklist/ Requirements</string>
+    <string name="close">Close</string>
+    <string name="certificate_of_coc_earned">Certificate of COC Earned</string>
+    <string name="checklist_of_requirements_promotion">Checklist of Requirements (Promotion)</string>
+    <string name="checklist_of_requirements_newly_hire">Checklist of Requirements (Newly hire)</string>
+    <string name="pds_form">PDS Form</string>
+    <string name="saln_form">SALN Form</string>
+    <string name="new_leave_application_form">New Leave Application Form</string>
+
+
+    <string name="home_taxes">Taxes</string>
+    <string name="taxes_rpt">RPT Payment</string>
+    <string name="taxes_franchisePayment">Franchise Payment</string>
+    <string name="taxes_onlineMP">Online Market Payment</string>
+    <string name="taxes_LCR">LCR Request Payment</string>
+    <string name="taxes_cert">Certification</string>
+    <string name="taxes_other">Others Payment</string>
+    <string name="why_invest_in_san_n_pablo_city">Why invest in San\n Pablo City?</string>
+    <string name="comprehensive_n_development_plan">Comprehensive \n Development Plan</string>
+    <string name="investment">Investment</string>
 
     <string name="rptform_name">Owners Name</string>
     <string name="rptform_email">Email Address</string>
     <string name="rptform_property"> Property Address</string>
     <string name="rptform_contact">Contact Number</string>
     <string name="rptform_pin">PIN</string>
-
-
-    <string name="dlsp_payment">DLSP Payment</string>
-
-    <string name="citymayor_name">Vicente B. Amante PhD</string>
-
-    <string name="cityadmin_name">Larry S. Amante</string>
-    <string name="cityadmin_address">San Pablo City Multi-Purpose Convention Center,  San Jose, San Pablo Cit</string>
-    <string name="cityadmin_contact">Tel No. (049) 521-0307</string>
-
-    <string name="cityaccountant_name">Arlene M. Beltejar</string>
-    <string name="cityaccountant_contact">Tel. No. 562-6577, 562-7687</string>
-    <string name="cityaccountant_internalcontact">Internal - 562-1982</string>
-
-    <string name="cityagri_name">Arthur B. Almari</string>
-    <string name="cityagri_contact">Tel. No. 503-2229</string>
-
-    <string name="cityassessor_name">Eva F. Punto</string>
-    <string name="cityassessor_contact">Tel. No.  521-0996,557-3663, 557-3845,800-0801</string>
-
-    <string name="citybudget_name">Arthur B. Almario</string>
-    <string name="citybudget_contact">Tel. No. 546-289</string>
-
-    <string name="citybuilding_name">Arch. Herbert G. Cartabio</string>
-    <string name="citybuilding_contact">Tel. No. 521-0798</string>
-
-    <string name="cityregistrar_name">Victoria G. Maloles</string>
-    <string name="cityregistrar_contact">Tel. No. 0918-792-2603; 0995-268-9523</string>
-
-    <string name="citycoop_name">Concepcion M. Biglete</string>
-    <string name="citycoop_contact">Tel. No. 562-2866</string>
-
-    <string name="cityDRRM_name">Margarita Vanessa T. Reyes</string>
-    <string name="cityDRRM_contact">Tel. No. 800-0405, 549-0500</string>
-
-    <string name="cityengr_name">Engr. Michael A. Dimaisip</string>
-    <string name="cityengr_contact">Tel. No.</string>
-
-    <string name="cityENR_name">Arthur B. Almario</string>
-    <string name="cityENR_contact">Tel. No. 546-2894</string>
-
-    <string name="cityservices_name">Dra. Marianne Criselda D. Belen</string>
-    <string name="cityservices_contact">Tel. No. 562-2395,562-0779</string>
-
-    <string name="cityhealth_name">Dr. James T. Lee Ho</string>
-    <string name="cityhealth_contact1">Tel. No. 562-8116</string>
-    <string name="cityhealth_contact2">Fax No. 562-7874</string>
-
-    <string name="cityHR_name">Engr. Diosdado A. Biglete</string>
-
-    <string name="cityinfo_name">Enrico B. Galicia</string>
-    <string name="cityinfo_contact">Tel No. 503-5783</string>
-    <string name="cityaffairs_contact">Brgy. Affairs: 561-1483</string>
-    <string name="brgy_controlnum">Barangay Control No.: 562-3086</string>
-
-    <string name="citylegal_name">Atty. Agripino G. Morga</string>
-    <string name="citylegal_contact">Tel. No. 562-0863</string>
-
-    <string name="cityPND_name">Cristina D. Amante</string>
-    <string name="cityPND_contact">Tel. No. 562-4980,503-1301</string>
-
-    <string name="citypopulation_name">Mylene T. Deriquito</string>
-    <string name="citypopulation_contact">Tel. No. 562-1030</string>
-
-    <string name="citySWD_name">Marilyn S. Escondo</string>
-    <string name="citySWD_contact">Tel. No. 562-1575</string>
-
-    <string name="citySWM_name">Engr. Diosdado A. Biglete</string>
-    <string name="citySWM_contact">Tel. No. 521-7816</string>
-
-    <string name="citytourism_name">Ma. Donnalyn E. Briñas</string>
-    <string name="citytourism_contact">Tel. No. 562-1429</string>
-
-    <string name="citytreasurer_name">Arjan V. Babani</string>
-    <string name="citytreasurer_contact">Tel. No. 562-6710</string>
-
-    <string name="cityvet_name">Dra. Fara Jayne C. Orsolino</string>
-    <string name="cityvet_contact">Tel. No. 562-8266</string>
-
-    <string name="PLSP_univPresName">Dr. Sigfredo D. Adajar</string>
-    <string name="PLSP_univPresContact">Tel. No. 536-7830</string>
-
-    <string name="SPCGenHsptl_name">Dr. Michale Ritchie L. Flores</string>
-    <string name="SPCGenHsptl_contact">Tel. No. 503-1351</string>
-    <string name="SPCGenHsptl_ernum">ER No. 503-1431</string>
-
-    <string name="cityvice_name">Hon. Justin G. Colago</string>
-    <string name="cityvice_contact">Tel. No. 562-8125,561-1315</string>
-
-    <string name="cityBPLO_name">Oria M. Bañagale</string>
-    <string name="cityBPLO_contact">Tel. No. 503-3481</string>
-
-    <string name="cityCTMO_name">Louie A. Castillo"</string>
-    <string name="cityCTMO_contact">Tel. No. 503-2200</string>
-
-    <string name="cityGAD_name">Peachy E. Tulud</string>
-    <string name="cityGAD_contact">Tel. No.</string>
-
-    <string name="cityLEDIPO_name">Paul Michael M. Cuadra</string>
-    <string name="cityLEDIPO_contact">Tel. No. 503-307</string>
-
-    <string name="cityMISO_name">Christina I. Flores</string>
-    <string name="cityMISO_contact">Tel. No. 0919-840-5599</string>
-
-    <string name="cityOSCA_name">Efren B. Azusano</string>
-    <string name="cityOSCA_contact">Tel. No. 562-4457</string>
-
-    <string name="cityPESO_name">Janquil D. Bumagat</string>
-    <string name="cityPESO_contact">Tel. No. 0956-930-2575</string>
-
-    <string name="citysports_name">Pedrito D. Bigueras</string>
-    <string name="citysports_contact">Tel. No. 503-3112</string>
-
-    <string name="cityCUDHO_name">Engr. Edgardo A. Malijan</string>
-    <string name="cityCUDHO_contact">Tel. No. 561-2322"</string>
-
-    <string name="cityCGSO_name">Louie A. Castillo</string>
-    <string name="cityCGSO_contact">Tel. No. 503-2200</string>
-
-    <string name="data_policy">By submitting this as a fully accomplished form; you hereby consent to the collection, generation, use, processing, storage and retention of your personal data by the City Government of San Pablo as provided for in the Data Privacy Act of 2012.</string>
-    <string name="title_activity_maps">MapsActivity</string>
-
+    <string name="rpt_request_assessment_form">RPT Request Assessment Form</string>
+    <string name="send">Send</string>
+    <string name="clear">Clear</string>
+    <string name="request_copy_of_td_oha">Request Copy of TD/OHA</string>
+    <string name="bplo_fill_up_forms">BPLO Fill-up Forms</string>
+    <string name="birth_certificate">Birth Certificate</string>
+    <string name="marriage_certificate">Marriage Certificate</string>
+    <string name="death_certificate">Death Certificate</string>
+    <string name="request_fill_up_form">Request Fill up Form</string>
+    <string name="first_name">First Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="suffix">Suffix</string>
+    <string name="home_address_wiith_zip_code">Home Address (wiith Zip code)</string>
+    <string name="email_address">Email Address</string>
+    <string name="information_for_dt_oha_certificate_request">Information for DT/OHA Certificate Request</string>
+    <string name="number_of_copies_you_are_requesting">Number of copies you are requesting</string>
+    <string name="first_name_owner_of_the_land">First Name (Owner of the Land)</string>
+    <string name="business_tax_payment">Business Tax Payment</string>
+    <string name="doing_business">Doing Business</string>
+    <string name="amendments">Amendments</string>
+    <string name="my_business">My Business</string>
+    <string name="business_tax_n_assessment">Business Tax \n Assessment</string>
+    <string name="print_n_mayor_s_permit">Print \n Mayor\'s Permit</string>
+    <string name="issuance_of_mayor_s_permit">Issuance of Mayor\'s Permit</string>
+    <string name="issuance_of_mayor_s_permit_for_new_business_registration">Issuance of Mayor\'s Permit for New Business Registration</string>
+    <string name="issuance_of_mayor_s_permit_for_new_business_renewal">Issuance of Mayor\'s Permit for New Business Permit Renewal</string>
+    <string name="clients">Clients:</string>
+    <string name="business_permit_applicants">Business Permit Applicants</string>
+    <string name="fees">Fees:</string>
+    <string name="based_on_the_revised_revenue_ncode_of_the_city_of_san_pablo">Based on the Revised Revenue\nCode of the City of San Pablo</string>
+    <string name="total_processing_time">Total Processing Time:</string>
+    <string name="_30_minutes">30 minutes</string>
+    <string name="_15_minutes">15 minutes</string>
+    <string name="schedule_of_service">Schedule of Service:</string>
+    <string name="monday_to_friday">Monday to Friday</string>
+    <string name="_8_00_am_to_5_00_pm_no_noon_break">8:00 am to 5:00 pm (No noon Break)</string>
+    <string name="requirements">Requirements</string>
+    <string name="_1_filled_up_unified_business_permit_application_form_n2_one_1_copy_of_dti_business_name_registration_if_sole_proprietor_sec_registration_and_articles_of_incorporation_if_corporation_or_partnership_cda_registration_and_articles_of_cooperation_if_cooperative_n3_one_1_photo_copy_contract_of_lease_ans_xerox_copy_of_lessor_mayor_s_permit_if_place_of_business_is_rented_n4_one_1_photo_copy_of_business_capitalization_n5_one_1_original_copy_of_occupancy_permit_for_newly_constructed_building_n6_one_1_duplicate_and_or_photo_copy_of_market_clearance_if_market_stall_holder_n7_one_1_photo_copy_of_occupancy_permit_for_newly_constructed_building_n8_one_1_photo_copy_of_sss_philhealth_pag_i_b_i_g_certification_of_coverage">1. Filled-up unified Business permit application form \n2. One(1) copy of DTI Business name registration (if sole proprietor) SEC Registration and Articles of Incorporation(if Corporation or Partnership) CDA Registration and Articles of Cooperation(if Cooperative \n3. One(1) Photo Copy Contract of lease ans Xerox copy of Lessor Mayor’s Permit(if place of business is rented) \n4. One(1) Photo Copy of Business Capitalization \n5. One(1) Original Copy of Occupancy Permit (for Newly Constructed Building) \n6. One(1) Duplicate and /or Photo Copy of Market Clearance (if Market Stall Holder) \n7. One(1) Photo Copy of Occupancy Permit(for Newly Constructed Building \n8. One(1) Photo Copy of SSS, PHILHEALTH, PAG-I.B.I.G. Certification of Coverage</string>
+    <string name= "business_renewal"> 1. Filled-up unified Business permit application form \n2. One(1) Original Copy of Barangay Business Clearance (Place of Business) \n3. One(1) Photo Copy of Income Tax Return of the previous year/ Statement of Gross Sales/Receipt \n4. Original Copy of Previous year’s Mayor’s permit \n5. One(1) Duplicate and /or Photo Copy of Market Clearance (if Market Stall Holder) \n6. One(1) Photo Copy of SSS, PHILHEALTH, PAG-I.B.I.G. Clearance
+</string>
+    <string name="_1_filled_up_unified_business_permit_application_form_2_one_1_copy_of_dti_business_name_registration_if_sole_proprietor_sec_registration_and_articles_of_incorporation_if_corporation_or_partnership_cda_registration_and_articles_of_cooperation_if_cooperative_3_one_1_photo_copy_contract_of_lease_ans_xerox_copy_of_lessor_mayor_s_permit_if_place_of_business_is_rented_4_one_1_photo_copy_of_business_capitalization_5_one_1_original_copy_of_occupancy_permit_for_newly_constructed_building_6_one_1_duplicate_and_or_photo_copy_of_market_clearance_if_market_stall_holder_7_one_1_photo_copy_of_occupancy_permit_for_newly_constructed_building_8_one_1_photo_copy_of_sss_philhealth_pag_i_b_i_g_certification_of_coverage">1. Filled-up unified Business permit application form \n2. One(1) copy of DTI Business name registration (if sole proprietor) SEC Registration and Articles of Incorporation(if Corporation or Partnership) CDA Registration and Articles of Cooperation(if Cooperative \n3. One(1) Photo Copy Contract of lease ans Xerox copy of Lessor Mayor’s Permit(if place of business is rented) \n4. One(1) Photo Copy of Business Capitalization \n5. One(1) Original Copy of Occupancy Permit (for Newly Constructed Building) \n6. One(1) Duplicate and /or Photo Copy of Market Clearance (if Market Stall Holder) \n7. One(1) Photo Copy of Occupancy Permit(for Newly Constructed Building \n8. One(1) Photo Copy of SSS, PHILHEALTH, PAG-I.B.I.G. Certification of Coverage</string>
+    <string name="issuance_tricycle_franchise_and_mayor_s_permit_for_tricycle_operators_new_renewal">Issuance Tricycle Franchise and Mayor\'s Permit for Tricycle Operators (New/ Renewal)</string>
+    <string name="tricycle_operators">Tricycle Operators</string>
+    <string name="based_on_ordinance_no_2011_01_n_and_the_revised_revenue_code_of_nthe_city_of_san_pablo">Based on Ordinance no. 2011-01 \n and the revised revenue code of \nthe city of San Pablo</string>
+    <string name="_1_accomplished_and_duly_notarized_tricycle_franchise_application_petition_form_n2_duly_approved_unified_clearance_form_n3_presentation_of_original_community_tax_certification_ctc_n4_road_worthy_certificate_n5_city_solid_waste_management_certificate_n6_original_copy_of_police_clearance_of_driver_n_nphoto_copy_of_n7_one_1_lto_certificate_of_registration_cr_and_officialreceipt_or_and_or_proof_of_ownership_of_tricycle_n8_one_1_photo_copy_of_insurance_policy_certificate_of_coverage_n9_one_1_photo_copy_of_professional_driver_s_license_with_registration_code_1_tricycle_driver_n10_one_1_photo_copy_of_voter_s_certification_id_n_nother_requirements_n11_one_1_photo_copy_of_certificate_of_coverage_clearance_from_sss_philhealth_and_pag_i_b_i_g_n12_original_copy_certificate_of_completion_attendance_of_seminar_from_pnp_ctmo_for_new_applicants_and_transfer_of_ownership_only">1. Accomplished and duly notarized Tricycle Franchise Application/Petition Form \n2. Duly Approved Unified Clearance form \n3. Presentation of Original Community Tax Certification(CTC) \n4. Road Worthy Certificate \n5. City Solid Waste Management Certificate \n6. Original Copy of Police Clearance of Driver \n\nPhoto Copy of: \n7. One (1) LTO Certificate of Registration (CR) and OfficialReceipt (OR) and/or proof of ownership of tricycle \n8. One(1) Photo Copy of Insurance Policy/Certificate of Coverage \n9. One(1) Photo Copy of Professional Driver’s License with Registration Code 1 (Tricycle Driver) \n10. One(1) Photo Copy of Voter’s Certification/ID \n\nOther Requirements: \n11. One(1) Photo Copy of Certificate of Coverage/Clearance from SSS, Philhealth and PAG- I.B.I.G. \n12. Original Copy certificate of Completion/Attendance of seminar from PNP/CTMO(for new applicants and transfer of ownership only)</string>
+    <string name="business_identification_number_bin">Business Identification Number (BIN)</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="password">Password</string>
+    <string name="mayor_s_permit">Mayor\'s Permit</string>
+    <string name="payment_official_receipt_number">Payment Official Receipt Number</string>
+    <string name="reference_number">Reference Number</string>
+    <string name="valid_email_address">Valid Email Address</string>
+    <string name="please_enter_valid_email_address_of_the_user">*Please enter valid email address of the user*</string>
+    <string name="your_full_name">Your Full Name</string>
+    <string name="home_address_with_zip_code">Home Address (with zip code)</string>
+    <string name="purpose_of_your_request">Purpose of your request</string>
+    <string name="information_for_business_tax_assessment_request">Information for Business Tax Assessment Request</string>
+    <string name="submit">Submit</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="log_in">Log in</string>
+    <string name="create_account_to_continue">Create account to continue</string>
+    <string name="don_t_have_an_account">Don\'t have an Account?</string>
+    <string name="logout">Logout</string>
 </resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <TextView
+        android:id="@+id/title_Disclosure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/disclosure"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/disclosureList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/disclosureList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape_radius_upcorner"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button176"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#007fdb"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="13dp"
+            android:text="@string/statement_of_debt_services_03_24_14"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/disclosure1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#007fdb"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="13dp"
+            android:text="@string/unliquidated_2018"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/disclosure2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#007fdb"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="13dp"
+            android:text="@string/statement_of_cash_flows_general_fund"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/disclosure3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#007fdb"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="13dp"
+            android:text="@string/condensed_statement_of_financial_performance_gf"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/disclosure4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#007fdb"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="13dp"
+            android:text="@string/condensed_statement_of_financial_position_gf"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

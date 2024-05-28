@@ -7,21 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.ImageButton
+import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.app.isanpablo.R
 import com.app.isanpablo.databinding.FragmentThecityBinding
-import com.app.isanpablo.ui.barangay.BarangayFragment
-import com.app.isanpablo.ui.citysanpablenos.CitySanPablenosFragment
-import com.app.isanpablo.ui.gelocation.GeLocationFragment
-import com.app.isanpablo.ui.history.HistoryFragment
-import com.app.isanpablo.ui.map.MapFragment
 
 class TheCityFragment : Fragment() {
 
     private var _binding: FragmentThecityBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    // This property is only valid between onCreateView and onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -29,81 +25,70 @@ class TheCityFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-
         _binding = FragmentThecityBinding.inflate(inflater, container, false)
-        val root: View = binding.root
 
-        binding.btnVision.setOnClickListener {
-            val message: String = "Vision"
-            showCustomDialogBox(message)
-        }
+        // Shows dialog box that shows the mission statement
         binding.btnMission.setOnClickListener {
-            val message: String = "Mission"
-            showMissionDialogBox(message)
-        }
-        binding.btnHistory?.setOnClickListener{
-            val fragmentManager = requireActivity().supportFragmentManager
-            val transaction = fragmentManager.beginTransaction()
-            transaction.replace(R.id.nav_host_fragment_content_main,HistoryFragment())
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }
-        binding.btnGeLocation?.setOnClickListener{
-            val fragmentManager = requireActivity().supportFragmentManager
-            val transaction = fragmentManager.beginTransaction()
-            transaction.replace(R.id.nav_host_fragment_content_main, GeLocationFragment())
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }
-        binding.btnBarangay?.setOnClickListener{
-            val fragmentManager = requireActivity().supportFragmentManager
-            val transaction = fragmentManager.beginTransaction()
-            transaction.replace(R.id.nav_host_fragment_content_main, BarangayFragment())
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }
-        binding.btnSanpablo?.setOnClickListener{
-            val fragmentManager = requireActivity().supportFragmentManager
-            val transaction = fragmentManager.beginTransaction()
-            transaction.replace(R.id.nav_host_fragment_content_main, CitySanPablenosFragment())
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }
-        binding.btnmap2?.setOnClickListener{
-            val fragmentManager = requireActivity().supportFragmentManager
-            val transaction = fragmentManager.beginTransaction()
-            transaction.replace(R.id.nav_host_fragment_content_main, MapFragment())
-            transaction.addToBackStack(null)
-            transaction.commit()
+            val title = "Mission"
+            val desc: String = "TO UPLIFT THE QUALITY OF THE LIFE OF SAN PABLEÑOS THROUGH " +
+                    "EFFECTIVE AND EFFICEIENT DELIVERY OF PUBLIC SERVICE IN PARTNERSHIP WITH THE" +
+                    " PRIVATE."
+            showMissionDialogBox(title, desc)
         }
 
-        return root
+        // Navigates to the History page
+        binding.btnHistory.setOnClickListener {
+            findNavController().navigate(R.id.nav_thecity_history)
+        }
+
+        // Navigates to the Map page
+        binding.btnmap2.setOnClickListener {
+            findNavController().navigate(R.id.nav_government_map)
+        }
+
+        // Navigates to the Location and Topology page
+        binding.btnGeLocation.setOnClickListener {
+            findNavController().navigate(R.id.nav_thecity_locationtopology)
+        }
+
+        // Navigates to the San Pablo City page
+        binding.btnSanpablo.setOnClickListener {
+            findNavController().navigate(R.id.nav_thecity_plsp)
+        }
+
+        // Navigates to the Barangay page
+        binding.btnBarangay.setOnClickListener {
+            findNavController().navigate(R.id.nav_thecity_brgy)
+        }
+
+        // Shows dialog box that shows the vision statement
+        binding.btnVision.setOnClickListener {
+            val title = "Vision"
+            val desc: String = "SAN PABLO, THE CITY OF SEVEN LAKES-PREMIER TOURIST " +
+                    "DESTINATION, LIGHT INDUSTRIAL AND EDUCATION HUB IN CALABARZON, " +
+                    "COMMITED TO GOOD GOVERNANCE AND SUSTAINABLE DEVELOPMENT."
+            showMissionDialogBox(title, desc)
+        }
+        return binding.root
     }
-    private fun showCustomDialogBox(message: String?) {
+
+    private fun showMissionDialogBox(title: String, desc:String) {
         val dialog = Dialog(requireContext())
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(false)
-        dialog.setContentView(R.layout.vision_dialog)
+        dialog.setContentView(R.layout.thecity_visionmission_layout)
         val btnExit: ImageButton = dialog.findViewById(R.id.btnExit)
-        dialog.window?.setBackgroundDrawableResource(R.drawable.rounded_dialog_bg)
+        dialog.window?.setBackgroundDrawableResource(R.drawable.shape_rounded_dialog_border)
+        val dialogTitle = dialog.findViewById<TextView>(R.id.txtTitle)
+        val dialogDescription = dialog.findViewById<TextView>(R.id.txtDesc)
+        val dialogSubTitle = dialog.findViewById<TextView>(R.id.txtSubtitle)
+        dialogTitle.text = title
+        dialogDescription.text = desc
+        dialogSubTitle.text = title
 
         btnExit.setOnClickListener {
             dialog.dismiss() // Dismiss the dialog
         }
-        dialog.show() // Show the dialog
-    }
-    private fun showMissionDialogBox(message: String?) {
-        val dialog = Dialog(requireContext())
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
-        dialog.setCancelable(false)
-        dialog.setContentView(R.layout.mission_dialog)
-        val btnExitMission: ImageButton = dialog.findViewById(R.id.btnExitMission)
-        dialog.window?.setBackgroundDrawableResource(R.drawable.rounded_dialog_bg)
-
-        btnExitMission.setOnClickListener {
-            dialog.dismiss() // Dismiss the dialog
-            }
         dialog.show() // Show the dialog
     }
     override fun onDestroyView() {

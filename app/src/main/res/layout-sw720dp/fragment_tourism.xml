@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:contextClickable="false"
+        tools:context=".ui.home.HomeFragment"
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/important_cultural_properties"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                tools:layout_editor_absoluteX="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btnSevenLakes"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#007FDB"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/our_7_lakes"
+                        android:textColor="@color/white"
+                        app:cornerRadius="8dp" />
+
+                    <Button
+                        android:id="@+id/btnGallery"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#007FDB"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/gallery"
+                        android:textColor="@color/white"
+                        app:cornerRadius="8dp" />
+
+                    <Button
+                        android:id="@+id/btnFestAndEvent"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#007FDB"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/festival_and_events"
+                        android:textColor="@color/white"
+                        app:cornerRadius="8dp" />
+
+                    <Button
+                        android:id="@+id/btnTourism"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#007FDB"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/tourism_masterplan"
+                        android:textColor="@color/white"
+                        app:cornerRadius="8dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imPlaza"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_cityplaza"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <ImageView
+                        android:id="@+id/imChruch"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_cathedral" />
+
+                    <ImageView
+                        android:id="@+id/imFarcon"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_farcon" />
+
+                    <ImageView
+                        android:id="@+id/imCityhall"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_cityhall" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imhagdangbato"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_hagdangbato" />
+
+                    <ImageView
+                        android:id="@+id/imboni"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_boni"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <ImageView
+                        android:id="@+id/imroad"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_railroad" />
+
+                    <ImageView
+                        android:id="@+id/imtrece"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_treceshrine"
+                        tools:ignore="ImageContrastCheck" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imguerilla"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_guerilla"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <ImageView
+                        android:id="@+id/imdona"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_dona" />
+
+                    <ImageView
+                        android:id="@+id/imlina"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_linabldg" />
+
+                    <ImageView
+                        android:id="@+id/imfranklin"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_franklin" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imcasa"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_casa" />
+
+                    <ImageView
+                        android:id="@+id/immabini"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_mabini" />
+
+                    <ImageView
+                        android:id="@+id/imprudencia"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_prudencia" />
+
+                    <ImageView
+                        android:id="@+id/imcentral"
+                        android:layout_width="0dp"
+                        android:layout_height="270dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/picture"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/pic_tourism_central" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#005acd">
+
+    <TextView
+        android:id="@+id/textView307"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/online_government_services"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/shape_radius_upcorner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView307">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="TextSizeCheck">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/shape_border"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton17"
+                                style="@style/Widget.AppCompat.ImageButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00ffffff"
+                                android:importantForAccessibility="no"
+                                android:padding="10dp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/logo_bir" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView311"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:padding="5dp"
+                            android:text="@string/bir_online_registration_tin"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:ignore="InefficientWeight" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shape_border"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton18"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00ffffff"
+                                android:importantForAccessibility="no"
+                                android:padding="10dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/logo_dti" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView312"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:padding="5dp"
+                            android:text="@string/dti_buisiness_registration"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:ignore="InefficientWeight" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shape_border"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton19"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00ffffff"
+                                android:importantForAccessibility="no"
+                                android:padding="10dp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/logo_passport" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView315"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:padding="5dp"
+                            android:text="@string/passport_online_app"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            tools:ignore="TextSizeCheck" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="207dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout27">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shape_border"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton20"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00ffffff"
+                                android:importantForAccessibility="no"
+                                android:padding="10dp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/logo_nbi" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView316"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:padding="5dp"
+                            android:text="@string/nbi_application"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:ignore="InefficientWeight" />
+
+                    <LinearLayout
+                        android:layout_width="149dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        tools:ignore="TextSizeCheck">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shape_border"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton21"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00ffffff"
+                                android:importantForAccessibility="no"
+                                android:padding="10dp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/logo_sss" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView318"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:padding="5dp"
+                            android:text="@string/sss_registration"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:ignore="InefficientWeight" />
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shape_border"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton22"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00ffffff"
+                                android:importantForAccessibility="no"
+                                android:padding="10dp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/logo_psa" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView319"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="@string/philsys"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout29">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shape_border"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton23"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00ffffff"
+                                android:importantForAccessibility="no"
+                                android:padding="10dp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/logo_philhealth" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView320"
+                            android:layout_width="match_parent"
+                            android:layout_height="77dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:padding="5dp"
+                            android:text="@string/philhealth_online_registration"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shape_border"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton24"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00ffffff"
+                                android:importantForAccessibility="no"
+                                android:padding="10dp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/logo_pagibig" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView321"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="@string/pag_ibig_online_registration"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,15 +16,15 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/header"
+            android:background="@color/blue"
             app:popupTheme="@style/Theme.ISanPablo.PopupOverlay" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="51dp"
-            android:layout_marginTop="-56dp"
-            android:layout_marginRight="51dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="-54dp"
+            android:layout_marginEnd="51dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 
@@ -32,6 +32,7 @@
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:contentDescription="@string/this_is_the_logo_of_spc"
                 android:padding="6dp"
                 app:srcCompat="@drawable/logo_spcgov" />
 
@@ -47,8 +48,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:paddingTop="8dp"
-                    android:text="@string/menu_home"
+                    android:text="@string/san_pablo_city"
                     android:textAlignment="center"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
                 <TextView
@@ -57,8 +59,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:paddingBottom="8dp"
-                    android:text="@string/menu_official"
+                    android:text="@string/city_government_of_san_pablo_city"
                     android:textAlignment="center"
+                    android:textColor="@color/white"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -75,10 +78,10 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
+        android:contentDescription="@string/emergency_hotline"
         android:foreground="@drawable/ic_hotline"
-        android:foregroundGravity="center"
         android:foregroundTintMode="screen"
         android:tintMode="add"
-        app:backgroundTint="@color/downloadButton" />
+        app:backgroundTint="@color/blue" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

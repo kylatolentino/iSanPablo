@@ -3,35 +3,233 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_login">
+
+
+    <fragment
+        android:id="@+id/nav_home_announcement"
+        android:name="com.app.isanpablo.ui.home.announcement.AnnouncementFragment"
+        android:label=" "
+        tools:layout="@layout/home_announcement" />
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.app.isanpablo.ui.login.LoginFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/nav_signin"
+        android:name="com.app.isanpablo.ui.login.signin.SignInFragment"
+        android:label=" "
+        tools:layout="@layout/sign_up_form1" />
 
     <fragment
         android:id="@+id/nav_home"
         android:name="com.app.isanpablo.ui.home.HomeFragment"
+        android:label=" "
         tools:layout="@layout/fragment_home" />
-    <fragment
-        android:id="@+id/nav_thecity"
-        android:name="com.app.isanpablo.ui.thecity.TheCityFragment"
-        tools:layout="@layout/fragment_thecity" />
-    <fragment
-        android:id="@+id/nav_government"
-        android:name="com.app.isanpablo.ui.government.GovernmentFragment"
-        tools:layout="@layout/fragment_slideshow" />
+
     <fragment
         android:id="@+id/nav_economy"
         android:name="com.app.isanpablo.ui.economy.EconomyFragment"
-        tools:layout="@layout/fragment_economy" />
-    <fragment
-        android:id="@+id/nav_foi"
-        android:name="com.app.isanpablo.ui.foi.FOIFragment"
-        tools:layout="@layout/fragment_economy" />
-    <fragment
-        android:id="@+id/nav_arta"
-        android:name="com.app.isanpablo.ui.arta.ARTAFragment"
-        tools:layout="@layout/fragment_economy" />
+        android:label=" "
+        tools:layout="@layout/fragment_gallery" />
+
     <fragment
         android:id="@+id/nav_tourism"
         android:name="com.app.isanpablo.ui.tourism.TourismFragment"
-        tools:layout="@layout/fragment_economy" />
+        android:label=" "
+        tools:layout="@layout/fragment_tourism" />
+
+    <fragment
+        android:id="@+id/nav_tourism_sevenlakes"
+        android:name="com.app.isanpablo.ui.tourism.sevenlakes.SevenLakesFragment"
+        android:label=" "
+        tools:layout="@layout/tourism_lakes" />
+
+    <fragment
+        android:id="@+id/nav_tourism_festivalevent"
+        android:name="com.app.isanpablo.ui.tourism.festivalevent.FestivalAndEventFragment"
+        android:label=" "
+        tools:layout="@layout/tourism_festivalevent" />
+
+    <fragment
+        android:id="@+id/nav_government"
+        android:name="com.app.isanpablo.ui.government.GovernmentFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_government" />
+
+    <fragment
+        android:id="@+id/nav_arta"
+        android:name="com.app.isanpablo.ui.arta.ARTAFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_arta" />
+
+    <fragment
+        android:id="@+id/nav_government_localofficial"
+        android:name="com.app.isanpablo.ui.government.local.LocalOfficialFragment"
+        android:label=" "
+        tools:layout="@layout/government_localofficials" />
+
+    <fragment
+        android:id="@+id/nav_government_departments"
+        android:name="com.app.isanpablo.ui.government.departments.DepartmentFragment"
+        android:label=" "
+        tools:layout="@layout/government_departments" />
+
+    <fragment
+        android:id="@+id/nav_government_map"
+        android:name="com.app.isanpablo.ui.government.map.MapFragment"
+        android:label=" "
+        tools:layout="@layout/government_map" />
+    <fragment
+        android:id="@+id/nav_tourism_gallery"
+        android:name="com.app.isanpablo.ui.tourism.gallery.GalleryFragment"
+        android:label=" "
+        tools:layout="@layout/tourism_gallery" />
+
+    <fragment
+        android:id="@+id/nav_foi"
+        android:name="com.app.isanpablo.ui.freedomofinformation.FOIFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_thecity"
+        android:name="com.app.isanpablo.ui.thecity.TheCityFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_thecity" />
+
+    <fragment
+        android:id="@+id/nav_thecity_history"
+        android:name="com.app.isanpablo.ui.thecity.history.HistoryFragment"
+        android:label=" "
+        tools:layout="@layout/thecity_history" />
+
+    <fragment
+        android:id="@+id/nav_thecity_locationtopology"
+        android:name="com.app.isanpablo.ui.thecity.locationtopology.LocationTopologyFragment"
+        android:label=" "
+        tools:layout="@layout/thecity_locationtopology" />
+    <fragment
+        android:id="@+id/nav_thecity_plsp"
+        android:name="com.app.isanpablo.ui.thecity.plsp.PlspFragment"
+        android:label=" "
+        tools:layout="@layout/thecity_sanpablenos" />
+
+    <fragment
+        android:id="@+id/nav_thecity_brgy"
+        android:name="com.app.isanpablo.ui.thecity.district.BarangayFragment"
+        android:label=" "
+        tools:layout="@layout/thecity_district" />
+
+    <fragment
+        android:id="@+id/nav_home_jobs"
+        android:name="com.app.isanpablo.ui.home.jobs.JobsFragment"
+        android:label=" "
+        tools:layout="@layout/home_jobs" />
+
+    <fragment
+        android:id="@+id/nav_home_services"
+        android:name="com.app.isanpablo.ui.home.services.ServicesFragment"
+        android:label=" "
+        tools:layout="@layout/home_services" />
+
+    <fragment
+        android:id="@+id/nav_home_services_disclosure"
+        android:name="com.app.isanpablo.ui.home.services.disclosure.DisclosureFragment"
+        android:label=" "
+        tools:layout="@layout/home_services_disclosure" />
+
+    <fragment
+        android:id="@+id/nav_home_services_onlinegovservice"
+        android:name="com.app.isanpablo.ui.home.services.onlinegovservice.OnlineGovServiceFragment"
+        android:label=" "
+        tools:layout="@layout/home_service_onlinegov" />
+
+    <fragment
+        android:id="@+id/nav_home_services_cityemployeecorner"
+        android:name="com.app.isanpablo.ui.home.services.cityemployeecorner.CityEmployeeCornerFragment"
+        android:label=" "
+        tools:layout="@layout/home_services_cityemployeecorner" />
+
+    <fragment
+        android:id="@+id/nav_home_services_engineeringandbuilding"
+        android:name="com.app.isanpablo.ui.home.services.engineeringandbuilding.HomeEngineeringAndBuildingFragment"
+        android:label=" "
+        tools:layout="@layout/home_services_engineeringandbuilding" />
+
+    <fragment
+        android:id="@+id/nav_home_services_taxes"
+        android:name="com.app.isanpablo.ui.home.services.taxes.TaxesFragment"
+        android:label=" "
+        tools:layout="@layout/home_services_taxes" />
+
+    <fragment
+        android:id="@+id/nav_home_services_taxes_rptpayment"
+        android:name="com.app.isanpablo.ui.home.services.taxes.rptpayment.RPTPaymentFragment"
+        android:label=" "
+        tools:layout="@layout/home_service_taxes_rptpayment" />
+
+    <fragment
+        android:id="@+id/nav_home_services_onlinerequest"
+        android:name="com.app.isanpablo.ui.home.services.onlinerequest.OnlineRequestFragment"
+        android:label=" "
+        tools:layout="@layout/home_services_onlinerequest" />
+
+
+    <fragment
+        android:id="@+id/nav_home_business"
+        android:name="com.app.isanpablo.ui.home.business.BusinessFragment"
+        android:label=" "
+        tools:layout="@layout/home_business" />
+
+    <fragment
+        android:id="@+id/nav_home_business_doingbusiness"
+        android:name="com.app.isanpablo.ui.home.business.doingbusiness.DoingBusinessFragment"
+        android:label=" "
+        tools:layout="@layout/home_business_doingbusiness" />
+
+    <fragment
+        android:id="@+id/nav_home_business_doingbusiness_newbusiness"
+        android:name="com.app.isanpablo.ui.home.business.doingbusiness.newbusiness.NewBusinessFragment"
+        android:label=" "
+        tools:layout="@layout/home_business_doingbusiness_newbusiness" />
+
+    <fragment
+        android:id="@+id/nav_home_business_doingbusiness_permitrenew"
+        android:name="com.app.isanpablo.ui.home.business.doingbusiness.permitrenew.PermitRenewFragment"
+        android:label=" "
+        tools:layout="@layout/home_business_doingbusiness_permitrenew" />
+
+    <fragment
+        android:id="@+id/nav_home_business_doingbusiness_tric"
+        android:name="com.app.isanpablo.ui.home.business.doingbusiness.tric.TricFragment"
+        android:label=" "
+        tools:layout="@layout/home_business_doingbusiness_tric" />
+
+    <fragment
+        android:id="@+id/nav_home_business_amend"
+        android:name="com.app.isanpablo.ui.home.business.amend.AmendFragment"
+        android:label=" "
+        tools:layout="@layout/home_business_amend" />
+
+    <fragment
+        android:id="@+id/nav_home_business_mayorpermit"
+        android:name="com.app.isanpablo.ui.home.business.mayorpermit.MayorPermitFragment"
+        android:label=" "
+        tools:layout="@layout/home_business_amend" />
+
+    <fragment
+        android:id="@+id/nav_home_business_taxassessment"
+        android:name="com.app.isanpablo.ui.home.business.taxassessment.TaxAssessmentFragment"
+        android:label=" "
+        tools:layout="@layout/home_business_taxassessment" />
+
+    <fragment
+        android:id="@+id/nav_home_business_mybusiness"
+        android:name="com.app.isanpablo.ui.home.business.mybusiness.MyBusinessFragment"
+        android:label=" "
+        tools:layout="@layout/home_business_mybusiness" />
+
 
 </navigation>

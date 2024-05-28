@@ -17,26 +17,13 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/back1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:backgroundTint="#AABCD3"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="Back"
-                    android:textColor="#000000"
-                    app:cornerRadius="15dp"
-                    app:icon="@drawable/back_icon"
-                    app:iconTint="#000000" />
 
                 <TextView
                     android:id="@+id/textView12"
@@ -44,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="Gallery"
+                    android:text="@string/gallery"
                     android:textColor="#000000"
                     android:textSize="20sp" />
 
@@ -66,8 +53,10 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
-                            android:foreground="@drawable/history_spc"
-                            android:scaleType="centerCrop" />
+                            android:contentDescription="@string/picture"
+                            android:foreground="@drawable/pic_tourism_gallery_historyspc"
+                            android:scaleType="centerCrop"
+                            tools:ignore="DuplicateSpeakableTextCheck" />
 
                         <ImageButton
                             android:id="@+id/btnFarcon"
@@ -78,8 +67,10 @@
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
                             android:backgroundTint="#00ffffff"
-                            android:foreground="@drawable/farcon"
-                            android:scaleType="centerCrop" />
+                            android:contentDescription="@string/picture"
+                            android:foreground="@drawable/pic_tourism_gallery_farcon"
+                            android:scaleType="centerCrop"
+                            tools:ignore="DuplicateSpeakableTextCheck" />
                     </TableRow>
 
                     <TableRow
@@ -97,9 +88,10 @@
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
                             android:backgroundTint="#00ffffff"
-                            android:foreground="@drawable/ic_government_mapl_oldcityhall"
+                            android:contentDescription="@string/picture"
+                            android:foreground="@drawable/pic_tourism_gallery_cityhall"
                             android:scaleType="centerCrop"
-                            tools:src="@drawable/cityhall" />
+                            tools:ignore="DuplicateSpeakableTextCheck" />
 
                         <ImageButton
                             android:id="@+id/btnSampa"
@@ -109,9 +101,9 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
-                            android:foreground="@drawable/sampaloc_lake"
+                            android:foreground="@drawable/pic_tourism_gallery_sampaloclake"
                             android:scaleType="centerCrop"
-                            tools:src="@drawable/lake" />
+                            android:contentDescription="@string/picture" />
                     </TableRow>
 
                     <TableRow
@@ -128,8 +120,9 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
-                            android:foreground="@drawable/spcathedral"
-                            android:src="@android:drawable/btn_star" />
+                            android:foreground="@drawable/pic_tourism_gallery_spcathedral"
+                            android:src="@android:drawable/btn_star"
+                            android:contentDescription="@string/picture" />
 
                         <ImageButton
                             android:id="@+id/btnOldCath"
@@ -139,8 +132,9 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
-                            android:foreground="@drawable/old_cathedral"
-                            android:src="@android:drawable/btn_star" />
+                            android:foreground="@drawable/pic_tourism_gallery_oldcathedral"
+                            android:src="@android:drawable/btn_star"
+                            android:contentDescription="@string/picture" />
                     </TableRow>
 
                     <TableRow
@@ -157,8 +151,9 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
-                            android:foreground="@drawable/plsp"
-                            android:src="@android:drawable/btn_star" />
+                            android:foreground="@drawable/pic_tourism_gallery_plsp"
+                            android:src="@android:drawable/btn_star"
+                            android:contentDescription="@string/picture" />
 
                         <ImageButton
                             android:id="@+id/btnHagda"
@@ -168,8 +163,9 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
-                            android:foreground="@drawable/hagdangbato"
-                            android:src="@android:drawable/btn_star" />
+                            android:foreground="@drawable/pic_tourism_gallery_hagdangbato"
+                            android:src="@android:drawable/btn_star"
+                            android:contentDescription="@string/picture" />
                     </TableRow>
                 </TableLayout>
             </LinearLayout>

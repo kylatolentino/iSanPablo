@@ -24,12 +24,22 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import com.app.isanpablo.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 
 class MainActivity : AppCompatActivity() {
 
+    // Google sign-in variables
+    private lateinit var mGoogleSignInClient: GoogleSignInClient
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+    private var isLoginPage = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,35 +47,79 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // This code is for Google Sign-in
+        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken(getString(R.string.default_web_client_id))
+            .requestEmail().build()
+
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
         setSupportActionBar(binding.appBarMain.toolbar)
 
-        binding.appBarMain.fab.setOnClickListener { view ->
-            val message: String = "City Hotlines"
-            showCustomDialogBox(message)
+        binding.appBarMain.fab.setOnClickListener {
+            showhotline()
         }
         checkPermission()
 
+        // This code is for drawer layout
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+        // Passing each menu ID as a set of Ids because each menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_thecity, R.id.nav_government,R.id.nav_economy,R.id.nav_tourism, R.id.nav_foi,R.id.nav_arta
+                R.id.nav_home,R.id.nav_thecity,R.id.nav_government,R.id.nav_economy,R.id.nav_arta,
+                R.id.nav_foi,R.id.nav_tourism
             ), drawerLayout
         )
+
+        // This code is for navigation
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            isLoginPage =destination.id == R.id.nav_login || destination.id == R.id.nav_signin
+            updateAppBarVisibility()
+            updateHotlineVisibility()
+
+        }
+
+        //
+        binding.appBarMain.fab.setOnClickListener {
+            if (!isLoginPage) {
+                showhotline()
+            }
+        }
     }
+
+    private fun updateAppBarVisibility() {
+        if (isLoginPage) {
+            supportActionBar?.hide()
+        } else {
+            supportActionBar?.show()
+        }
+    }
+    private fun updateHotlineVisibility() {
+        if (isLoginPage) {
+            binding.appBarMain.fab.hide()
+        } else {
+            binding.appBarMain.fab.show()
+        }
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main, menu)
         return true
     }
+    private fun checkPermission() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CALL_PHONE), 101)//Check for permission
+        }
+    }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.actionLogout -> {
+            R.id.action_settings -> {
                 showLogoutDialog()
                 true
             }
@@ -77,8 +131,8 @@ class MainActivity : AppCompatActivity() {
         builder.setTitle("Logout")
         builder.setMessage("Are you sure you want to logout?")
         builder.setPositiveButton("Yes") { dialog, which ->
-            // Perform logout action here
-            // For example, you can clear user session and navigate to login screen
+            // Use findNavController on the current fragment to navigate to the logout destination
+            logout()
         }
         builder.setNegativeButton("No") { dialog, which ->
             dialog.dismiss()
@@ -86,20 +140,29 @@ class MainActivity : AppCompatActivity() {
         val dialog = builder.create()
         dialog.show()
     }
+    private fun logout() {
+        // Firebase sign out
+        FirebaseAuth.getInstance().signOut()
 
+        // Google sign out
+        mGoogleSignInClient.signOut().addOnCompleteListener {
+            // Once sign-out is complete, navigate to the login screen
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main)?.findNavController()?.navigate(R.id.nav_login)
+        }
+    }
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
-    private fun showCustomDialogBox(message: String?) {
+    private fun showhotline() {
         val dialog = Dialog(this)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(true)
         dialog.setContentView(R.layout.city_hotline)
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-        dialog.window?.setBackgroundDrawableResource(R.drawable.rounded_dialog_bg)
+        dialog.window?.setBackgroundDrawableResource(R.drawable.shape_rounded_dialog_border)
 
-        val btnClose = dialog.findViewById<ImageView>(R.id.btnExitHotline) // assuming you have an ImageView with id "btnClose" in your layout
+        val btnClose = dialog.findViewById<ImageView>(R.id.exitto) // assuming you have an ImageView with id "btnClose" in your layout
         btnClose.setOnClickListener {
             dialog.dismiss() // Close the dialog when the close button is clicked
         }
@@ -270,26 +333,5 @@ class MainActivity : AppCompatActivity() {
 
 
         dialog.show()
-    }
-    //create class for checkPermission
-    private fun checkPermission() {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CALL_PHONE), 101)//Check for permission
-        }
-    }
-
-    // Handle the result of the permission request
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == 101) {
-            if (grantResults.isNotEmpty() && grantResults[0] != PackageManager.PERMISSION_GRANTED) {
-                // Permission denied, force close the app
-                finish()
-            }
-        }
     }
 }
